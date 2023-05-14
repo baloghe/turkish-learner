@@ -9,7 +9,7 @@ function QuestionNumber(props){
   );
 }
 
-function CardItem({listitemkey, word}){
+function CardItem({listitemkey, word, wordDragged}){
 	const handleDragStart = e => {
     e.dataTransfer.setData("text/plain", listitemkey.toString());
   };
@@ -28,7 +28,10 @@ function CardItem({listitemkey, word}){
   const handleDrop = e => {
     e.preventDefault();
     e.stopPropagation();
-    console.log(`${e.dataTransfer.getData("text/plain")} -> ${e.target.dataset.itemkey}`);
+    let from = e.dataTransfer.getData("text/plain");
+    let to = e.target.dataset.itemkey;
+   	console.log(`CardItem: drag from ${from} to ${to}`);
+    wordDragged(from, to);
   };
 	return (
   	<div className="word"
@@ -46,37 +49,62 @@ function CardItem({listitemkey, word}){
   );
 }
 
-function CardContainer({arr=[], handleDragStart, handleDragEnd}){
-	return (<div>
-  	{arr.map((e,i) => {return <CardItem listitemkey={i} word={e} key={i} />;})}
-    </div>
-  );
-}
+class CardContainer extends React.Component {
+	constructor(props) {
+    super(props);
+    //console.log(`${this.props.handleWordDrag}`);
+   };
+   
+   wordDragged = (from, to) => {
+   	 console.log(`CardContainer: drag from ${from} to ${to}`);
+     //console.log(`${this.props.handleWordDrag}`);
+     this.props.handleWordDrag(from, to);
+   };
+   
+   
+   render() {
+     return (<div>
+      {this.props.arr.map((e,i) => {return <CardItem listitemkey={i} word={e} key={i} wordDragged={this.wordDragged} />;})}
+      </div>
+    );
+   }
+ }
 
 function Question(props){
-	//console.log(`${props.aArr}`);
+	//console.log(`${props.handleWordDrag}`);
   return (
   <table><tbody><tr>
       <td><span className="lang">{props.qLang}</span></td>
       <td><span className="question">{props.qSentence}</span></td>
     </tr><tr>
       <td><span className="lang">{props.aLang}</span></td>
-      <td><CardContainer arr={props.aArr}/></td>
+      <td><CardContainer arr={props.aArr} handleWordDrag={props.handleWordDrag}/></td>
     </tr>
     </tbody></table>
   );
 }
 
-function Test(props){
- return (
-  <div className="test">
-    <QuestionNumber actNum={props.actNum} totNum={props.totNum} />
-    <Question qLang={props.qLang} qSentence={props.qSentence} 
-    aLang={props.aLang} aArr={props.aArr}/>
-  </div>
-);
+
+class Test extends React.Component {
+	constructor(props) {
+    super(props);
+   }
+   
+   onWordDragged(from,to) {
+   	  console.log(`Test: drag from ${from} to ${to}`);
+   };
+   
+   
+	render() {
+  	return (<div className="test">
+    <QuestionNumber actNum={this.props.actNum} totNum={this.props.totNum} />
+    <Question qLang={this.props.qLang} qSentence={this.props.qSentence} 
+    aLang={this.props.aLang} aArr={this.props.aArr}
+    handleWordDrag={this.onWordDragged}/>
+  </div>);
+  }
 }
 
 ReactDOM.createRoot( 
   document.querySelector('#root')
-).render(<Test actNum="3" totNum="8" qLang="EN" qSentence="Now I will tell you the story of the tree." aLang="TR" aArr={['sizlerle','hikayesini','şimdi','ağacın','anlatacağım','.',',']} />);
+).render(<Test actNum="3" totNum="8" qLang="EN" qSentence="Now I will tell you the story of the tree." aLang="TR" aArr={['sizlerle','hikayesini','şimdi','ağacın','anlatacağım','.',',']}  />);
