@@ -21,10 +21,10 @@ body {
 }
 .actNum {
   color: blue;
+  font-weight: bold;
 }
 .totNum {
   color: blue;
-  font-weight: bold;
 }
 .lang {
   font-style: italic;
