@@ -1,6 +1,53 @@
 /*import React from 'react';
 import ReactDOM from 'react-dom/client';
 */
+
+const punct='\\['+ '\\!'+ '\\"'+ '\\#'+ '\\$'+   // since javascript does not
+          '\\%'+ '\\&'+ '\\\''+ '\\('+ '\\)'+  // support POSIX character
+          '\\*'+ '\\+'+ '\\,'+ '\\\\'+ '\\-'+  // classes, we'll need our
+          '\\.'+ '\\/'+ '\\:'+ '\\;'+ '\\<'+   // own version of [:punct:]
+          '\\='+ '\\>'+ '\\?'+ '\\@'+ '\\['+
+          '\\]'+ '\\^'+ '\\_'+ '\\`'+ '\\{'+
+          '\\|'+ '\\}'+ '\\~'+ '\\]',
+
+    re=new RegExp(     // tokenizer
+       '\\s*'+            // discard possible leading whitespace
+       '('+               // start capture group
+         '\\.{3}'+            // ellipsis (must appear before punct)
+         /*
+       '|'+               // alternator
+         '\\w+\\-\\w+'+       // hyphenated words (must appear before punct)
+       '|'+               // alternator
+         '\\w+\'(?:\\w+)?'+   // compound words (must appear before punct)
+       '|'+               // alternator
+         '\\w+'+              // other words
+         */
+       '|'+               // alternator
+         '['+punct+']'+        // punct
+       ')'                // end capture group
+     );
+     
+const tokenize = (str) => {
+	let arr = str.split(re);
+	let ret = [];
+  for(let s of arr){
+  	let x = s.split(/\s+/);
+    ret = [...ret, ...x];
+  }
+  return ret.filter(e=>e.length>0).map(e=>e.toLowerCase());
+};
+
+//source: https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
+const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+};
+
 function QuestionNumber(props){
   return (
     <div className="questionnumber">
@@ -95,18 +142,41 @@ function Question(props){
   );
 }
 
+class TestButton extends React.Component {
+  constructor(props){
+  	super(props);
+  }
+  
+  handleClick = (e) => {
+    this.props.callBack(e);
+  }
+  
+  render() {
+    return (
+      <button onClick={this.handleClick}>
+        {this.props.caption}
+      </button>
+    );
+  }
+}
 
 class Test extends React.Component {
 	constructor(props) {
     super(props);
     this.state = {words: props.aArr.map(e=>e)};
-    //console.log(`Test constr: state.aArr=${this.state.words.join("|")}`);
    }
    
    onWordDragged = (newArr) => {
    	  this.setState({words: newArr.map(e=>e)});
-   };
+   }
    
+   exitTest = (e) => {
+   	this.props.exitTest(e);
+   }
+   
+   nextTest = (e) => {
+   	this.props.nextTest(e);
+   }
    
 	render() {
   	return (<div className="test">
@@ -114,10 +184,88 @@ class Test extends React.Component {
     <Question qLang={this.props.qLang} qSentence={this.props.qSentence} 
     aLang={this.props.aLang} aArr={this.state.words}
     handleWordDrag={this.onWordDragged}/>
+    <table><tbody>
+    <tr>
+    <td className="exitTest"><TestButton callBack={this.exitTest} caption="Exit" /></td>
+    <td className="nextTest"><TestButton callBack={this.nextTest} caption="Next" /></td>
+    </tr>
+    </tbody></table>
   </div>);
   }
 }
 
+class TestContainer extends React.Component {
+	constructor(props) {
+    super(props);
+    this.state = {
+      tests: this.extractTests(props.tests),
+      totTestNum: props.tests.length,
+      qLang: props.qLang,
+      aLang: props.aLang,
+    	actTestNum: 0,
+      tsContainerStart: new Date(),
+      aAnswers: [] //Array of {answer: |-sep String, tsSubmit: timestamp}
+    };
+  } //constructor
+  
+  extractTests = (testArr) => {
+  	//testArr: Array of {qSentence: String, aSentence: String}
+    return testArr.map((e,i) => {
+      let aSent = tokenize(e.aSentence);
+    	let ret = {
+      	qSentence: e.qSentence,
+        aSentence: shuffleArray( aSent ),
+        expResult: aSent.join('|'),
+        tsActStart: (nuli==0 ? new Date() : nulll)
+      };
+      return ret;
+    });
+  };
+  
+  nextTest = (e, strAns) => {
+  	if(this.state.actTestNum < this.state.totTestNum){
+      //save completion time and answer
+      let ans = {
+      			answer: strAns, 
+            secSpent: (new Date() - this.state.tests[this.state.actTestNum].tsActStart)/1000,
+            result: strAns == this.state.tests[this.state.actTestNum].expResult
+            };
+    
+ 	    //show next test
+    	this.setState({
+      		actTestNum: this.state.actTestNum+1,
+          aAnswers: [...this.state.aAnswers, ans]
+      	});
+      this.state.tests[this.state.actTestNum].tsActStart = new Date();
+    } else {
+    	this.exitTest();
+    }
+  };
+  
+  exitTest = (e) => {
+  	//compile results
+    let res = {
+    	totTestNum: this.state.totTestNum,
+      cntAnswered: this.state.aAnswers.length,
+      timeSpent: new Date() - this.state.tsContainerStart,
+      cntGoodAns: this.state.aAnswers.reduce(
+                     e=>(e.result ? 1 : 0)
+      							,0
+      						)
+    };
+  	//exit => navigate to Results
+  };
+  
+  render() {
+  	return (<Test actNum="3" totNum="8" qLang="EN" qSentence="Now I will tell you the story of the tree." aLang="TR" 
+aArr = {shuffleArray(tokenize('Şimdi sizlerle, ağacın hikayesini anlatacağım.'))}
+exitTest={this.exitTest} nextTest={this.nextTest}
+/>);
+  }//render
+}
+
 ReactDOM.createRoot( 
   document.querySelector('#root')
-).render(<Test actNum="3" totNum="8" qLang="EN" qSentence="Now I will tell you the story of the tree." aLang="TR" aArr={['sizlerle','hikayesini','şimdi','ağacın','anlatacağım','.',',']}  />);
+).render(<Test actNum="3" totNum="8" qLang="EN" qSentence="Now I will tell you the story of the tree." aLang="TR" 
+aArr = {shuffleArray(tokenize('Şimdi sizlerle, ağacın hikayesini anlatacağım.'))}
+/>);
