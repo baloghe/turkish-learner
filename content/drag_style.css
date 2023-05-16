@@ -44,3 +44,9 @@ body {
 .word:hover {
   color: blue;
 }
+td.exitTest {
+  display: inline-block;
+}
+td.nextTest {
+  display: inline-block;
+}
