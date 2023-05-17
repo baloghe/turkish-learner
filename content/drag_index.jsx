@@ -56,90 +56,179 @@ function QuestionNumber(props){
   );
 }
 
-function CardItem({listitemkey, word, wordDragged}){
-	const handleDragStart = e => {
-    e.dataTransfer.setData("text/plain", listitemkey.toString());
-  };
-	const handleDragEnter = e => {
-    e.preventDefault();
-    e.stopPropagation();
-  };
-  const handleDragLeave = e => {
-    e.preventDefault();
-    e.stopPropagation();
-  };
-  const handleDragOver = e => {
-    e.preventDefault();
-    e.stopPropagation();
-  };
-  const handleDrop = e => {
+class CardItem extends React.Component {
+	constructor(props){
+  	super(props);
+    this.state = {
+    	dragEnabled: props.dragEnabled
+    };
+  }
+  
+	handleDragStart = e => {
+    //console.log(`handleDragStart :: ${this.props.listitemkey}`);
+    e.dataTransfer.setData("text/plain", this.props.listitemkey.toString());
+  }
+  
+  handleDrop = e => {
     e.preventDefault();
     e.stopPropagation();
     let from = e.dataTransfer.getData("text/plain");
     let to = e.target.dataset.itemkey;
    	//console.log(`CardItem: drag from ${from} to ${to}`);
-    wordDragged(from, to);
+    this.props.wordDragged(from, to);
+  }
+  
+  handleDragEnter = e => {
+    e.preventDefault();
+    e.stopPropagation();
   };
-	return (
-  	<div className="word"
-    		key={listitemkey}
-        data-itemkey={listitemkey}
-        draggable
-        onDrop={e => handleDrop(e)}
-        onDragStart={e => handleDragStart(e)}
-        onDragOver={e => handleDragOver(e)}
-        onDragEnter={e => handleDragEnter(e)}
-        onDragLeave={e => handleDragLeave(e)}
-      >
-      {word}
-    </div>
-  );
+  handleDragLeave = e => {
+    e.preventDefault();
+    e.stopPropagation();
+  };
+  handleDragOver = e => {
+    e.preventDefault();
+    e.stopPropagation();
+  };
+  
+  switch = e => {
+  	this.setState({dragEnabled: e} /*, () => console.log(`CardItem: e=${e} -> dragEnabled=${this.state.dragEnabled}`)*/
+    );
+  }
+  
+	render() {
+    //console.log(`CardItem.render() :: ${this.props.word}`);
+  	return (
+      <div className="word"
+          key={this.props.listitemkey}
+          data-itemkey={this.props.listitemkey}
+          draggable={this.state.dragEnabled ? "true" : "false" }
+          onDrop={this.state.dragEnabled ? this.handleDrop : null}
+          onDragStart={this.state.dragEnabled ? this.handleDragStart : null}
+        onDragOver={this.handleDragOver}
+        onDragEnter={this.handleDragEnter}
+        onDragLeave={this.handleDragLeave}
+        >
+        {this.props.word}
+      </div>
+      );
+  };
 }
 
 class CardContainer extends React.Component {
 	constructor(props) {
     super(props);
-    //console.log(`CardContainer constr: props=${JSON.stringify(props)}`);
-    this.state = {arr: props.arr.map(e=>e)};
+    this.state = {
+    	arr: props.arr.map(e=>e),
+      dragEnabled: props.dragEnabled,
+      visibleEnabled: props.visibleEnabled
+    };
+    this.dragListeners = props.arr.map(e=>React.createRef());
+    //console.log(`CardContainer :: visibleEnabled=${this.state.visibleEnabled}`);
    };
    
+   setVisible = (b) => {
+   	this.setState({visibleEnabled: b});
+   };
+   
+   switchDrag = () => {
+     this.state.dragEnabled = !this.state.dragEnabled;
+     //console.log(`CardContainer: ${this.state.dragEnabled}`);
+     //notify listeners...
+     for(const x of this.dragListeners){
+     	 x.current.switch(this.state.dragEnabled);
+     }
+   }
+   
    wordDragged = (from, to) => {
-   	 //console.log(`CardContainer: drag from ${from} to ${to}`);
-     //console.log(`before: ${this.props.arr.join("|")}`);
-     //console.log(`${this.props.handleWordDrag}`);
-     
      //reorder array
      if(from != to){
-      let fromElement = this.state.arr.splice(from,1)[0];
+      let newArr = this.state.arr.map(e=>e);
+      let fromElement = newArr.splice(from,1)[0];
       let toPos = (from < to ? to-1 : to);
-      this.state.arr.splice(toPos,0,fromElement);
-      let newText = this.state.arr.join("|");
-      //console.log(`after: ${newText}`);
+      newArr.splice(toPos,0,fromElement);
+      //ask for rendering component
+      this.setState({arr: newArr});
+      //notify parent of new word order
       this.props.handleWordDrag(this.state.arr);
      }
    };
    
    
    render() {
-     return (<div>
-      {this.state.arr.map((e,i) => {return <CardItem listitemkey={i} word={e} key={i} wordDragged={this.wordDragged} />;})}
-      </div>
+    if(this.state.visibleEnabled)
+    {
+      return (
+        <div>
+          {this.state.arr.map((e,i) => {
+            //console.log(`CardContainer.render(): i=${i}`);
+            return (
+        		<CardItem 
+                listitemkey={i} 
+                word={e} key={i} 
+                wordDragged={this.wordDragged} 
+                dragEnabled={this.state.dragEnabled} 
+                ref={this.dragListeners[i]} 
+             />);}
+           )//map
+         	}
+        </div>
     );
+    } else {
+    	return null;
+    }
    }
  }
 
-function Question(props){
-	//console.log(`${props.handleWordDrag}`);
-  return (
-  <table><tbody><tr>
-      <td><span className="lang">{props.qLang}</span></td>
-      <td><span className="question">{props.qSentence}</span></td>
-    </tr><tr>
-      <td><span className="lang">{props.aLang}</span></td>
-      <td><CardContainer arr={props.aArr} handleWordDrag={props.handleWordDrag}/></td>
-    </tr>
-    </tbody></table>
-  );
+class Question extends React.Component{
+  constructor(props){
+  	super(props);
+    this.state = {
+      dragEnabled: props.dragEnabled,
+      showExpected: false
+    };
+    this.ansContainer = React.createRef();
+    this.expContainer = React.createRef();
+  }
+  
+  setDraggable = (b) => {
+    //console.log(`this.childContainer=${this.childContainer.current.switchDrag}`);
+  	this.ansContainer.current.switchDrag();
+  }
+  
+  showExpected = (b) => {
+    console.log(`Question :: showExpected ${b}`);
+  	this.setDraggable(!b);
+    this.expContainer.current.setVisible(b);
+  }
+  
+  render() {
+  	return (
+    <table><tbody><tr>
+        <td><span className="lang">{this.props.qLang}</span></td>
+        <td><span className="question">{this.props.qSentence}</span></td>
+      </tr><tr>
+        <td><span className="lang">{this.props.aLang}</span></td>
+        <td><CardContainer 
+              ref={this.ansContainer}
+              arr={this.props.aArr} 
+              handleWordDrag={this.props.handleWordDrag} 
+              dragEnabled={this.state.dragEnabled} 
+              visibleEnabled={true}
+              /></td>
+      </tr><tr>
+        <td />
+        <td><CardContainer 
+              ref={this.expContainer}
+              arr={this.props.eArr} 
+              handleWordDrag={null} 
+              dragEnabled={false}              
+              visibleEnabled={false}
+              /></td>
+      </tr>
+      </tbody></table>
+    );
+  }
 }
 
 class TestButton extends React.Component {
@@ -163,7 +252,11 @@ class TestButton extends React.Component {
 class Test extends React.Component {
 	constructor(props) {
     super(props);
-    this.state = {words: props.aArr.map(e=>e)};
+    this.state = {
+    	words: props.aArr.map(e=>e),
+      answerOpen: true
+    };
+    this.questionTag = React.createRef();
    }
    
    onWordDragged = (newArr) => {
@@ -175,15 +268,35 @@ class Test extends React.Component {
    }
    
    nextTest = (e) => {
-   	this.props.nextTest(e);
+    //show correct answer for 3 seconds
+    let p1 = new Promise( (resolve, reject) => {
+        setTimeout(() => {
+          this.state.answerOpen = false;
+          this.questionTag.current.showExpected(true);
+          console.log(`Test :: answer shown`);
+          resolve(true)
+        }, 0);
+     });
+    //proceed to next (by parent)
+   	p1.then(resolve => setTimeout(() => {
+    			console.log(`Test :: waited for 3 secs`);
+        }, 3000)
+       ).then(x => this.props.nextTest(e));
    }
    
 	render() {
   	return (<div className="test">
     <QuestionNumber actNum={this.props.actNum} totNum={this.props.totNum} />
-    <Question qLang={this.props.qLang} qSentence={this.props.qSentence} 
-    aLang={this.props.aLang} aArr={this.state.words}
-    handleWordDrag={this.onWordDragged}/>
+    <Question
+      ref={this.questionTag}
+      qLang={this.props.qLang} 
+      qSentence={this.props.qSentence} 
+      aLang={this.props.aLang}
+      aArr={this.state.words}
+      eArr={this.props.expResult}
+      dragEnabled={this.state.answerOpen}
+      handleWordDrag={this.onWordDragged}
+      />
     <table><tbody>
     <tr>
     <td className="exitTest"><TestButton callBack={this.exitTest} caption="Exit" /></td>
@@ -257,9 +370,19 @@ class TestContainer extends React.Component {
   };
   
   render() {
-  	return (<Test actNum="3" totNum="8" qLang="EN" qSentence="Now I will tell you the story of the tree." aLang="TR" 
-aArr = {shuffleArray(tokenize('Şimdi sizlerle, ağacın hikayesini anlatacağım.'))}
-exitTest={this.exitTest} nextTest={this.nextTest}
+    console.log(`expResult: ${JSON.stringify(this.state.tests[this.state.actTestNum].expResult)}`);
+    
+  	return (
+    	<Test 
+        actNum={this.state.actTestNum+1}
+        totNum={this.state.totTestNum}
+        qLang={this.state.qLang}
+        qSentence={this.state.tests[this.state.actTestNum].qSentence}
+        aLang={this.state.aLang}
+        aArr = {this.state.tests[this.state.actTestNum].aSentence}
+        expResult = {this.state.tests[this.state.actTestNum].expResult}
+        exitTest={this.exitTest} 
+        nextTest={this.nextTest}
 />);
   }//render
 }
@@ -268,4 +391,5 @@ ReactDOM.createRoot(
   document.querySelector('#root')
 ).render(<Test actNum="3" totNum="8" qLang="EN" qSentence="Now I will tell you the story of the tree." aLang="TR" 
 aArr = {shuffleArray(tokenize('Şimdi sizlerle, ağacın hikayesini anlatacağım.'))}
+expResult = {tokenize('Şimdi sizlerle, ağacın hikayesini anlatacağım.')}
 />);
