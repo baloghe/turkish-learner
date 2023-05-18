@@ -99,7 +99,7 @@ class CardItem extends React.Component {
 	render() {
     //console.log(`CardItem.render() :: ${this.props.word}`);
   	return (
-      <div className="word"
+      <div className={this.props.wordClasses}
           key={this.props.listitemkey}
           data-itemkey={this.props.listitemkey}
           draggable={this.state.dragEnabled ? "true" : "false" }
@@ -156,6 +156,7 @@ class CardContainer extends React.Component {
    
    
    render() {
+    console.log(`CardContainer.render() :: wordClasses=${this.props.wordClasses}, arr.length=${this.props.arr.length}, visibleEnabled=${this.state.visibleEnabled}`);
     if(this.state.visibleEnabled)
     {
       return (
@@ -163,7 +164,8 @@ class CardContainer extends React.Component {
           {this.state.arr.map((e,i) => {
             //console.log(`CardContainer.render(): i=${i}`);
             return (
-        		<CardItem 
+        		<CardItem
+                wordClasses={this.props.wordClasses}
                 listitemkey={i} 
                 word={e} key={i} 
                 wordDragged={this.wordDragged} 
@@ -197,12 +199,13 @@ class Question extends React.Component{
   }
   
   showExpected = (b) => {
-    console.log(`Question :: showExpected ${b}`);
+    //console.log(`Question :: showExpected ${b}`);
   	this.setDraggable(!b);
     this.expContainer.current.setVisible(b);
   }
   
   render() {
+    //console.log(`Question.render() called, question=${this.props.qSentence}`);
   	return (
     <table><tbody><tr>
         <td><span className="lang">{this.props.qLang}</span></td>
@@ -210,6 +213,7 @@ class Question extends React.Component{
       </tr><tr>
         <td><span className="lang">{this.props.aLang}</span></td>
         <td><CardContainer 
+              wordClasses={`word word-answer`}
               ref={this.ansContainer}
               arr={this.props.aArr} 
               handleWordDrag={this.props.handleWordDrag} 
@@ -219,6 +223,7 @@ class Question extends React.Component{
       </tr><tr>
         <td />
         <td><CardContainer 
+              wordClasses={`word word-expected`}
               ref={this.expContainer}
               arr={this.props.eArr} 
               handleWordDrag={null} 
@@ -280,11 +285,12 @@ class Test extends React.Component {
     //proceed to next (by parent)
    	p1.then(resolve => setTimeout(() => {
     			console.log(`Test :: waited for 3 secs`);
-        }, 3000)
-       ).then(x => this.props.nextTest(e));
+        }, this.props.wait)
+       ).then(x => this.props.nextTest(e, this.state.words.join('|')));
    }
    
 	render() {
+  	//console.log(`Test.render() called, actNum=${this.props.actNum}`);
   	return (<div className="test">
     <QuestionNumber actNum={this.props.actNum} totNum={this.props.totNum} />
     <Question
@@ -327,30 +333,32 @@ class TestContainer extends React.Component {
       let aSent = tokenize(e.aSentence);
     	let ret = {
       	qSentence: e.qSentence,
-        aSentence: shuffleArray( aSent ),
-        expResult: aSent.join('|'),
-        tsActStart: (nuli==0 ? new Date() : nulll)
+        aSentence: shuffleArray( aSent.map(x=>x) ),
+        expResult: aSent,
+        tsActStart: (i==0 ? new Date() : null)
       };
       return ret;
     });
   };
   
   nextTest = (e, strAns) => {
+  	console.log(`TestContainer.nextTest entered...`);
   	if(this.state.actTestNum < this.state.totTestNum){
       //save completion time and answer
       let ans = {
       			answer: strAns, 
             secSpent: (new Date() - this.state.tests[this.state.actTestNum].tsActStart)/1000,
-            result: strAns == this.state.tests[this.state.actTestNum].expResult
+            result: strAns == this.state.tests[this.state.actTestNum].expResult.join('|')
             };
-    
- 	    //show next test
+    	//show next test
+      this.state.tests[this.state.actTestNum].tsActStart = new Date();
     	this.setState({
       		actTestNum: this.state.actTestNum+1,
           aAnswers: [...this.state.aAnswers, ans]
       	});
-      this.state.tests[this.state.actTestNum].tsActStart = new Date();
+      console.log(`TestContainer.nextTest: setState() called`);
     } else {
+      console.log(`nextTest: No more tests => exit`);
     	this.exitTest();
     }
   };
@@ -370,7 +378,7 @@ class TestContainer extends React.Component {
   };
   
   render() {
-    console.log(`expResult: ${JSON.stringify(this.state.tests[this.state.actTestNum].expResult)}`);
+    console.log(`TestContainer.render() :: expResult: ${JSON.stringify(this.state.tests[this.state.actTestNum].expResult)}`);
     
   	return (
     	<Test 
@@ -383,13 +391,38 @@ class TestContainer extends React.Component {
         expResult = {this.state.tests[this.state.actTestNum].expResult}
         exitTest={this.exitTest} 
         nextTest={this.nextTest}
+        wait={this.props.wait}
 />);
   }//render
 }
-
+/*
 ReactDOM.createRoot( 
   document.querySelector('#root')
 ).render(<Test actNum="3" totNum="8" qLang="EN" qSentence="Now I will tell you the story of the tree." aLang="TR" 
 aArr = {shuffleArray(tokenize('Şimdi sizlerle, ağacın hikayesini anlatacağım.'))}
 expResult = {tokenize('Şimdi sizlerle, ağacın hikayesini anlatacağım.')}
+wait={3000}
+/>);
+*/
+
+//Array of {qSentence: String, aSentence: String}
+const mockTests = [
+{ qSentence: "Do you recognize me?"
+ ,aSentence: "Beni tanıdınız mı?"
+},{ qSentence: "Yes, I'm a tree."
+ ,aSentence: "Evet, ben bir ağacım."
+},{ qSentence: "Now I will tell you the story of the tree."
+ ,aSentence: "Şimdi sizlerle, ağacın hikayesini anlatacağım."
+},{ qSentence: "First, let me introduce myself to you more closely."
+ ,aSentence: "Önce size kendimi daha yakından tanıtayım."
+},{ qSentence: "These are my leaves!"
+ ,aSentence: "Bunlar yapraklarım!"
+},{ qSentence: "These are my nourishing roots beneath the soil."
+ ,aSentence: "Bunlar, toprağın altındaki besleyici köklerim."
+}
+];
+
+ReactDOM.createRoot( 
+  document.querySelector('#root')
+).render(<TestContainer qLang="EN" aLang="TR" tests={mockTests}
 />);
