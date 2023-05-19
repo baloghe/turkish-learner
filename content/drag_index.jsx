@@ -59,9 +59,6 @@ function QuestionNumber(props){
 class CardItem extends React.Component {
 	constructor(props){
   	super(props);
-    this.state = {
-    	dragEnabled: props.dragEnabled
-    };
   }
   
 	handleDragStart = e => {
@@ -119,30 +116,11 @@ class CardContainer extends React.Component {
 	constructor(props) {
     super(props);
     this.state = {
-    	arr: props.arr.map(e=>e),
-      dragListeners: props.arr.map(e=>React.createRef()),
-      dragEnabled: props.dragEnabled,
-      visibleEnabled: props.visibleEnabled
+    	arr: props.arr.map(e=>e)
     };
     console.log(`CardContainer :: constr arr: ${this.state.arr.length}`);
     
    };//constructor
-   
-   setVisible = (b) => {
-   	this.setState({visibleEnabled: b});
-   };
-   
-   setDraggable = (b) => {
-   	 /*
-     this.state.dragEnabled = !this.state.dragEnabled;
-     //console.log(`CardContainer: ${this.state.dragEnabled}`);
-     //notify listeners...
-     for(const x of this.dragListeners){
-     	 x.current.switch(this.state.dragEnabled);
-     }
-     */
-     this.setState({dragEnabled: b});
-   }
    
    wordDragged = (from, to) => {
      //reorder array
@@ -158,22 +136,9 @@ class CardContainer extends React.Component {
      }
    };
    
-   componentDidUpdate(prevProps, prevState, snapshot){
-     //console.log(`CardContainer :: componentDidUpdate called, ${this.props.actNum}`);
-     if(this.props.actNum != prevProps.actNum){
-       this.setState ({
-          arr: this.props.arr.map(e=>e),
-          dragListeners: this.props.arr.map(e=>React.createRef()),
-          dragEnabled: this.props.dragEnabled,
-          visibleEnabled: this.props.visibleEnabled
-        });
-     }
-   }
-   
    render() {
     /*console.log(`CardContainer.render() :: wordClasses=${this.props.wordClasses}, arr.length=${this.state.arr.length}, visibleEnabled=${this.state.visibleEnabled}`);*/
-    if(this.state.visibleEnabled)
-    {
+    
       return (
         <div>
           {this.state.arr.map((e,i) => {
@@ -182,20 +147,18 @@ class CardContainer extends React.Component {
         		<CardItem
                 wordClasses={this.props.wordClasses}
                 listitemkey={i} 
-                word={e} key={i} 
+                word={e} key={'c'+i} 
                 wordDragged={this.wordDragged} 
-                dragEnabled={this.state.dragEnabled} 
-                ref={this.state.dragListeners[i]}
+                dragEnabled={this.props.dragEnabled} 
+                /*ref={this.state.dragListeners[i]}*/
                 actNum={this.props.actNum}
              />);}
            )//map
          	}
         </div>
     );
-    } else {
-    	return null;
-    }
    }
+   
  }
  
  
@@ -203,35 +166,39 @@ class CardContainer extends React.Component {
 class Question extends React.Component{
   constructor(props){
   	super(props);
-    this.state = {
-      dragEnabled: props.dragEnabled,
-      showExpected: false
-    };
-    this.ansContainer = React.createRef();
-    this.expContainer = React.createRef();
   }
   
-  setDraggable = (b) => {
-    //console.log(`this.childContainer=${this.childContainer.current.switchDrag}`);
-  	this.ansContainer.current.setDraggable(b);
+  renderUserAnswerContainer = (inModifiable) => {
+  	return (
+    <tr>
+        <td><span className="lang">{this.props.aLang}</span></td>
+        <td><CardContainer 
+              wordClasses={`word word-answer`}
+              arr={this.props.aArr} 
+              handleWordDrag={inModifiable ? this.props.handleWordDrag : null} 
+              dragEnabled={inModifiable}
+              actNum={this.props.actNum}
+              />
+         </td>
+      </tr>
+    );
   }
   
-  showExpected = (b) => {
-    //console.log(`Question :: showExpected ${b}`);
-  	this.setDraggable(!b);
-    this.expContainer.current.setVisible(b);
+  renderExpectedAnswerContainer = () => {
+  	return (
+    <tr>
+        <td></td>
+        <td><CardContainer 
+              wordClasses={`word word-expected`}
+              arr={this.props.eArr} 
+              handleWordDrag={null} 
+              dragEnabled={false}
+              actNum={this.props.actNum}
+              />
+         </td>
+      </tr>
+    );
   }
-  
-  componentDidUpdate(prevProps, prevState, snapshot){
-     /*console.log(`Question :: componentDidUpdate called, ${this.props.actNum}`);*/
-     if(this.props.actNum != prevProps.actNum){
-       this.setState ({
-        dragEnabled: this.props.dragEnabled,
-      	showExpected: false
-      });
-     }
-    //this.questionTag = React.createRef();
-   }
   
   render() {
     console.log(`Question.render() called, aArr=${this.props.aArr.length}`);
@@ -240,29 +207,9 @@ class Question extends React.Component{
     <table><tbody><tr>
         <td><span className="lang">{this.props.qLang}</span></td>
         <td><span className="question">{this.props.qSentence}</span></td>
-      </tr><tr>
-        <td><span className="lang">{this.props.aLang}</span></td>
-        <td><CardContainer 
-              wordClasses={`word word-answer`}
-              ref={this.ansContainer}
-              arr={this.props.aArr} 
-              handleWordDrag={this.props.handleWordDrag} 
-              dragEnabled={this.state.dragEnabled} 
-              visibleEnabled={true}
-              actNum={this.props.actNum}
-              /></td>
-      </tr><tr>
-        <td />
-        <td><CardContainer 
-              wordClasses={`word word-expected`}
-              ref={this.expContainer}
-              arr={this.props.eArr} 
-              handleWordDrag={null} 
-              dragEnabled={false}              
-              visibleEnabled={false}
-              actNum={this.props.actNum}
-              /></td>
       </tr>
+      {this.renderUserAnswerContainer(this.props.dragEnabled)}
+      {this.props.dragEnabled ? null : this.renderExpectedAnswerContainer()}
       </tbody></table>
     );
   }
@@ -272,10 +219,8 @@ class Test extends React.Component {
 	constructor(props) {
     super(props);
     this.state = {
-    	words: props.aArr.map(e=>e),
-      dragEnabled: true
+    	words: props.aArr.map(e=>e)
     };
-    this.questionTag = React.createRef();
    }
    
    onWordDragged = (newArr) => {
@@ -285,46 +230,19 @@ class Test extends React.Component {
    exitTest = (e) => {
    	this.props.exitTest(e);
    }
-   /*
-   nextTest = (e) => {
-    console.log(`Test.nextTest() called`);
-    const st1 = setTimeout(() => {
-    			this.state.dragEnabled = false;
-          this.questionTag.current.showExpected(true);
-          console.log(`Test :: answer shown`);
-          clearTimeout(st1);
-    		}, 0);
-    const st2 = setTimeout(() => {
-    			console.log(`Test :: waited for 3 secs`);
-          this.props.containerNextTest(e, this.state.words.join('|'))
-          clearTimeout(st2);
-    		}, this.props.wait);
-   }
-   */
-   componentDidUpdate(prevProps, prevState, snapshot){
-     /*console.log(`Test :: componentDidUpdate called, ${this.state.words.join('|')} vs ${this.props.aArr.join('|')}`);*/
-     if(this.props.actNum != prevProps.actNum){
-       this.setState ({
-        words: this.props.aArr.map(e=>e),
-        dragEnabled: true
-      });
-     }
-    //this.questionTag = React.createRef();
-   }
    
 	render() {
-  	console.log(`Test.render() called, actNum=${this.props.actNum}, words: ${this.state.words.length}, drag: ${this.state.dragEnabled}`);
+  	console.log(`Test.render() called, actNum=${this.props.actNum}, words: ${this.state.words.length}, drag: ${this.props.dragEnabled}`);
   	return (<div className="test">
     <QuestionNumber actNum={this.props.actNum} totNum={this.props.totNum} />
     <Question
-      ref={this.questionTag}
       actNum={this.props.actNum}
       qLang={this.props.qLang} 
       qSentence={this.props.qSentence} 
       aLang={this.props.aLang}
       aArr={this.state.words}
       eArr={this.props.expResult}
-      dragEnabled={this.state.dragEnabled}
+      dragEnabled={this.props.dragEnabled}
       handleWordDrag={this.onWordDragged}
       />
   </div>);
@@ -359,6 +277,7 @@ class TestContainer extends React.Component {
       aLang: props.aLang,
     	actTestNum: 0,
       tsContainerStart: new Date(),
+      dragEnabled: true,
       aAnswers: [] //Array of {answer: |-sep String, tsSubmit: timestamp}
     };
   } //constructor
@@ -416,11 +335,12 @@ class TestContainer extends React.Component {
   };
   
   render() {
-    /*console.log(`TestContainer.render() :: expResult: ${JSON.stringify(this.state.tests[this.state.actTestNum].expResult)}`);*/
+    console.log(`TestContainer.render() :: actTestNum: ${this.state.actTestNum}, aArr.length=${this.state.tests[this.state.actTestNum].aSentence.length}`);
     
   	return (
     	<div>
     	<Test 
+        key={'t'+this.state.actTestNum}
         actNum={this.state.actTestNum+1}
         totNum={this.state.totTestNum}
         qLang={this.state.qLang}
@@ -431,6 +351,7 @@ class TestContainer extends React.Component {
         exitTest={this.exitTest} 
         containerNextTest={this.containerNextTest}
         wait={this.props.wait}
+        dragEnabled={this.state.dragEnabled}
 />
     <table><tbody>
     <tr>
