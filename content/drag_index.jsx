@@ -118,7 +118,7 @@ class CardContainer extends React.Component {
     this.state = {
     	arr: props.arr.map(e=>e)
     };
-    console.log(`CardContainer :: constr arr: ${this.state.arr.length}`);
+    //console.log(`CardContainer :: constr arr: ${this.state.arr.length}`);
     
    };//constructor
    
@@ -201,7 +201,7 @@ class Question extends React.Component{
   }
   
   render() {
-    console.log(`Question.render() called, aArr=${this.props.aArr.length}`);
+    //console.log(`Question.render() called, aArr=${this.props.aArr.length}`);
     
   	return (
     <table><tbody><tr>
@@ -221,9 +221,11 @@ class Test extends React.Component {
     this.state = {
     	words: props.aArr.map(e=>e)
     };
+    console.log(`Test.constructor called`);
    }
    
    onWordDragged = (newArr) => {
+      this.props.updateContainer(newArr.map(e=>e));
    	  this.setState({words: newArr.map(e=>e)});
    }
    
@@ -232,7 +234,7 @@ class Test extends React.Component {
    }
    
 	render() {
-  	console.log(`Test.render() called, actNum=${this.props.actNum}, words: ${this.state.words.length}, drag: ${this.props.dragEnabled}`);
+  	console.log(`Test.render() called, actNum=${this.props.actNum}, words: ${this.state.words.length}, drag: ${this.props.dragEnabled}, aArr=${this.props.aArr.join('|')}, words=${this.state.words.join('|')}`);
   	return (<div className="test">
     <QuestionNumber actNum={this.props.actNum} totNum={this.props.totNum} />
     <Question
@@ -292,31 +294,51 @@ class TestContainer extends React.Component {
         expResult: aSent,
         tsActStart: (i==0 ? new Date() : null)
       };
-      console.log(`${i}: ${ret.qSentence} = ${ret.aSentence}`);
+      //console.log(`${i}: ${ret.qSentence} = ${ret.aSentence}`);
       return ret;
     });
   };
   
-  containerNextTest = (e, strAns) => {
-  	console.log(`TestContainer.nextTest entered...`);
-  	if(this.state.actTestNum < this.state.totTestNum){
-      //save completion time and answer
-      let ans = {
-      			answer: strAns, 
-            secSpent: (new Date() - this.state.tests[this.state.actTestNum].tsActStart)/1000,
-            result: strAns == this.state.tests[this.state.actTestNum].expResult.join('|')
-            };
-    	//show next test
-      this.state.tests[this.state.actTestNum].tsActStart = new Date();
-    	this.setState({
-      		actTestNum: this.state.actTestNum+1,
-          aAnswers: [...this.state.aAnswers, ans]
+  showExpectedResult = () => {
+  	this.setState({
+      		dragEnabled: false
       	});
-      console.log(`TestContainer.nextTest: setState() called`);
-    } else {
-      console.log(`nextTest: No more tests => exit`);
-    	this.exitTest();
-    }
+  }
+  
+  updateUserAnswer = (ansArr) => {
+  	this.state.tests[this.state.actTestNum].aSentence = ansArr;
+    console.log(`updateUserAnswer: ${this.state.tests[this.state.actTestNum].aSentence.join('|')}`);
+  }
+  
+  containerNextTest = (e) => {
+  	//console.log(`TestContainer.nextTest entered...`);
+    
+    this.showExpectedResult();
+    const st1 = setTimeout(() => {
+    	//console.log(`waited ${this.props.wait/1000} sec`);
+    
+      if(this.state.actTestNum < this.state.totTestNum-1){
+        //save completion time and answer
+        let strAns = this.state.tests[this.state.actTestNum].aSentence.join('|');
+        let ans = {
+              secSpent: (new Date() - this.state.tests[this.state.actTestNum].tsActStart)/1000,
+              result: strAns == this.state.tests[this.state.actTestNum].expResult.join('|')
+              };
+        //show next test
+        this.state.tests[this.state.actTestNum].tsActStart = new Date();
+        this.setState({
+            actTestNum: this.state.actTestNum+1,
+            aAnswers: [...this.state.aAnswers, ans],
+            dragEnabled: true
+          });
+        //console.log(`TestContainer.nextTest: setState() called`);
+        } else {
+          //console.log(`nextTest: No more tests => exit`);
+          this.exitTest();
+        }
+        
+      clearTimeout(st1);
+    }, this.props.wait);
   };
   
   exitTest = (e) => {
@@ -335,12 +357,14 @@ class TestContainer extends React.Component {
   };
   
   render() {
-    console.log(`TestContainer.render() :: actTestNum: ${this.state.actTestNum}, aArr.length=${this.state.tests[this.state.actTestNum].aSentence.length}`);
+    
+    let tid = (this.state.dragEnabled ? 't' : 'tr') + this.state.actTestNum;
+    console.log(`TestContainer.render() :: actTestNum: ${this.state.actTestNum}, aArr.length=${this.state.tests[this.state.actTestNum].aSentence.length}, tid=${tid}`);
     
   	return (
     	<div>
     	<Test 
-        key={'t'+this.state.actTestNum}
+        key={tid}
         actNum={this.state.actTestNum+1}
         totNum={this.state.totTestNum}
         qLang={this.state.qLang}
@@ -352,6 +376,7 @@ class TestContainer extends React.Component {
         containerNextTest={this.containerNextTest}
         wait={this.props.wait}
         dragEnabled={this.state.dragEnabled}
+        updateContainer={this.updateUserAnswer}
 />
     <table><tbody>
     <tr>
@@ -381,5 +406,5 @@ const mockTests = [
 
 ReactDOM.createRoot( 
   document.querySelector('#root')
-).render(<TestContainer qLang="EN" aLang="TR" tests={mockTests} wait={3000}
+).render(<TestContainer qLang="EN" aLang="TR" tests={mockTests} wait={2000}
 />);
