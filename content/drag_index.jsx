@@ -132,7 +132,7 @@ class CardContainer extends React.Component {
       //ask for rendering component
       this.setState({arr: newArr});
       //notify parent of new word order
-      this.props.handleWordDrag(this.state.arr);
+      this.props.handleWordDrag(newArr);
      }
    };
    
@@ -221,10 +221,11 @@ class Test extends React.Component {
     this.state = {
     	words: props.aArr.map(e=>e)
     };
-    console.log(`Test.constructor called`);
+    //console.log(`Test.constructor called`);
    }
    
    onWordDragged = (newArr) => {
+   		//console.log(`Test.onWordDragged() :: ${newArr.join('|')}`);
       this.props.updateContainer(newArr.map(e=>e));
    	  this.setState({words: newArr.map(e=>e)});
    }
@@ -234,7 +235,7 @@ class Test extends React.Component {
    }
    
 	render() {
-  	console.log(`Test.render() called, actNum=${this.props.actNum}, words: ${this.state.words.length}, drag: ${this.props.dragEnabled}, aArr=${this.props.aArr.join('|')}, words=${this.state.words.join('|')}`);
+  	//console.log(`Test.render() called, actNum=${this.props.actNum}, words: ${this.state.words.length}, drag: ${this.props.dragEnabled}, aArr=${this.props.aArr.join('|')}, words=${this.state.words.join('|')}`);
   	return (<div className="test">
     <QuestionNumber actNum={this.props.actNum} totNum={this.props.totNum} />
     <Question
@@ -307,7 +308,7 @@ class TestContainer extends React.Component {
   
   updateUserAnswer = (ansArr) => {
   	this.state.tests[this.state.actTestNum].aSentence = ansArr;
-    console.log(`updateUserAnswer: ${this.state.tests[this.state.actTestNum].aSentence.join('|')}`);
+    //console.log(`updateUserAnswer: ${this.state.tests[this.state.actTestNum].aSentence.join('|')}`);
   }
   
   containerNextTest = (e) => {
@@ -359,7 +360,7 @@ class TestContainer extends React.Component {
   render() {
     
     let tid = (this.state.dragEnabled ? 't' : 'tr') + this.state.actTestNum;
-    console.log(`TestContainer.render() :: actTestNum: ${this.state.actTestNum}, aArr.length=${this.state.tests[this.state.actTestNum].aSentence.length}, tid=${tid}`);
+    //console.log(`TestContainer.render() :: actTestNum: ${this.state.actTestNum}, aArr.length=${this.state.tests[this.state.actTestNum].aSentence.length}, tid=${tid}`);
     
   	return (
     	<div>
