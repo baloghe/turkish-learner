@@ -357,6 +357,17 @@ class TestContainer extends React.Component {
     console.log(`Test exited`);
   };
   
+  renderButtons(){
+  	return (
+    <table><tbody>
+      <tr>
+      <td className="exitTest"><TestButton callBack={this.exitTest} caption="Exit" /></td>
+      <td className="nextTest"><TestButton callBack={this.containerNextTest} caption="Next" /></td>
+      </tr>
+      </tbody></table>
+    );
+  }
+  
   render() {
     
     let tid = (this.state.dragEnabled ? 't' : 'tr') + this.state.actTestNum;
@@ -379,12 +390,7 @@ class TestContainer extends React.Component {
         dragEnabled={this.state.dragEnabled}
         updateContainer={this.updateUserAnswer}
 />
-    <table><tbody>
-    <tr>
-    <td className="exitTest"><TestButton callBack={this.exitTest} caption="Exit" /></td>
-    <td className="nextTest"><TestButton callBack={this.containerNextTest} caption="Next" /></td>
-    </tr>
-    </tbody></table>
+    {this.state.dragEnabled ? this.renderButtons() : null}
 </div>);
   }//render
 }
