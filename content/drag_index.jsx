@@ -316,20 +316,26 @@ class TestContainer extends React.Component {
     
     this.showExpectedResult();
     const st1 = setTimeout(() => {
-    	//console.log(`waited ${this.props.wait/1000} sec`);
-    
-      if(this.state.actTestNum < this.state.totTestNum-1){
-        //save completion time and answer
-        let strAns = this.state.tests[this.state.actTestNum].aSentence.join('|');
-        let ans = {
-              secSpent: (new Date() - this.state.tests[this.state.actTestNum].tsActStart)/1000,
-              result: strAns == this.state.tests[this.state.actTestNum].expResult.join('|')
+    	let strAns = this.state.tests[this.state.actTestNum].aSentence.join('|');
+      let expAns = this.state.tests[this.state.actTestNum].expResult.join('|');
+      let tstResult = (strAns.trim() == expAns.trim());
+      let tstSecSpent = (new Date() - this.state.tests[this.state.actTestNum].tsActStart)/1000;
+      
+      let ans = {
+              secSpent: tstSecSpent,
+              result: tstResult
               };
         //show next test
         this.state.tests[this.state.actTestNum].tsActStart = new Date();
+        this.state.aAnswers = [...this.state.aAnswers, ans]
+        
+        console.log(`containerNextTest :: ans=${JSON.stringify(this.state.aAnswers)}`);
+    
+      if(this.state.actTestNum < this.state.totTestNum-1){
+        //save completion time and answer
         this.setState({
             actTestNum: this.state.actTestNum+1,
-            aAnswers: [...this.state.aAnswers, ans],
+            tsActStart: new Date(),
             dragEnabled: true
           });
         //console.log(`TestContainer.nextTest: setState() called`);
@@ -347,14 +353,14 @@ class TestContainer extends React.Component {
     let res = {
     	totTestNum: this.state.totTestNum,
       cntAnswered: this.state.aAnswers.length,
-      timeSpent: new Date() - this.state.tsContainerStart,
+      timeSpent: (new Date() - this.state.tsContainerStart)/1000,
       cntGoodAns: this.state.aAnswers.reduce(
-                     e=>(e.result ? 1 : 0)
+                     (c,e)=>(c+(e.result ? 1 : 0))
       							,0
       						)
     };
   	//exit => navigate to Results
-    console.log(`Test exited`);
+    console.log(`Test exited, res: ${JSON.stringify(res)}`);
   };
   
   renderButtons(){
