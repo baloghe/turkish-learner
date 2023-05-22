@@ -48,6 +48,10 @@ const shuffleArray = (array) => {
   return array;
 };
 
+/*----------------------------------
+	Test Components
+----------------------------------*/
+
 function QuestionNumber(props){
   return (
     <div className="questionnumber">
@@ -329,7 +333,7 @@ class TestContainer extends React.Component {
         this.state.tests[this.state.actTestNum].tsActStart = new Date();
         this.state.aAnswers = [...this.state.aAnswers, ans]
         
-        console.log(`containerNextTest :: ans=${JSON.stringify(this.state.aAnswers)}`);
+        //console.log(`containerNextTest :: ans=${JSON.stringify(this.state.aAnswers)}`);
     
       if(this.state.actTestNum < this.state.totTestNum-1){
         //save completion time and answer
@@ -360,7 +364,8 @@ class TestContainer extends React.Component {
       						)
     };
   	//exit => navigate to Results
-    console.log(`Test exited, res: ${JSON.stringify(res)}`);
+    //console.log(`Test exited, res: ${JSON.stringify(res)}`);
+    this.props.dispatchResults(res);
   };
   
   renderButtons(){
@@ -400,8 +405,247 @@ class TestContainer extends React.Component {
 </div>);
   }//render
 }
-//Array of {qSentence: String, aSentence: String}
+
+/*----------------------------
+   Settings pane components
+----------------------------*/
+class TopicPane extends React.Component {
+	constructor(props){
+  	super(props);
+    this.state = {
+    	activeTitle: this.props.activeTitle
+    };
+    //console.log(`${props.topics.map(e=>(e.cnt + ' ' + e.title)).join(', ')}`);
+  }
+  
+  titleChanged = (e) => {
+  	this.setState({
+    	activeTitle: e.target.value
+    });
+    this.props.selectedTitleChanged(e.target.value);
+  };
+  
+  render(){
+  	return (
+    	<div className="radios">
+      {this.props.topics.map((e,i)=>(
+      	<div key={'d'+i}>
+          <input 
+            key={'i'+i} 
+            type="radio" 
+            value={i.toString()} 
+            name="titles" 
+            id={'tit'+i}
+            checked={i==this.state.activeTitle}
+            onChange={this.titleChanged}
+          />
+          <label key={'lab'+i} htmlFor={'tit'+i}>
+            <span key={'lab'+i+'-1'} className="topic-title">{e.title}</span> 
+            <span key={'lab'+i+'-2'} className="topic-title topic-cnt">({e.cnt})</span>
+          </label></div>))}
+      </div>
+    );
+  }
+}
+
+class Settings extends React.Component {
+	constructor(props){
+  	super(props);
+    this.state = {
+    	activeTitle:this.props.activeTitle == null ? 0 : this.props.activeTitle,
+      isRandOrder: this.props.isRandOrder || false
+    };
+    }
+   
+  selectedTitleChanged = (newIdx) => {
+  	//console.log(`newIdx=${newIdx}`);
+  	this.setState({
+    	activeTitle: newIdx
+    });
+  }
+  
+  setRandOrder = () => {
+  	this.setState({
+    	isRandOrder: !this.state.isRandOrder
+    });
+  }
+  
+  startTest = () => {
+    let actTitle = this.state.activeTitle;
+    let actRand = this.state.isRandOrder;
+  	console.log(`Start test no. ${actTitle}: ${this.props.topics[this.state.activeTitle].title}, random: ${actRand}`);
+    this.props.startTest(actTitle, actRand);
+  }
+    
+  render() {
+  	return (
+    	<div className="settings">
+        <h3>Choose a topic!</h3>
+        <TopicPane
+          topics={this.props.topics}
+          activeTitle={this.state.activeTitle}
+          selectedTitleChanged={this.selectedTitleChanged}
+        />
+        <div className="chkbx">
+          <input
+            key="randOrder"
+            type="checkbox" 
+            id="randOrder"
+            name="randOrder"
+            value="randOrder"
+            checked={this.state.isRandOrder}
+            onChange={this.setRandOrder}
+          />
+          <label key="labRandOrder" htmlFor="randOrder">
+            Random order
+          </label>
+        </div>
+        <button className="startBtn" onClick={this.startTest}>
+        <span>Start</span>
+        </button>
+      </div>
+    );
+  }
+}
+
+/*-------------------------------
+   APP components
+-------------------------------*/
+class App extends React.Component {
+	constructor(props){
+  	super(props);
+    this.state = {
+    	topics: this.getTopics(props.tests),
+      actTopic: 0,
+      actRandom: false,
+      actPhase: "settings",
+      results: []
+    };
+  }
+  
+  getTopics = (inp) => {
+  	return inp.map(e=>{
+    	return {title: e.title, cnt: (e.sentences ? e.sentences.length : 0)};
+    })
+  }
+  
+  showResults = (res) => {
+  	//console.log(`App: Test finished: ${JSON.stringify(res)}`);
+    this.state.results.unshift(res);
+    this.setState({
+    	results: this.state.results.filter((e,i)=>i<5),
+      actPhase: "results"
+    });
+    const st1 = setTimeout(() => {
+      this.setState({
+        actPhase: "settings"
+      });
+      clearTimeout(st1);
+      }
+      ,this.props.wait*2
+    );
+    
+  }
+  
+  getRandomizedSentences = (idx) => {
+  	
+  	let arr = this.props.tests[idx].sentences.map(e=>{return {qSentence: e.qSentence, aSentence: e.aSentence};}
+    );
+    return shuffleArray(arr);
+    
+    //return this.props.tests[idx].sentences;
+  }
+  
+  startTest = (inTopic, inRandom) => {
+  	this.setState({
+    	actTopic: inTopic,
+      actRandom: inRandom,
+      actPhase: "test"
+    });
+  }
+    
+  renderSettings = () => {
+    return (
+      <Settings
+        topics={this.state.topics}
+        startTest={this.startTest}
+        activeTitle={this.state.actTopic}
+        isRandOrder={this.state.actRandom}
+        />
+    );
+  }
+    
+  renderTestContainer = () => {
+    let actSentences =(
+      this.state.actRandom
+      ? this.getRandomizedSentences(this.state.actTopic)
+      : this.props.tests[this.state.actTopic].sentences
+    );
+    return (
+      <TestContainer 
+        qLang={this.props.qLang}
+        aLang={this.props.aLang}
+        tests={actSentences}
+        wait={this.props.wait}
+        dispatchResults={this.showResults}
+        />
+    );
+  }
+  
+  renderResults = () => {
+    	return (
+      <div className="results-overall">
+        <div className="results">
+          <h3 className="results-head">
+            Results
+          </h3>
+        </div>
+        <table className="results">
+          <thead>
+            <tr>
+              <th key="rc1">All</th>
+              <th key="rc2">Good</th>
+              <th key="rc3">Bad</th>
+              <th key="rc4">Time (s)</th>
+              <th key="rc5">%</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.results.map((e,i)=>{
+            	return (
+            	<tr key={'rr'+i}>
+              <td key={'rr'+i+'-1'}>{e.totTestNum}</td>
+              <td key={'rr'+i+'-2'}>{e.cntGoodAns}</td>
+              <td key={'rr'+i+'-3'}>{e.cntAnswered - e.cntGoodAns}</td>
+              <td key={'rr'+i+'-4'}>{e.timeSpent}</td>
+              <td key={'rr'+i+'-5'}>{Math.round(e.cntGoodAns * 100 / e.totTestNum)}</td>
+              </tr>
+              );
+            })}
+          </tbody>
+        </table>
+        </div>
+      );
+  }
+  
+  render() {
+		if(this.state.actPhase == "settings") {
+      return this.renderSettings();
+    } else if(this.state.actPhase == "test") {
+      return this.renderTestContainer();
+  	} else if(this.state.actPhase == "results") {
+      return this.renderResults();
+  	}
+	}
+}
+
+/*-------------------------------
+   Actual inputs and root rendering
+-------------------------------*/
+
 const mockTests = [
+{title: "Ağaç Nasil Oluşur?",
+ sentences: [
 { qSentence: "Do you recognize me?"
  ,aSentence: "Beni tanıdınız mı?"
 },{ qSentence: "Yes, I'm a tree."
@@ -415,9 +659,22 @@ const mockTests = [
 },{ qSentence: "These are my nourishing roots beneath the soil."
  ,aSentence: "Bunlar, toprağın altındaki besleyici köklerim."
 }
+]},
+{title: "Arılar varsa, yarınlar var",
+ sentences: [
+ { qSentence: "Then let's go to the flowers together..."
+ ,aSentence: "O zaman gelin hep birlikte çiçeklere doğru gidelim..."
+},{ qSentence: "Here is a worker bee."
+ ,aSentence: "İşte bir işçi arı."
+},{ qSentence: "How quickly it passed."
+ ,aSentence: "Nasıl da hızla geçip gitti."
+},{ qSentence: "Isn't it hard to believe that it was an egg 21 days ago?"
+ ,aSentence: "Onun 21 gün önce bir yumurta olduğuna inanmak zor değil mi?"
+}
+ ]}
 ];
 
 ReactDOM.createRoot( 
   document.querySelector('#root')
-).render(<TestContainer qLang="EN" aLang="TR" tests={mockTests} wait={2000}
+).render(<App qLang="EN" aLang="TR" tests={mockTests} wait={2000}
 />);
