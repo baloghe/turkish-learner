@@ -452,10 +452,69 @@ class Settings extends React.Component {
 	constructor(props){
   	super(props);
     this.state = {
+    	titles: this.getTitlesFromProps(),
     	activeTitle:this.props.activeTitle == null ? 0 : this.props.activeTitle,
       isRandOrder: this.props.isRandOrder || false
     };
     }
+    
+  getTitlesFromProps = () => {
+  	return this.props.topics.map(e => 
+    					{return {title: e.title, cnt: e.cnt};});
+  }
+  
+  loadFile = (e) => {
+  	let selectedFile = e.target.files[0];
+    this.state.reader = new FileReader();
+    this.state.reader.readAsText(selectedFile);
+    this.state.reader.onloadend = this.parseXml;
+  }
+  
+  parseXml = () => {
+    const parser = new DOMParser();
+    const dbMetadata = parser.parseFromString(this.state.reader.result,"text/xml");
+    let root = dbMetadata.children[0];
+    
+    let ndlang = root.getElementsByTagName("languages")[0];
+    let langs=[];
+    for(let ch of ndlang.children){
+    	langs.push(ch.getAttribute('id'));
+    }
+
+    let ndsub = root.getElementsByTagName("subjects")[0];
+    
+    let ret = {languages: langs, topics: []};
+    for(let ch of ndsub.children){
+      ret.topics.push({id: ch.getAttribute('id'),
+                       title: ch.getAttribute('name')});
+    }
+
+    let ndsent = root.getElementsByTagName("sentences")[0];
+    let subcnt = [];
+    for(let ch of ndsent.children){
+      let sents = [];
+      for(let chx of ch.children){
+      	let s={};
+      	for(let chy of chx.children){
+        	let lang = chy.getAttribute('lang');
+          s[lang] = chy.getAttribute('txt').replace(/\[\//g,'').replace(/\/\]/g,'');
+        }//chy
+        sents.push(s);
+      }
+      subcnt.push({id: ch.getAttribute('subjectID'),
+                   cnt: ch.children.length,
+                   sentences: sents
+                   });
+    }
+    ret.topics.forEach(x => {
+      x.cnt = subcnt.filter(y => y.id==x.id)[0].cnt;
+      x.sentences = subcnt.filter(y => y.id==x.id)[0].sentences;
+    });
+    
+    //console.log(JSON.stringify(ret));
+
+    this.props.fileLoaded(ret);
+  }
    
   selectedTitleChanged = (newIdx) => {
   	//console.log(`newIdx=${newIdx}`);
@@ -486,6 +545,18 @@ class Settings extends React.Component {
           activeTitle={this.state.activeTitle}
           selectedTitleChanged={this.selectedTitleChanged}
         />
+        <div className="chkbx">  
+          <label key="labFromFile" htmlFor="fromFile">
+            Load XML: 
+          </label>      
+          <input 
+            key="fromFile"
+            type="file"
+            id="fromFile"
+            name="fromFile"
+            onChange={this.loadFile}
+          />
+        </div>
         <div className="chkbx">
           <input
             key="randOrder"
@@ -516,6 +587,7 @@ class App extends React.Component {
   	super(props);
     this.state = {
     	topics: this.getTopics(props.tests),
+      tests: props.tests,
       actTopic: 0,
       actRandom: false,
       actPhase: "settings",
@@ -527,6 +599,24 @@ class App extends React.Component {
   	return inp.map(e=>{
     	return {title: e.title, cnt: (e.sentences ? e.sentences.length : 0)};
     })
+  }
+  
+  fileLoaded = (inFileData) => {
+  	let loadedTopics = inFileData.topics.map(e => {return {title: e.title, cnt: e.cnt};});
+    let loadedTests = inFileData.topics.map(e => {
+    	let ret = [];
+      for(let ch of e.sentences){
+      	let s = {qSentence: ch[this.props.qLang],
+                  aSentence: ch[this.props.aLang]};
+        ret.push(s);
+      }
+      return {sentences: ret};
+    });
+    
+    this.setState({
+    	topics: loadedTopics,
+      tests:  loadedTests
+    });
   }
   
   showResults = (res) => {
@@ -549,7 +639,7 @@ class App extends React.Component {
   
   getRandomizedSentences = (idx) => {
   	
-  	let arr = this.props.tests[idx].sentences.map(e=>{return {qSentence: e.qSentence, aSentence: e.aSentence};}
+  	let arr = this.state.tests[idx].sentences.map(e=>{return {qSentence: e.qSentence, aSentence: e.aSentence};}
     );
     return shuffleArray(arr);
     
@@ -571,6 +661,7 @@ class App extends React.Component {
         startTest={this.startTest}
         activeTitle={this.state.actTopic}
         isRandOrder={this.state.actRandom}
+        fileLoaded={this.fileLoaded}
         />
     );
   }
@@ -579,7 +670,7 @@ class App extends React.Component {
     let actSentences =(
       this.state.actRandom
       ? this.getRandomizedSentences(this.state.actTopic)
-      : this.props.tests[this.state.actTopic].sentences
+      : this.state.tests[this.state.actTopic].sentences
     );
     return (
       <TestContainer 
