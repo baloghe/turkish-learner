@@ -454,7 +454,9 @@ class Settings extends React.Component {
     this.state = {
     	titles: this.getTitlesFromProps(),
     	activeTitle:this.props.activeTitle == null ? 0 : this.props.activeTitle,
-      isRandOrder: this.props.isRandOrder || false
+      isRandOrder: this.props.isRandOrder || false,
+      qLang: props.qLang,
+      aLang: props.aLang
     };
     }
     
@@ -529,6 +531,16 @@ class Settings extends React.Component {
     });
   }
   
+  changeLang = () => {
+  	let [newQLang, newALang] = [this.state.aLang, this.state.qLang];
+    this.setState({
+    	qLang: newQLang,
+      aLang: newALang
+    });
+    
+    this.props.setLang([newQLang, newALang]);
+  }
+  
   startTest = () => {
     let actTitle = this.state.activeTitle;
     let actRand = this.state.isRandOrder;
@@ -570,6 +582,9 @@ class Settings extends React.Component {
           <label key="labRandOrder" htmlFor="randOrder">
             Random order
           </label>
+          <button onClick={this.changeLang}>
+          <span>{this.state.qLang} &rarr; {this.state.aLang}</span>
+          </button>
         </div>
         <button className="startBtn" onClick={this.startTest}>
         <span>Start</span>
@@ -591,7 +606,9 @@ class App extends React.Component {
       actTopic: 0,
       actRandom: false,
       actPhase: "settings",
-      results: []
+      results: [],
+      qLang: props.qLang,
+      aLang: props.aLang
     };
   }
   
@@ -601,14 +618,27 @@ class App extends React.Component {
     })
   }
   
+  setLang = ([inQLang, inALang]) => {
+  	this.setState({
+    	qLang: inQLang,
+      aLang: inALang
+    });
+  }
+  
   fileLoaded = (inFileData) => {
   	let loadedTopics = inFileData.topics.map(e => {return {title: e.title, cnt: e.cnt};});
+    
+    this.state.qLang = inFileData.languages[0];
+    this.state.aLang = inFileData.languages[1];
+    
     let loadedTests = inFileData.topics.map(e => {
     	let ret = [];
       for(let ch of e.sentences){
-      	let s = {qSentence: ch[this.props.qLang],
-                  aSentence: ch[this.props.aLang]};
-        ret.push(s);
+      	/*
+      	let s = {qSentence: ch[this.state.qLang],
+                  aSentence: ch[this.state.aLang]};
+        */
+        ret.push(ch);
       }
       return {sentences: ret};
     });
@@ -639,7 +669,9 @@ class App extends React.Component {
   
   getRandomizedSentences = (idx) => {
   	
-  	let arr = this.state.tests[idx].sentences.map(e=>{return {qSentence: e.qSentence, aSentence: e.aSentence};}
+  	let arr = this.state.tests[idx].sentences.map(
+    		/*e=>{return {qSentence: e.qSentence, aSentence: e.aSentence};}*/
+        e=>e
     );
     return shuffleArray(arr);
     
@@ -662,6 +694,9 @@ class App extends React.Component {
         activeTitle={this.state.actTopic}
         isRandOrder={this.state.actRandom}
         fileLoaded={this.fileLoaded}
+        qLang={this.state.qLang}
+        aLang={this.state.aLang}
+        setLang={this.setLang}
         />
     );
   }
@@ -671,11 +706,18 @@ class App extends React.Component {
       this.state.actRandom
       ? this.getRandomizedSentences(this.state.actTopic)
       : this.state.tests[this.state.actTopic].sentences
-    );
+    ).map(e => {
+    	return {
+      	qSentence: e[this.state.qLang],
+        aSentence: e[this.state.aLang]
+      };
+    });
+    //console.log(`this.state.tests[this.state.actTopic].sentences: ${JSON.stringify(this.state.tests[this.state.actTopic].sentences)}`);
+    //console.log(`actSentences: ${JSON.stringify(actSentences)}`);
     return (
       <TestContainer 
-        qLang={this.props.qLang}
-        aLang={this.props.aLang}
+        qLang={this.state.qLang}
+        aLang={this.state.aLang}
         tests={actSentences}
         wait={this.props.wait}
         dispatchResults={this.showResults}
@@ -737,30 +779,30 @@ class App extends React.Component {
 const mockTests = [
 {title: "Ağaç Nasil Oluşur?",
  sentences: [
-{ qSentence: "Do you recognize me?"
- ,aSentence: "Beni tanıdınız mı?"
-},{ qSentence: "Yes, I'm a tree."
- ,aSentence: "Evet, ben bir ağacım."
-},{ qSentence: "Now I will tell you the story of the tree."
- ,aSentence: "Şimdi sizlerle, ağacın hikayesini anlatacağım."
-},{ qSentence: "First, let me introduce myself to you more closely."
- ,aSentence: "Önce size kendimi daha yakından tanıtayım."
-},{ qSentence: "These are my leaves!"
- ,aSentence: "Bunlar yapraklarım!"
-},{ qSentence: "These are my nourishing roots beneath the soil."
- ,aSentence: "Bunlar, toprağın altındaki besleyici köklerim."
+{ EN: "Do you recognize me?"
+ ,TR: "Beni tanıdınız mı?"
+},{ EN: "Yes, I'm a tree."
+ ,TR: "Evet, ben bir ağacım."
+},{ EN: "Now I will tell you the story of the tree."
+ ,TR: "Şimdi sizlerle, ağacın hikayesini anlatacağım."
+},{ EN: "First, let me introduce myself to you more closely."
+ ,TR: "Önce size kendimi daha yakından tanıtayım."
+},{ EN: "These are my leaves!"
+ ,TR: "Bunlar yapraklarım!"
+},{ EN: "These are my nourishing roots beneath the soil."
+ ,TR: "Bunlar, toprağın altındaki besleyici köklerim."
 }
 ]},
 {title: "Arılar varsa, yarınlar var",
  sentences: [
- { qSentence: "Then let's go to the flowers together..."
- ,aSentence: "O zaman gelin hep birlikte çiçeklere doğru gidelim..."
-},{ qSentence: "Here is a worker bee."
- ,aSentence: "İşte bir işçi arı."
-},{ qSentence: "How quickly it passed."
- ,aSentence: "Nasıl da hızla geçip gitti."
-},{ qSentence: "Isn't it hard to believe that it was an egg 21 days ago?"
- ,aSentence: "Onun 21 gün önce bir yumurta olduğuna inanmak zor değil mi?"
+ { EN: "Then let's go to the flowers together..."
+ ,TR: "O zaman gelin hep birlikte çiçeklere doğru gidelim..."
+},{ EN: "Here is a worker bee."
+ ,TR: "İşte bir işçi arı."
+},{ EN: "How quickly it passed."
+ ,TR: "Nasıl da hızla geçip gitti."
+},{ EN: "Isn't it hard to believe that it was an egg 21 days ago?"
+ ,TR: "Onun 21 gün önce bir yumurta olduğuna inanmak zor değil mi?"
 }
  ]}
 ];
