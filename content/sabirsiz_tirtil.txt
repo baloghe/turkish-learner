@@ -1,88 +1,104 @@
-Sabırsız Tırtıl
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+	<languages>
+		<language id="EN" name="English"/>
+		<language id="TR" name="Türkçe"/>
+	</languages>
+	<subjects>
+		<subject id="S01" name="Sabırsız Tırtıl 1-36" />
+		<subject id="S02" name="Sabırsız Tırtıl 37-72" />
+	</subjects>
+	<sentences>
+		<subject subjectID="S01">
+			
+<sentence order="1"><variant lang="TR" txt="[/Hey/] ne yapıyorsunuz çocuklar?"/><variant lang="EN" txt="Hey, what are you guys doing?"/></sentence>
+<sentence order="2"><variant lang="TR" txt="Metamorfoza uğrayacağız."/><variant lang="EN" txt="We will undergo metamorphose."/></sentence>
+<sentence order="3"><variant lang="TR" txt="Kime uğrayacaksınız?"/><variant lang="EN" txt="What will you metamorphose into?"/></sentence>
+<sentence order="4"><variant lang="TR" txt="Yani kelebeğe dönüşeceğiz."/><variant lang="EN" txt="So we'll turn into butterflies."/></sentence>
+<sentence order="5"><variant lang="TR" txt="Evet. Doğru. Biliyordum zaten."/><variant lang="EN" txt="Yeah. That's right, yeah. I knew it."/></sentence>
 
-- Hey ne yapıyorsunuz çocuklar?
-- Metamorfoza uğrayacağız.
-- Kime uğrayacaksınız?
-- Yani kelebeğe dönüşeceğiz.
-- Evet. Doğru. Biliyordum zaten.
+<sentence order="6"><variant lang="TR" txt="Bir dakika! Yani şimdi sen bana kelebek olabileceğimi söylüyorsun?"/><variant lang="EN" txt="Wait a minute! So now you're telling me I can be a butterfly?"/></sentence>
+<sentence order="7"><variant lang="TR" txt="Kanatlı falan?"/><variant lang="EN" txt="With wings and stuff?"/></sentence>
+<sentence order="8"><variant lang="TR" txt="Beni de bekleyin!"/><variant lang="EN" txt="Wait for me, too!"/></sentence>
 
-- Bir dakika! Yani şimdi sen bana kelebek olabileceğimi söylüyorsun?
-- Evet.
-- Kanatlı falan?
-- Evet.
-- Sahi mi?
-- Evet.
-- Beni de bekleyin!
+<sentence order="9"><variant lang="TR" txt="Şimdi ne yapıyoruz?"/><variant lang="EN" txt="What are we doing now?"/></sentence>
+<sentence order="10"><variant lang="TR" txt="Kozanı ör."/><variant lang="EN" txt="Knit the cocoon."/></sentence>
+<sentence order="11"><variant lang="TR" txt="Koza. Evet. Doğru. Biliyordum zaten."/><variant lang="EN" txt="Cocoon. Yeah. That's right, yeah. I knew it."/></sentence>
 
-- Şimdi ne yapıyoruz?
-- Kozanı ör.
-- Koza. Evet. Doğru. Biliyordum zaten.
+<sentence order="12"><variant lang="TR" txt="Ne! Bunu nasıl yaptın?"/><variant lang="EN" txt="What! How did you do that?"/></sentence>
+<sentence order="13"><variant lang="TR" txt="Bir kez dönmek yeterli mi?"/><variant lang="EN" txt="Is it enough to turn round once?"/></sentence>
+<sentence order="14"><variant lang="TR" txt="Yoksa fırıl fırıl döneyim mi?"/><variant lang="EN" txt="Or should I spin round and round?"/></sentence>
 
-- Ne! Bunu nasıl yaptın? Bir kez dönmek yeterli mi?
-Yoksa fırıl fırıl döneyim mi?
+<sentence order="15"><variant lang="TR" txt="Kelebek oldum mu?"/><variant lang="EN" txt="Did I become a butterfly?"/></sentence>
+<sentence order="16"><variant lang="TR" txt="Şimdi ne yapıyoruz?"/><variant lang="EN" txt="What are we doing now?"/></sentence>
+<sentence order="17"><variant lang="TR" txt="Sabırlı ol ve akışına bırak."/><variant lang="EN" txt="Be patient and go with the flow."/></sentence>
+<sentence order="18"><variant lang="TR" txt="Sabır. Doğru. Tamam, anladım."/><variant lang="EN" txt="Patience. Right. Okay, I got it."/></sentence>
 
-- Kelebek oldum u?
-- Of!
-- Şimdi ne yapıyoruz?
-- Sabırlı ol ve akışına bırak.
-- Sabır. Doğru. Tamam, anladım.
+<sentence order="19"><variant lang="TR" txt="Kelebek oldum mu?"/><variant lang="EN" txt="Have I become a butterfly?"/></sentence>
+<sentence order="20"><variant lang="TR" txt="Hayır. Sabırlı ol."/><variant lang="EN" txt="No. Be patient."/></sentence>
+<sentence order="21"><variant lang="TR" txt="Bir sorum var."/><variant lang="EN" txt="I have a question."/></sentence>
+<sentence order="22"><variant lang="TR" txt="Daha değil!"/><variant lang="EN" txt="Not yet!"/></sentence>
+<sentence order="23"><variant lang="TR" txt="Ne soracağağımı bile bilmiyorsun."/><variant lang="EN" txt="You don't even know what I'm gonna ask."/></sentence>
+<sentence order="24"><variant lang="TR" txt="Peki. Sor bakalım."/><variant lang="EN" txt="All right, then. Go ahead."/></sentence>
+<sentence order="25"><variant lang="TR" txt="Günün nasıl geçiyor? Bir de... artık kelebek oldum mu?"/><variant lang="EN" txt="How's your day going? And... am I a butterfly now?"/></sentence>
+<sentence order="26"><variant lang="TR" txt="Hayır. Sabırlı ol!"/><variant lang="EN" txt="No. Be patient."/></sentence>
 
-- Kelebek oldum mu?
-- Hayır.
-- Peki ya şimdi?
-- Hayır.
-- Şimdi?
-- Hayır. Sabırlı ol.
-- Bir sorum var.
-- Daha değil!
-- Ne soracağağımı bile bilmiyorsun.
-- Peki. Sor bakalım.
-- Günün nasıl geçiyor? Bir de... artık kelebek oldum mu?
-- Hayır. Sabırlı ol!
+<sentence order="27"><variant lang="TR" txt="[/Şişşşşt/]! Burada metamorfoza uğramaya çalışıyoruz!"/><variant lang="EN" txt="Shhht! We're trying to metamorphose here!"/></sentence>
 
-- Şişşşşt! Burada metamorfoza uğramaya çalışıyoruz!
-- Tamam tamam.
+<sentence order="28"><variant lang="TR" txt="Bunun kaç gün süreceğini ben tabii ki biliyorum da... sen de biliyor musun acaba?"/><variant lang="EN" txt="Of course I know how many days this will take... but I wonder if you know?"/></sentence>
+<sentence order="29"><variant lang="TR" txt="İki hafta."/><variant lang="EN" txt="Two weeks."/></sentence>
+<sentence order="30"><variant lang="TR" txt="Evet. Doğru. İki hafta."/><variant lang="EN" txt="Yeah. That's right. Two weeks."/></sentence>
+<sentence order="31"><variant lang="TR" txt="İki hafta mı?"/><variant lang="EN" txt="Two weeks?"/></sentence>
+<sentence order="32"><variant lang="TR" txt="Of... İki hafta boyunca burada ne yapacağım ben?"/><variant lang="EN" txt="What am I going to do here for two weeks?"/></sentence>
+<sentence order="33"><variant lang="TR" txt="Çizgi roman falan alabilir miyim acaba?"/><variant lang="EN" txt="Can I get a comic book or something?"/></sentence>
+<sentence order="34"><variant lang="TR" txt="Ya canım bir şeyler atıştırmak isterse?..."/><variant lang="EN" txt="What if I fancy a snack?"/></sentence>
+<sentence order="35"><variant lang="TR" txt="[/Merhaba/]. İki pizza lütfen. Adres mi? Kozadayım. [/Alo/]? [/Alooo/]?"/><variant lang="EN" txt="Hello. Two pizzas, please. Address? I'm in the cocoon. Hallo? Hallo?"/></sentence>
+<sentence order="36"><variant lang="TR" txt="Ne kadar zamandır buradayım?"/><variant lang="EN" txt="How long have I been here?"/></sentence>
+		</subject>
+		<subject subjectID="S02">
+<sentence order="37"><variant lang="TR" txt="Ya tuvalete gitmek gerekirse?"/><variant lang="EN" txt="What if you need to go to the loo?"/></sentence>
+<sentence order="38"><variant lang="TR" txt="Oyun oynamak isteyen var mı?"/><variant lang="EN" txt="Anyone want to play games?"/></sentence>
+<sentence order="39"><variant lang="TR" txt="Daha birinci günde miyiz? Ama uzun sürüyormuş!"/><variant lang="EN" txt="It's only day one? It's taking so long!"/></sentence>
+<sentence order="40"><variant lang="TR" txt="Bu kadar yeter."/><variant lang="EN" txt="That's enough."/></sentence>
+<sentence order="41"><variant lang="TR" txt="Yeterince metamorfoza uğramışım gibi geliyor bana."/><variant lang="EN" txt="I feel like I've been metamorphosed enough."/></sentence>
+<sentence order="42"><variant lang="TR" txt="Merhaba dünya."/><variant lang="EN" txt="Hello World!"/></sentence>
+<sentence order="43"><variant lang="TR" txt="Bakın da gözleriniz bayram etsin."/><variant lang="EN" txt="Let your eyes feast."/></sentence>
+<sentence order="44"><variant lang="TR" txt="İşte karşınızda güzeller güzeli bir kelebek!"/><variant lang="EN" txt="Here is the most beautiful butterfly in front of you!"/></sentence>
+<sentence order="45"><variant lang="TR" txt="Nasıl görünüyorum?"/><variant lang="EN" txt="How do I look?"/></sentence>
+<sentence order="46"><variant lang="TR" txt="Dönüşmüş müyüm?"/><variant lang="EN" txt="Am I transformed?"/></sentence>
+<sentence order="47"><variant lang="TR" txt="Kanatlarımı açıp uçma vakti geldi!"/><variant lang="EN" txt="It's time to spread my wings and fly!"/></sentence>
+<sentence order="48"><variant lang="TR" txt="Bir dakika! [/Pppp/]... Kanatlarım nerede?"/><variant lang="EN" txt="Wait a minute! Pppp... Where are my wings?"/></sentence>
+<sentence order="49"><variant lang="TR" txt="Yeni bir yöntem denesem iyi olacak."/><variant lang="EN" txt="I'd better try a new method."/></sentence>
+<sentence order="50"><variant lang="TR" txt="Başarabilirsin küçük tırtıl."/><variant lang="EN" txt="You can do it, little caterpillar."/></sentence>
+<sentence order="51"><variant lang="TR" txt="Başaramazsın küçük tırtıl."/><variant lang="EN" txt="You won't make it, little caterpillar."/></sentence>
+<sentence order="52"><variant lang="TR" txt="Tamam. Bunu yapabilirsin. Sabırlı olabilirsin."/><variant lang="EN" txt="Okay. You can do this. You can be patient."/></sentence>
+<sentence order="53"><variant lang="TR" txt="Ah, kimi kandırıyorum ki? Ben sabırlı olamam!"/><variant lang="EN" txt="Oh, who am I kidding? I can't be patient!"/></sentence>
+<sentence order="54"><variant lang="TR" txt="Yapabilirsin! Yapamam."/><variant lang="EN" txt="You can do it! I can't."/></sentence>
+<sentence order="55"><variant lang="TR" txt="Kendini topla! Bunu yapabilirsin!"/><variant lang="EN" txt="Pull yourself together! You can do this!"/></sentence>
+<sentence order="56"><variant lang="TR" txt="Yapamam! Yapamam!"/><variant lang="EN" txt="I can't! I can't!"/></sentence>
 
-- Bunun kaç gün süreceğini ben tabii ki biliyorum da... sen de biliyor musun acaba?
-- İki hafta.
-- Evet. Doğru. İki hafta.
-İki hafta mı?
-Of... İki hafta boyunca burada ne yapacağım ben?
-Çizgi roman falan alabilir miyim acaba?
-Ya canım bir şeyler atıştırmak isterse?...
-Merhaba. İki pizza lütfen. Adres mi? Kozadayım. Alo? Alooo?
-Ne kadar zamandır buradayım?
-Ya tuvalete gitmek gerfekirse?
-Oyun oynamak isteyen var mı?
-Daha 1. günde miyiz? Amma uzun sürüyormuş!
-Bu kadar yeter. Yeterince metamorfoza uğramışım gibi geliyor bana.
-- Merhaba dünya. Bakın da gözleriniz bayram etsin. İşte karşınızda güzeller güzeli bir kelebek!
-Nasıl görünüyorum? Dönüşmüş müyüm? Kanatlarımı açıp uçma vakti geldi!
-Bir dakika! Pppp... Kanatlarim nerede? Yeni bir yöntem denesem iyi olacak.
+<sentence order="58"><variant lang="TR" txt="Sabırlı olabilirim."/><variant lang="EN" txt="I can be patient."/></sentence>
+<sentence order="59"><variant lang="TR" txt="Sabır zihinde başlar."/><variant lang="EN" txt="Patience begins in the mind."/></sentence>
+<sentence order="60"><variant lang="TR" txt="Kozayla bütünleş."/><variant lang="EN" txt="Become one with the cocoon."/></sentence>
+<sentence order="61"><variant lang="TR" txt="Derin derin nefes al... ve ver."/><variant lang="EN" txt="Take a deep breath... and out."/></sentence>
+<sentence order="62"><variant lang="TR" txt="Başarmak üzereyim!"/><variant lang="EN" txt="I'm about to make it!"/></sentence>
+<sentence order="63"><variant lang="TR" txt="Sabırlı ol yeter."/><variant lang="EN" txt="Just be patient."/></sentence>
+<sentence order="64"><variant lang="TR" txt="Sadece sabırlı ol."/><variant lang="EN" txt="Only be patient."/></sentence>
 
-Başarabilirsin küçük tırtıl. Başaramazsin küçük tırtıl.
-Tamam. Bunu yapabilirsin. Sabırlı olabilirsin.
-Ah, kimi kandırıyorum ki? Ben sabırlı olamam!
-Yapabilirsin! Yapamam.
-Kendini topla! Bunu yapabilirsin! Yapamam! Yapamam!
-Yapabilirsin! Yapamam. Yapabilirsin! Yapamam. Yapabilirsin! Yapamam.
+<sentence order="65"><variant lang="TR" txt="İki hafta sonra..."/><variant lang="EN" txt="Two weeks later..."/></sentence>
+<sentence order="66"><variant lang="TR" txt="Başardım! Artık bir kelebeğim!"/><variant lang="EN" txt="I've done it! I'm a butterfly now!"/></sentence>
 
-Sabırlı olabilirim. Sabır zihinde başlar. Kozayla bütünleş.
-Derin derin nefes al... ve ver. 6. gün olmuş bile!
-Başarmak üzereyim! Sabırlı ol yeter. Sadece sabırlı ol.
+<sentence order="67"><variant lang="TR" txt="Biliyor musun, gerçekten de değiştiğimi hissediyorum!"/><variant lang="EN" txt="You know, I really feel like I've changed!"/></sentence>
+<sentence order="68"><variant lang="TR" txt="Şu andan itibaren çok daha sabırlı olacağım."/><variant lang="EN" txt="From now on, I'll be much more patient."/></sentence>
 
-İki hafta sonra...
-Başardım! Artık bir kelebeğim!
+<sentence order="69"><variant lang="TR" txt="[/Hey/]! Hepiniz nereye gidiyorsunuz böyle?"/><variant lang="EN" txt="Where are you all going?"/></sentence>
+<sentence order="70"><variant lang="TR" txt="Göç ediyoruz."/><variant lang="EN" txt="We migrate."/></sentence>
+<sentence order="71"><variant lang="TR" txt="Göç. Evet. Doğru. Beni de bekleyin!"/><variant lang="EN" txt="Migration. Yeah. That's right. Wait for me, too!"/></sentence>
 
-- Biliyor musun, gerçekten de değiştiğimi hissediyorum! Şu andan itibaren çok daha sabırlı olacağım.
-- Harika!
+<sentence order="72"><variant lang="TR" txt="Geldik mi?"/><variant lang="EN" txt="Are we here?"/></sentence>
+<sentence order="73"><variant lang="TR" txt="Yine başlıyoruz."/><variant lang="EN" txt="Here we go again."/></sentence>
+			
+		</subject>	
 
-- Hey! Hepiniz nereye gidiyorsunuz böyle?
-- Göç ediyoruz.
-- Göç. Evet. Doğru. Beni de bekleyin!
-
-- Geldik mi?
-- Yine başlıyoruz.
-
-
-
+	</sentences>
+</test>
