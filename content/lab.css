@@ -1,0 +1,37 @@
+.tile{
+  border-radius: 5px;
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  background-color: yellow;
+  display: inline-block;
+  text-align: center;
+}
+.tile-movable{
+  color: grey;
+  border-color: #999999;
+}
+.tile-frozen{
+  color: red;
+  border-color: red;
+}
+.arrow{
+  border-radius: 5px;
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #F0F8FF;
+  display: inline-block;
+  text-align: center;
+}
+.arrow-pushable{
+  color: #00008B;
+  border-color: #00008B;
+}
+.arrow-pushable:hover{
+  cursor: pointer;
+}
+.arrow-frozen{
+  color: red;
+  border-color: red;
+}
