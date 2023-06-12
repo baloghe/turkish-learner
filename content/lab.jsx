@@ -1,5 +1,44 @@
 const useState = React.useState;
 
+const gridShiftRow = (origArr, rows, cols, r, d) => {
+    let si = r*cols;
+    let ei = si+cols-1;
+    let newGrid = origArr.map(e=>e);
+  	//d>0 => shift to the right
+    if(d>0){
+      let rm = newGrid.splice(ei,1);
+      newGrid.splice(si,0,rm[0]);
+    //otherwise: shift to the left
+    } else {
+    	let rm = newGrid.splice(si,1);
+      newGrid.splice(ei,0,rm[0]);
+    }
+    return newGrid;
+};
+
+
+  
+const gridShiftCol = (origArr, rows, cols, c, d) => {
+  	let si = c;
+    let ei = si+(rows-1)*cols;
+    //d>0 => shift down
+    let idxs;
+    if(d>0){
+    	idxs = Array.from({length: rows}, (v, i) => ei-i*cols);
+    //else shift up
+    } else {
+    	idxs = Array.from({length: rows}, (v, i) => si+i*cols);
+    }
+    //console.log(`shiftCol :: si=${si}, ei=${ei}, idxs=${JSON.stringify(idxs)}`);
+    //change array elements one by one
+    let newGrid = origArr.map(e=>e);
+    for(let i=0; i<idxs.length-1; i++){
+    	[ newGrid[idxs[i]] , newGrid[idxs[i+1]] ] = [ newGrid[idxs[i+1]] , newGrid[idxs[i]] ];
+      //console.log(`shiftCol :: i=${i}, swap ${idxs[i]} and ${idxs[i+1]}`);
+    }
+    return newGrid;
+  };
+
 function Tile({caption, isMovable}){
 	
   const [movable, setMovable] = useState(isMovable);
@@ -41,42 +80,11 @@ function Board({rows, cols, tiles}){
 	const [tileGrid, setTileGrid] = useState(tiles);
 
 	const shiftRow = (r, d) => {
-    let si = r*parseInt(cols);
-    let ei = si+parseInt(cols)-1;
-    let newGrid = tileGrid.map(e=>e);
-  	//d>0 => shift to the right
-    if(d>0){
-      let rm = newGrid.splice(ei,1);
-      newGrid.splice(si,0,rm[0]);
-    //otherwise: shift to the left
-    } else {
-    	let rm = newGrid.splice(si,1);
-      newGrid.splice(ei,0,rm[0]);
-    }
-    //replace
-    setTileGrid(newGrid);
+    setTileGrid( gridShiftRow(tileGrid, parseInt(rows), parseInt(cols), r, d) );
   };
   
   const shiftCol = (c, d) => {
-  	let si = c;
-    let ei = si+(parseInt(rows)-1)*parseInt(cols);
-    //d>0 => shift down
-    let idxs;
-    if(d>0){
-    	idxs = Array.from({length: parseInt(rows)}, (v, i) => si+i*parseInt(cols));
-    //else shift up
-    } else {
-    	idxs = Array.from({length: parseInt(rows)}, (v, i) => ei-i*parseInt(cols));
-    }
-    //console.log(`shiftCol :: si=${si}, ei=${ei}, idxs=${JSON.stringify(idxs)}`);
-    //change array elements one by one
-    let newGrid = tileGrid.map(e=>e);
-    for(let i=0; i<idxs.length-1; i++){
-    	[ newGrid[idxs[i]] , newGrid[idxs[i+1]] ] = [ newGrid[idxs[i+1]] , newGrid[idxs[i]] ];
-      console.log(`shiftCol :: i=${i}, swap ${idxs[i]} and ${idxs[i+1]}`);
-    }
-    //replace
-    setTileGrid(newGrid);
+    setTileGrid( gridShiftCol(tileGrid, parseInt(rows), parseInt(cols), c, d) );
   };
 
 	const pushable = new Map();
@@ -195,18 +203,35 @@ function Board({rows, cols, tiles}){
   );
 }
 
+function TestApp1({rows, cols}){
+  
+  //create and randomize grid
+  let initGrid = Array.from({length: parseInt(rows)*parseInt(cols)}, (v, i) => (i+1));
+  
+  for(let i=0; i<5; i++){
+  	let r = Math.random() >= 0.5;
+  	let d = Math.random() - 0.5;
+    let x = Math.floor(Math.random() * ( (r ? parseInt(rows) : parseInt(cols))));
+    let fun = r ? gridShiftRow : gridShiftCol;
+    initGrid = fun(initGrid, parseInt(rows), parseInt(cols), x, d);
+  }
+  
+  
+	const [tileGrid, setTileGrid] = useState(initGrid);
+  
+
+  return (
+  <Board 
+rows={rows}
+cols={cols}
+tiles={tileGrid}
+/>
+  );
+}
+
 ReactDOM.createRoot( 
   document.querySelector('#root')
-).render(<Board 
-rows="2"
-cols="3"
-tiles={[1,2,3,4,5,6]}
-/>);
-/*
-ReactDOM.createRoot( 
-  document.querySelector('#root')
-).render(<App 
-rows="2"
+).render(<TestApp1 
+rows="3"
 cols="3"
 />);
-*/
