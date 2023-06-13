@@ -304,9 +304,10 @@ class TestContainer extends React.Component {
     });
   };
   
-  showExpectedResult = () => {
+  showExpectedResult = (res) => {
   	this.setState({
-      		dragEnabled: false
+      		dragEnabled: false,
+          actResult: res
       	});
   }
   
@@ -318,11 +319,12 @@ class TestContainer extends React.Component {
   containerNextTest = (e) => {
   	//console.log(`TestContainer.nextTest entered...`);
     
-    this.showExpectedResult();
+   let strAns = this.state.tests[this.state.actTestNum].aSentence.join('|');
+    let expAns = this.state.tests[this.state.actTestNum].expResult.join('|');
+    let tstResult = (strAns.trim() == expAns.trim());
+    this.showExpectedResult(tstResult);
+    
     const st1 = setTimeout(() => {
-    	let strAns = this.state.tests[this.state.actTestNum].aSentence.join('|');
-      let expAns = this.state.tests[this.state.actTestNum].expResult.join('|');
-      let tstResult = (strAns.trim() == expAns.trim());
       let tstSecSpent = (new Date() - this.state.tests[this.state.actTestNum].tsActStart)/1000;
       
       let ans = {
@@ -379,6 +381,15 @@ class TestContainer extends React.Component {
     );
   }
   
+  renderActResults(){
+  	let clnm = this.state.actResult ? "actres-ok" : "actres-bad";
+  	let cont = this.state.actResult ? '\u2705' : '\u274C';
+    console.log(`clnm=${clnm}`);
+  	return (
+    <div><span className={clnm}> {cont} </span></div>
+    );
+  }
+  
   render() {
     
     let tid = (this.state.dragEnabled ? 't' : 'tr') + this.state.actTestNum;
@@ -402,6 +413,7 @@ class TestContainer extends React.Component {
         updateContainer={this.updateUserAnswer}
 />
     {this.state.dragEnabled ? this.renderButtons() : null}
+    {this.state.dragEnabled ? null : this.renderActResults()}
 </div>);
   }//render
 }
