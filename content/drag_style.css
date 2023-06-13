@@ -119,3 +119,15 @@ td.nextTest {
 th.results {
   font-weight: bold;
 }
+
+span.actres-ok {
+  color: green;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+span.actres-ok {
+  color: red;
+  font-variant: small-caps;
+  font-weight: bold;
+}
