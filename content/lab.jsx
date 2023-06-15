@@ -39,16 +39,25 @@ const gridShiftCol = (origArr, rows, cols, c, d) => {
     return newGrid;
   };
 
-function Tile({caption, isMovable}){
-	
-  const [movable, setMovable] = useState(isMovable);
-  
-  const actClassNames = x => "tile" + " " + (x ? "tile-movable" : "tile-frozen");
-  
-  //console.log(`movable=${movable}, actClassNames=${actClassNames(movable)}`);
+const getMisplacedTiles = (act,exp) => {
+	let ret = [];
+	for(let i=0; i<act.length;i++){
+  	if(act[i] != exp[i])
+    	ret.push(i);
+  }
+  console.log(`getMisplacedTiles: ${JSON.stringify(ret)}`);
+  return ret;
+};
 
+function Tile({caption, isMovable, isMisplaced}){
+  
+  const actClassNames = () => "tile" + " " 
+  		+ (isMovable ? "tile-movable" : "tile-frozen") + " " 
+  		+ (isMisplaced ? "tile-misplaced" : "")
+  		;
+  
 	return (
-  <div className={actClassNames(movable)}>
+  <div className={actClassNames()}>
     {caption}
   </div>
   );
@@ -75,16 +84,21 @@ function Arrow({caption, isPushable, arrowClicked, idx, direction}){
   );
 }
 
-function Board({rows, cols, tiles}){
+function Board({rows, cols, tiles, solution}){
 
 	const [tileGrid, setTileGrid] = useState(tiles);
+	const [misPlaced, setMisPlaced] = useState( getMisplacedTiles(tileGrid,solution) );
 
 	const shiftRow = (r, d) => {
-    setTileGrid( gridShiftRow(tileGrid, parseInt(rows), parseInt(cols), r, d) );
+  	const newGrid = gridShiftRow(tileGrid, parseInt(rows), parseInt(cols), r, d);
+    setMisPlaced(getMisplacedTiles(newGrid,solution));
+    setTileGrid( newGrid );
   };
   
   const shiftCol = (c, d) => {
-    setTileGrid( gridShiftCol(tileGrid, parseInt(rows), parseInt(cols), c, d) );
+  	const newGrid = gridShiftCol(tileGrid, parseInt(rows), parseInt(cols), c, d);
+    setMisPlaced(getMisplacedTiles(newGrid,solution));
+    setTileGrid( newGrid );
   };
 
 	const pushable = new Map();
@@ -146,9 +160,11 @@ function Board({rows, cols, tiles}){
   }
 
   const getTile = (c,m,i) => {
+  	let b = misPlaced.includes(i);
+    if(b)console.log(`getTile ${i}->${b}`);
     return (
         <td key={'c'+i}>
-          <Tile caption={c} isMovable={m} />
+          <Tile caption={c} isMovable={m} isMisplaced={b} />
         </td>
         );
   }
@@ -206,18 +222,20 @@ function Board({rows, cols, tiles}){
 function TestApp1({rows, cols}){
   
   //create and randomize grid
-  let initGrid = Array.from({length: parseInt(rows)*parseInt(cols)}, (v, i) => (i+1));
+  const initGrid = Array.from({length: parseInt(rows)*parseInt(cols)}, (v, i) => (i+1));
   
-  for(let i=0; i<5; i++){
+  let toSolveGrid = initGrid.map(e=>e);
+  
+  for(let i=0; i<2; i++){
   	let r = Math.random() >= 0.5;
   	let d = Math.random() - 0.5;
     let x = Math.floor(Math.random() * ( (r ? parseInt(rows) : parseInt(cols))));
     let fun = r ? gridShiftRow : gridShiftCol;
-    initGrid = fun(initGrid, parseInt(rows), parseInt(cols), x, d);
+    toSolveGrid = fun(toSolveGrid, parseInt(rows), parseInt(cols), x, d);
   }
   
   
-	const [tileGrid, setTileGrid] = useState(initGrid);
+	const [tileGrid, setTileGrid] = useState(toSolveGrid);
   
 
   return (
@@ -225,6 +243,7 @@ function TestApp1({rows, cols}){
 rows={rows}
 cols={cols}
 tiles={tileGrid}
+solution={initGrid}
 />
   );
 }
