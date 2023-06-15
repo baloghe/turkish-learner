@@ -8,12 +8,16 @@
   text-align: center;
 }
 .tile-movable{
-  color: grey;
+  color: black;
   border-color: #999999;
 }
 .tile-frozen{
   color: red;
   border-color: red;
+}
+.tile-misplaced{
+  border-color: red;
+  background-color: orange;
 }
 .arrow{
   border-radius: 5px;
