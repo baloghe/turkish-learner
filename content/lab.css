@@ -1,29 +1,44 @@
 .tile{
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 2px;
+  padding: 0px;
   border-style: solid;
-  border-width: 2px;
-  background-color: yellow;
+  border-width: 1px;
+  background-color: #fcf6e8;
   display: inline-block;
   text-align: center;
+  font-size: 20px;
 }
 .tile-movable{
   color: black;
   border-color: #999999;
 }
-.tile-frozen{
-  color: red;
-  border-color: red;
+.tile-start{
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
-.tile-misplaced{
-  border-color: red;
-  background-color: orange;
+.tile-finish{
+  background: linear-gradient(#fa4884, #ffe047);
+}
+.tile-end{
+  background: linear-gradient(#b8f76f, #e6facf);
+}
+table, td, th {
+  border-collapse: collapse;
+  padding: 0px;
+  border: none;
+}
+table.padded, td.padded, th.padded {
+  border-collapse: separate;
+  padding: 10px;
+  border: none;
+}
+td.spanned{
+  text-align:center;
 }
 .arrow{
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 2px;
+  padding: 0px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   background-color: #F0F8FF;
   display: inline-block;
   text-align: center;
@@ -34,8 +49,4 @@
 }
 .arrow-pushable:hover{
   cursor: pointer;
-}
-.arrow-frozen{
-  color: red;
-  border-color: red;
 }
