@@ -1,5 +1,22 @@
 const useState = React.useState;
 
+const cards = [
+{caption: '\u2550', up: false, down: false, left: true, right: true, turnCW: '\u2551', turnCCW: '\u2551'}
+,{caption: '\u2551', up: true, down: true, left: false, right: false, turnCW: '\u2550', turnCCW: '\u2550'}
+,{caption: '\u2554', up: false, down: true, left: false, right: true, turnCW: '\u2557', turnCCW: '\u255A'}
+,{caption: '\u2557', up: false, down: true, left: true, right: false, turnCW: '\u255D', turnCCW: '\u2554'}
+,{caption: '\u255A', up: true, down: false, left: false, right: true, turnCW: '\u2557', turnCCW: '\u255D'}
+,{caption: '\u255D', up: true, down: false, left: true, right: false, turnCW: '\u255A', turnCCW: '\u2557'}
+,{caption: '\u2560', up: true, down: true, left: false, right: true, turnCW: '\u2566', turnCCW: '\u2569'}
+,{caption: '\u2563', up: true, down: true, left: true, right: false, turnCW: '\u2569', turnCCW: '\u2566'}
+,{caption: '\u2566', up: false, down: true, left: true, right: true, turnCW: '\u2563', turnCCW: '\u2560'}
+,{caption: '\u2569', up: true, down: false, left: true, right: true, turnCW: '\u2560', turnCCW: '\u2563'}
+,{caption: '\u256C', up: true, down: true, left: true, right: true, turnCW: '\u256C', turnCCW: '\u256C'}
+];
+
+const cardMap = new Map();
+cards.forEach(e=>cardMap.set(e.caption, {up: e.up, down: e.down, left: e.left, right: e.right, turnCW: e.turnCW, turnCCW: e.turnCCW}));
+
 const gridShiftRow = (origArr, rows, cols, r, d, excrd) => {
     let si = r*cols;
     let ei = si+cols-1;
@@ -48,22 +65,18 @@ const gridShiftCol = (origArr, rows, cols, c, d, excrd) => {
     
     return [newGrid, newExCrd];
   };
-
-const getMisplacedTiles = (act,exp) => {
-	let ret = [];
-	for(let i=0; i<act.length;i++){
-  	if(act[i] != exp[i])
-    	ret.push(i);
-  }
-  //console.log(`getMisplacedTiles: ${JSON.stringify(ret)}`);
-  return ret;
-};
-
-function Tile({caption, isMovable, isMisplaced}){
+  
+function Tile({caption, isMovable, special}){
+  
+  const specClass = {
+  	 'S' : "tile-start"
+    ,'F' : "tile-finish"
+    ,'E' : "tile-end"
+  };
   
   const actClassNames = () => "tile" + " " 
-  		+ (isMovable ? "tile-movable" : "tile-frozen") + " " 
-  		+ (isMisplaced ? "tile-misplaced" : "")
+  		+ (isMovable ? "tile-movable" : "tile-frozen")
+  		+ (special!=null ? " " + specClass[special] : "")
   		;
   
 	return (
@@ -72,8 +85,6 @@ function Tile({caption, isMovable, isMisplaced}){
   </div>
   );
 }
-
-
 
 function Arrow({caption, isPushable, arrowClicked, idx, direction}){
 	
@@ -94,23 +105,67 @@ function Arrow({caption, isPushable, arrowClicked, idx, direction}){
   );
 }
 
-function Board({rows, cols, tiles, solution, excrd}){
+function Rotator({caption, rotatorClicked}){
+	
+  const handleClick = () => {
+  	rotatorClicked();
+  }
 
-	const [tileGrid, setTileGrid] = useState(tiles);
-	const [misPlaced, setMisPlaced] = useState( getMisplacedTiles(tileGrid,solution) );
-	const [extraCard, setExtraCard] = useState(excrd);
+	return (
+  <div className="arrow arrow-pushable" onClick={handleClick}>
+    {caption}
+  </div>
+  );  
+}
 
-	const shiftRow = (r, d) => {
-  	const [newGrid, newExCrd] = gridShiftRow(tileGrid, parseInt(rows), parseInt(cols), r, d, extraCard);
-    setMisPlaced(getMisplacedTiles(newGrid,solution));
-    setTileGrid( newGrid );
+function ExtraCardManager({excrdCaption, rotateCW, rotateCCW}){
+
+	return (
+  <div>
+    <p>Extra card:</p>
+    <table className="padded"><tbody>
+    <tr key="tile"><td className="spanned" colSpan={2}>
+      <Tile caption={excrdCaption} isMovable={true} />
+      </td>
+    </tr>
+      <tr key="control">
+        <td key="CW" className="padded">
+          <Rotator caption={'\u21BB'} rotatorClicked={rotateCW} />
+        </td>
+        <td key="CCW" className="padded">
+          <Rotator caption={'\u21BA'} rotatorClicked={rotateCCW} />
+        </td>
+      </tr>
+    </tbody></table>
+  </div>
+  );
+}
+
+function Board({rows, cols, origMap, exCrd}){
+
+	const [extraCard, setExtraCard] = useState(exCrd);
+  const [actMap, setActMap] = useState(origMap);
+  
+  const turnCW = () => {
+  	let newCap = cardMap.get(extraCard).turnCW;
+    //console.log(`turnCW : ${extraCard} -> ${newCap}`);
+  	setExtraCard(newCap);
+  };
+  const turnCCW = () => {
+  	let newCap = cardMap.get(extraCard).turnCCW;
+    //console.log(`turnCCW : ${extraCard} -> ${newCap}`);
+  	setExtraCard(newCap);
+  };
+  
+  const shiftRow = (r, d) => {
+  	const [newGrid, newExCrd] = gridShiftRow(actMap, parseInt(rows), parseInt(cols), r, d, extraCard);
+    setActMap( newGrid );
     setExtraCard( newExCrd );
   };
   
   const shiftCol = (c, d) => {
-  	const [newGrid, newExCrd] = gridShiftCol(tileGrid, parseInt(rows), parseInt(cols), c, d, extraCard);
-    setMisPlaced(getMisplacedTiles(newGrid,solution));
-    setTileGrid( newGrid );
+  	const [newGrid, newExCrd] = gridShiftCol(actMap, parseInt(rows), parseInt(cols), c, d, extraCard);
+    setActMap( newGrid );
     setExtraCard( newExCrd );
   };
 
@@ -172,12 +227,10 @@ function Board({rows, cols, tiles, solution, excrd}){
     );
   }
 
-  const getTile = (c,m,i) => {
-  	let b = misPlaced.includes(i);
-    //if(b)console.log(`getTile ${i}->${b}`);
-    return (
+  const getTile = (c,m,i,spec) => {
+  	return (
         <td key={'c'+i}>
-          <Tile caption={c} isMovable={m} isMisplaced={b} />
+          <Tile caption={c} isMovable={m} special={spec}/>
         </td>
         );
   }
@@ -204,7 +257,13 @@ function Board({rows, cols, tiles, solution, excrd}){
       const s=(r-1)*parseInt(cols);
       for(let i=s; i<s+parseInt(cols); i++){
         //console.log(`  getRow :: i=${i}, upper=${upper}`);
-        ret.push( getTile(tileGrid[i], true, i) );
+        let spec=null;
+        if(i==(parseInt(rows)-1)*parseInt(cols)){
+        	spec='S';
+        } else if(i==(parseInt(cols)-1)) {
+        	spec='F';
+        }
+        ret.push( getTile(actMap[i], true, i, spec) );
       }
       //right arrow
       ret.push( getControl(r,parseInt(cols)+1,pushable.get(r+'|'+(parseInt(cols)+1))) );
@@ -225,54 +284,36 @@ function Board({rows, cols, tiles, solution, excrd}){
     return ret;
   }
   
-  const getExtraCard = () => {
-  	let b = (parseInt(extraCard)!=parseInt(rows)*parseInt(cols) + 1);
-    return (
-    	<Tile caption={extraCard} isMovable={true} isMisplaced={b} />
-    );
-  }
-
   return (
-  <table><tbody><tr><td key='board'>
-    <table><tbody>
+  	<table className="padded"><tbody>
+    <tr><td className="padded">
+      <table><tbody>
       {genRows()}
+      </tbody></table>
+    </td><td className="padded">
+      <ExtraCardManager excrdCaption={extraCard} rotateCW={turnCW} rotateCCW={turnCCW} />
+      </td></tr>
     </tbody></table>
-  </td><td key='extra'>
-  <p>Extra card:</p>
-    {getExtraCard()}
-  </td></tr>
-  </tbody></table>
   );
 }
 
 function TestApp1({rows, cols}){
-  
-  //create and randomize grid
-  const initGrid = Array.from({length: parseInt(rows)*parseInt(cols)}, (v, i) => (i+1));
-  let exc = parseInt(rows)*parseInt(cols) + 1;
-  
-  let toSolveGrid = initGrid.map(e=>e);
-  
-  for(let i=0; i<2; i++){
-  	let r = Math.random() >= 0.5;
-  	let d = Math.random() - 0.5;
-    let x = Math.floor(Math.random() * ( (r ? parseInt(rows) : parseInt(cols))));
-    let fun = r ? gridShiftRow : gridShiftCol;
-    [toSolveGrid, exc] = fun(toSolveGrid, parseInt(rows), parseInt(cols), x, d, exc);
+  	
+  let brd=[];
+  for(let r=0; r<parseInt(rows); r++){
+  	for(let c=0; c<parseInt(cols); c++){
+    	let idx = Math.floor(Math.random() * parseInt(cards.length));
+      brd.push(cards[idx].caption);
+    }
   }
+  let excrd = cards[Math.floor(Math.random() * parseInt(cards.length))].caption;
   
-  
-	const [tileGrid, setTileGrid] = useState(toSolveGrid);
-	const [extraCard, setExtraCard] = useState(exc);
-  
-
-  return (
+ return (
   <Board 
 rows={rows}
 cols={cols}
-tiles={tileGrid}
-solution={initGrid}
-excrd={extraCard}
+origMap={brd}
+exCrd={excrd}
 />
   );
 }
@@ -281,5 +322,5 @@ ReactDOM.createRoot(
   document.querySelector('#root')
 ).render(<TestApp1 
 rows="3"
-cols="3"
+cols="5"
 />);
