@@ -1,0 +1,1238 @@
+﻿WEBVTT
+
+NOTE Netflix
+NOTE Profile: webvtt-lssdh-ios8
+NOTE Date: 2023/04/07 01:05:27
+
+NOTE SegmentIndex
+NOTE Segment=591.840 10000@421 61
+NOTE Segment=594.800 23027@10421 135
+NOTE Segment=509.240 15749@33448 91
+NOTE Segment=251.440 357@49197 2
+NOTE /SegmentIndex
+
+                                                                                                                                                        
+
+
+1
+00:00:52.760 --> 00:00:54.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Excuse me?</c.bg_transparent>
+
+2
+00:00:55.160 --> 00:00:56.480 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Hello! Excuse me?</c.bg_transparent>
+
+3
+00:00:56.560 --> 00:00:58.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I'm dying of thirst here!</c.bg_transparent>
+
+4
+00:01:00.240 --> 00:01:02.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Hello! </c.bg_transparent><c.bg_transparent><i>Monsieur! </i></c.bg_transparent><c.bg_transparent>Hey!</c.bg_transparent>
+
+5
+00:01:04.240 --> 00:01:06.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Oh, fuck this.</c.bg_transparent>
+
+6
+00:01:07.280 --> 00:01:09.240 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-What are you doing? Stop it.</c.bg_transparent>
+<c.bg_transparent>-Grab me.</c.bg_transparent>
+
+7
+00:01:09.320 --> 00:01:10.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Just do it.</c.bg_transparent>
+
+8
+00:01:20.520 --> 00:01:22.520 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>He left me no other choice.</c.bg_transparent>
+
+9
+00:01:23.320 --> 00:01:24.480 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Single or double?</c.bg_transparent>
+
+10
+00:01:25.120 --> 00:01:26.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Stupid question.</c.bg_transparent>
+
+11
+00:01:33.360 --> 00:01:34.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Cheers.</c.bg_transparent>
+
+12
+00:01:40.520 --> 00:01:41.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I'm bumming one.</c.bg_transparent>
+
+13
+00:01:47.560 --> 00:01:48.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>So, tell me.</c.bg_transparent>
+
+14
+00:01:49.400 --> 00:01:51.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>What is it you're trying to forget?</c.bg_transparent>
+
+15
+00:01:51.520 --> 00:01:53.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>We don't know each other.</c.bg_transparent>
+
+16
+00:01:53.360 --> 00:01:55.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>It's much easier to tell a stranger.</c.bg_transparent>
+
+17
+00:01:59.200 --> 00:02:01.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You'll be even sadder at this rate.</c.bg_transparent>
+
+18
+00:02:01.520 --> 00:02:03.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You got your drink. Can I be alone now?</c.bg_transparent>
+
+19
+00:02:03.720 --> 00:02:04.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Certainly.</c.bg_transparent>
+
+20
+00:02:17.680 --> 00:02:20.720 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Thanks for the drink.</c.bg_transparent>
+
+21
+00:02:21.280 --> 00:02:23.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>It'll help you forget.</c.bg_transparent>
+
+22
+00:02:27.560 --> 00:02:29.880 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Can't remember anything else</c.bg_transparent>
+<c.bg_transparent>when you forget yourself.</c.bg_transparent>
+
+23
+00:02:29.960 --> 00:02:31.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Keep that in mind.</c.bg_transparent>
+
+24
+00:04:07.040 --> 00:04:09.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Are you okay? Huh?</c.bg_transparent>
+
+25
+00:04:23.680 --> 00:04:24.520 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>What's wrong?</c.bg_transparent>
+
+26
+00:04:26.000 --> 00:04:27.800 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Home.</c.bg_transparent>
+<c.bg_transparent>-Okay, let's go.</c.bg_transparent>
+
+27
+00:04:28.920 --> 00:04:29.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I'll go.</c.bg_transparent>
+
+28
+00:04:30.440 --> 00:04:32.480 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Oh. All right.</c.bg_transparent>
+
+29
+00:05:05.080 --> 00:05:06.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>What are you doing tomorrow?</c.bg_transparent>
+
+30
+00:05:07.080 --> 00:05:07.920 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Nothing.</c.bg_transparent>
+
+31
+00:05:10.200 --> 00:05:11.080 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Hang on.</c.bg_transparent>
+
+32
+00:05:13.520 --> 00:05:14.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Sorry.</c.bg_transparent>
+
+33
+00:05:17.560 --> 00:05:20.520 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Can you write down your number?</c.bg_transparent>
+<c.bg_transparent>-Write down my number?</c.bg_transparent>
+
+34
+00:05:20.600 --> 00:05:23.480 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Don't you have a phone?</c.bg_transparent>
+<c.bg_transparent>-No.</c.bg_transparent>
+
+35
+00:05:24.120 --> 00:05:25.120 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You're married.</c.bg_transparent>
+
+36
+00:05:25.800 --> 00:05:26.920 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Will you write it?</c.bg_transparent>
+
+37
+00:05:38.440 --> 00:05:40.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>"Cemre."</c.bg_transparent>
+
+38
+00:05:48.400 --> 00:05:50.080 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Wear white.</c.bg_transparent>
+<c.bg_transparent>-What?</c.bg_transparent>
+
+39
+00:05:50.680 --> 00:05:52.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Wear white tomorrow.</c.bg_transparent>
+
+40
+00:06:07.480 --> 00:06:10.480 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>THE TAILOR</c.bg_transparent>
+
+41
+00:08:07.800 --> 00:08:11.800 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Mr. Peyami,</c.bg_transparent>
+<c.bg_transparent>your father hasn't eaten a bite,</c.bg_transparent>
+
+42
+00:08:11.880 --> 00:08:13.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>although I've done my best.</c.bg_transparent>
+
+43
+00:08:14.280 --> 00:08:15.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>He'll get ill.</c.bg_transparent>
+
+44
+00:08:16.680 --> 00:08:17.800 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>What should we do?</c.bg_transparent>
+
+45
+00:08:51.320 --> 00:08:52.600 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You have to eat.</c.bg_transparent>
+
+46
+00:08:55.440 --> 00:08:58.840 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Come on, have some.</c.bg_transparent>
+<c.bg_transparent>-No.</c.bg_transparent>
+
+47
+00:09:00.960 --> 00:09:03.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Look, this is not okay. You'll get ill.</c.bg_transparent>
+
+48
+00:09:04.400 --> 00:09:06.360 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-You must eat.</c.bg_transparent>
+<c.bg_transparent>-No.</c.bg_transparent>
+
+49
+00:09:18.160 --> 00:09:19.600 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Shall I sing to you?</c.bg_transparent>
+
+50
+00:09:20.440 --> 00:09:21.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Kiraz's song?</c.bg_transparent>
+
+51
+00:09:23.560 --> 00:09:24.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>How did it go?</c.bg_transparent>
+
+52
+00:09:26.160 --> 00:09:31.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent><i>Into the cherry orchard I went</i></c.bg_transparent>
+
+53
+00:09:31.960 --> 00:09:33.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent><i>Into the…</i></c.bg_transparent>
+
+54
+00:09:33.720 --> 00:09:35.520 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Eat it.</c.bg_transparent>
+<c.bg_transparent>-No.</c.bg_transparent>
+
+55
+00:09:36.120 --> 00:09:38.440 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-You have to eat.</c.bg_transparent>
+<c.bg_transparent>-I don't want to.</c.bg_transparent>
+
+56
+00:09:38.520 --> 00:09:40.640 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>No "I don't want to"s!</c.bg_transparent>
+<c.bg_transparent>You're going to eat!</c.bg_transparent>
+
+57
+00:09:40.720 --> 00:09:42.600 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-No!</c.bg_transparent>
+<c.bg_transparent>-Open your mouth!</c.bg_transparent>
+
+58
+00:09:43.200 --> 00:09:44.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I said, open your mouth!</c.bg_transparent>
+
+59
+00:09:44.920 --> 00:09:47.080 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Open your damn mouth!</c.bg_transparent>
+
+60
+00:09:47.160 --> 00:09:48.520 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You're going to eat!</c.bg_transparent>
+
+61
+00:09:48.600 --> 00:09:51.160 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Open your mouth! Open it!</c.bg_transparent>
+
+62
+00:09:51.840 --> 00:09:56.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Enough, damn it! Enough!</c.bg_transparent>
+
+63
+00:10:42.040 --> 00:10:44.920 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Park even further away, why don't you?</c.bg_transparent>
+
+64
+00:10:46.600 --> 00:10:47.960 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I almost didn't recognize you.</c.bg_transparent>
+
+65
+00:10:48.040 --> 00:10:51.520 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>You were quite drunk last night.</c.bg_transparent>
+<c.bg_transparent>Now you're sober. It's understandable.</c.bg_transparent>
+
+66
+00:10:52.320 --> 00:10:53.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Who says I'm sober?</c.bg_transparent>
+
+67
+00:10:56.840 --> 00:10:58.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Are you staying here?</c.bg_transparent>
+
+68
+00:10:59.560 --> 00:11:00.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Yes, for now.</c.bg_transparent>
+
+69
+00:11:01.520 --> 00:11:03.000 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Hotels are nice.</c.bg_transparent>
+
+70
+00:11:03.920 --> 00:11:05.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>It never gets quiet.</c.bg_transparent>
+
+71
+00:11:05.640 --> 00:11:09.400 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>People arrive all the time.</c.bg_transparent>
+<c.bg_transparent>They come in, they go out.</c.bg_transparent>
+
+72
+00:11:12.000 --> 00:11:14.200 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I told you to wear white.</c.bg_transparent>
+
+73
+00:11:15.960 --> 00:11:17.480 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Right, you did.</c.bg_transparent>
+
+74
+00:11:18.960 --> 00:11:21.600 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>The thing about that…</c.bg_transparent>
+
+75
+00:11:21.680 --> 00:11:24.480 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>White isn't for me. I find it depressing.</c.bg_transparent>
+
+76
+00:11:25.400 --> 00:11:26.400 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>White?</c.bg_transparent>
+
+77
+00:11:27.520 --> 00:11:29.160 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Why would anyone wear white?</c.bg_transparent>
+
+78
+00:11:29.240 --> 00:11:31.520 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>People wear it when they're dead.</c.bg_transparent>
+<c.bg_transparent>I hate it.</c.bg_transparent>
+
+79
+00:11:31.600 --> 00:11:33.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Is this so bad, huh?</c.bg_transparent>
+
+80
+00:11:35.040 --> 00:11:36.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>No, it's nice.</c.bg_transparent>
+
+81
+00:11:37.040 --> 00:11:38.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Here's what we can do.</c.bg_transparent>
+
+82
+00:11:40.440 --> 00:11:43.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Because I don't want to disappoint you.</c.bg_transparent>
+
+83
+00:11:44.840 --> 00:11:48.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>A small white detail. Huh?</c.bg_transparent>
+
+84
+00:11:52.600 --> 00:11:54.480 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Is this okay? All good now?</c.bg_transparent>
+
+85
+00:11:55.880 --> 00:11:57.440 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Should we go?</c.bg_transparent>
+<c.bg_transparent>-Get in.</c.bg_transparent>
+
+86
+00:12:06.000 --> 00:12:07.520 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Aren't you going to ask where?</c.bg_transparent>
+
+87
+00:12:07.600 --> 00:12:08.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Honestly…</c.bg_transparent>
+
+88
+00:12:12.520 --> 00:12:14.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I'll go wherever you take me.</c.bg_transparent>
+
+89
+00:12:36.720 --> 00:12:38.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Holy shit.</c.bg_transparent>
+
+90
+00:12:39.080 --> 00:12:40.920 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You've got to be kidding me!</c.bg_transparent>
+
+91
+00:12:41.480 --> 00:12:44.000 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I have to warn you about something.</c.bg_transparent>
+
+92
+00:12:44.080 --> 00:12:48.000 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>I'm the girl</c.bg_transparent>
+<c.bg_transparent>people don't want at their wedding.</c.bg_transparent>
+
+93
+00:12:49.800 --> 00:12:52.400 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-What's my role, then?</c.bg_transparent>
+<c.bg_transparent>-Your role?</c.bg_transparent>
+
+94
+00:12:52.480 --> 00:12:54.480 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Since you invited me here,</c.bg_transparent>
+
+95
+00:12:54.560 --> 00:12:57.120 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>you must be trying to make a statement.</c.bg_transparent>
+
+96
+00:12:57.200 --> 00:13:00.200 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-What are you introducing me as?</c.bg_transparent>
+<c.bg_transparent>-Welcome.</c.bg_transparent>
+
+97
+00:13:00.280 --> 00:13:01.720 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Thanks.</c.bg_transparent>
+<c.bg_transparent>-Please.</c.bg_transparent>
+
+98
+00:13:07.560 --> 00:13:09.960 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I mean, I could be your girlfriend,</c.bg_transparent>
+
+99
+00:13:10.040 --> 00:13:12.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>a distant cousin, or an employee.</c.bg_transparent>
+
+100
+00:13:12.840 --> 00:13:13.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>What will it be?</c.bg_transparent>
+
+101
+00:13:14.400 --> 00:13:15.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Just be yourself.</c.bg_transparent>
+
+102
+00:13:17.280 --> 00:13:18.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Are you sure?</c.bg_transparent>
+
+103
+00:13:25.880 --> 00:13:28.320 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Peyami dear.</c.bg_transparent>
+<c.bg_transparent>-Dear Lia.</c.bg_transparent>
+
+104
+00:13:30.160 --> 00:13:32.160 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Welcome, darling.</c.bg_transparent>
+<c.bg_transparent>-Thank you.</c.bg_transparent>
+
+105
+00:13:33.080 --> 00:13:34.520 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Welcome, Peyami.</c.bg_transparent>
+
+106
+00:13:34.600 --> 00:13:35.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Thanks, Uncle Ari.</c.bg_transparent>
+
+107
+00:13:36.240 --> 00:13:38.480 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Welcome, Mr. Peyami.</c.bg_transparent>
+<c.bg_transparent>-Hello.</c.bg_transparent>
+
+108
+00:13:39.080 --> 00:13:42.720 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>We haven't been able to see you more</c.bg_transparent>
+<c.bg_transparent>because of the wedding.</c.bg_transparent>
+
+109
+00:13:42.800 --> 00:13:44.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You're not cross with me, are you?</c.bg_transparent>
+
+110
+00:13:44.640 --> 00:13:46.520 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>How could I be, dear Lia? Never.</c.bg_transparent>
+
+111
+00:13:46.600 --> 00:13:47.680 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>We're a family.</c.bg_transparent>
+
+112
+00:13:47.760 --> 00:13:50.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>But we weren't really there for you.</c.bg_transparent>
+
+113
+00:13:50.640 --> 00:13:52.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>First your accident,</c.bg_transparent>
+
+114
+00:13:52.320 --> 00:13:54.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>then Mrs. Sülün passing.</c.bg_transparent>
+
+115
+00:13:54.800 --> 00:13:55.920 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I mean…</c.bg_transparent>
+
+116
+00:13:56.000 --> 00:13:58.440 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>You have every right to ask</c.bg_transparent>
+<c.bg_transparent>if it was the right time</c.bg_transparent>
+
+117
+00:13:58.520 --> 00:13:59.920 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>to organize a wedding.</c.bg_transparent>
+
+118
+00:14:00.000 --> 00:14:02.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>But you know what Dimitri's like.</c.bg_transparent>
+
+119
+00:14:02.920 --> 00:14:04.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>When Esvet returned suddenly…</c.bg_transparent>
+
+120
+00:14:05.840 --> 00:14:08.760 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Thankfully he was able to wait</c.bg_transparent>
+<c.bg_transparent>a month after the funeral</c.bg_transparent>
+
+121
+00:14:08.840 --> 00:14:10.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>and didn't embarrass us further.</c.bg_transparent>
+
+122
+00:14:10.320 --> 00:14:12.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Lia, please. No need to be embarrassed.</c.bg_transparent>
+
+123
+00:14:13.360 --> 00:14:15.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>And look, this is Dimitri's happiest day.</c.bg_transparent>
+
+124
+00:14:15.640 --> 00:14:17.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>So, forget about that stuff.</c.bg_transparent>
+
+125
+00:14:17.360 --> 00:14:20.000 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Just enjoy the day. Okay?</c.bg_transparent>
+<c.bg_transparent>-Okay.</c.bg_transparent>
+
+126
+00:14:23.320 --> 00:14:25.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Hello, I'm Cemre. Congratulations.</c.bg_transparent>
+
+127
+00:14:26.360 --> 00:14:27.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent><i>Merci.</i></c.bg_transparent>
+
+128
+00:14:28.600 --> 00:14:30.760 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>I thought a little color</c.bg_transparent>
+<c.bg_transparent>wouldn't hurt anyone.</c.bg_transparent>
+
+129
+00:14:30.840 --> 00:14:32.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>My bad. I forgot to introduce you.</c.bg_transparent>
+
+130
+00:14:33.640 --> 00:14:34.600 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Lia.</c.bg_transparent>
+
+131
+00:14:35.320 --> 00:14:36.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Peyami.</c.bg_transparent>
+
+132
+00:14:37.560 --> 00:14:38.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>We have a problem.</c.bg_transparent>
+
+133
+00:14:39.880 --> 00:14:40.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>What is it, Suzan?</c.bg_transparent>
+
+134
+00:14:40.920 --> 00:14:42.080 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>The wedding dress.</c.bg_transparent>
+
+135
+00:14:47.400 --> 00:14:50.520 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-How did it happen?</c.bg_transparent>
+<c.bg_transparent>-No idea. It must have caught somewhere.</c.bg_transparent>
+
+136
+00:14:56.040 --> 00:14:58.200 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Could you wait here? Be right back.</c.bg_transparent>
+
+137
+00:14:58.760 --> 00:15:00.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Sure, do your thing. No problem.</c.bg_transparent>
+
+138
+00:15:05.680 --> 00:15:06.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Here you go.</c.bg_transparent>
+
+139
+00:15:07.480 --> 00:15:08.880 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Enjoy.</c.bg_transparent>
+<c.bg_transparent>-Thanks.</c.bg_transparent>
+
+140
+00:15:09.760 --> 00:15:11.480 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Who's that?</c.bg_transparent>
+<c.bg_transparent>-A friend.</c.bg_transparent>
+
+141
+00:15:12.080 --> 00:15:14.000 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Friend? Since when?</c.bg_transparent>
+
+142
+00:15:14.600 --> 00:15:16.400 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Since last night. All right?</c.bg_transparent>
+
+143
+00:15:23.840 --> 00:15:25.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Peyami.</c.bg_transparent>
+
+144
+00:15:26.240 --> 00:15:27.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Are you okay?</c.bg_transparent>
+
+145
+00:16:00.440 --> 00:16:01.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Peyami.</c.bg_transparent>
+
+146
+00:16:13.840 --> 00:16:15.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Did you sleep with her?</c.bg_transparent>
+
+147
+00:16:15.120 --> 00:16:17.680 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I'd rather go to jail than be with you!</c.bg_transparent>
+
+148
+00:16:31.560 --> 00:16:34.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You see, sweetheart?</c.bg_transparent>
+
+149
+00:16:35.680 --> 00:16:37.000 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>What did I tell you?</c.bg_transparent>
+
+150
+00:16:38.120 --> 00:16:39.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Not to worry.</c.bg_transparent>
+
+151
+00:16:40.760 --> 00:16:42.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Peyami is here to help us out.</c.bg_transparent>
+
+152
+00:16:54.240 --> 00:16:55.720 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Where have you been, man?</c.bg_transparent>
+
+153
+00:16:57.120 --> 00:16:59.040 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>You arrive at the last second</c.bg_transparent>
+<c.bg_transparent>like a stranger.</c.bg_transparent>
+
+154
+00:16:59.120 --> 00:17:01.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Like having an imam perform the ceremony!</c.bg_transparent>
+
+155
+00:17:02.080 --> 00:17:03.520 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Here I am.</c.bg_transparent>
+
+156
+00:17:03.600 --> 00:17:05.120 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Sure you are. Where else would you be?</c.bg_transparent>
+
+157
+00:17:05.720 --> 00:17:08.560 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Are you aware</c.bg_transparent>
+<c.bg_transparent>that I'm getting married, dude?</c.bg_transparent>
+
+158
+00:17:08.640 --> 00:17:13.800 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>If I can't raise a glass with my best man</c.bg_transparent>
+<c.bg_transparent>before this ruckus, then why get married?</c.bg_transparent>
+
+159
+00:17:13.880 --> 00:17:16.480 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>This is the happiest day</c.bg_transparent>
+<c.bg_transparent>of my life, Peyami.</c.bg_transparent>
+
+160
+00:17:16.560 --> 00:17:18.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>But it's been touched by bad luck.</c.bg_transparent>
+
+161
+00:17:19.080 --> 00:17:20.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Just look at the dress.</c.bg_transparent>
+
+162
+00:17:25.480 --> 00:17:27.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Let me tell you something.</c.bg_transparent>
+
+163
+00:17:27.400 --> 00:17:29.720 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Peyami, this dress is cursed.</c.bg_transparent>
+
+164
+00:17:29.800 --> 00:17:31.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>We were so careful.</c.bg_transparent>
+
+165
+00:17:31.320 --> 00:17:34.720 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>We followed the traditions</c.bg_transparent>
+<c.bg_transparent>of my mama, my grandma, her mama.</c.bg_transparent>
+
+166
+00:17:34.800 --> 00:17:36.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>But still, the dress tore.</c.bg_transparent>
+
+167
+00:17:40.720 --> 00:17:41.720 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Don't worry. I'll fix it.</c.bg_transparent>
+
+168
+00:17:42.360 --> 00:17:43.440 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Good.</c.bg_transparent>
+<c.bg_transparent>-Sure.</c.bg_transparent>
+
+169
+00:17:43.520 --> 00:17:46.560 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Such mishaps before weddings are normal.</c.bg_transparent>
+<c.bg_transparent>Don't get upset.</c.bg_transparent>
+
+170
+00:17:46.640 --> 00:17:49.200 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>No way. Why would I get upset about this?</c.bg_transparent>
+
+171
+00:17:49.280 --> 00:17:50.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Like you said, Suzi, mishaps are normal.</c.bg_transparent>
+
+172
+00:17:51.440 --> 00:17:52.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>But let me tell you this.</c.bg_transparent>
+
+173
+00:17:52.840 --> 00:17:56.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>If two people are meant to be together,</c.bg_transparent>
+
+174
+00:17:56.400 --> 00:18:00.400 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>nothing can take away</c.bg_transparent>
+<c.bg_transparent>from their happiness, right?</c.bg_transparent>
+
+175
+00:18:02.160 --> 00:18:03.800 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Once Esvet and I get married,</c.bg_transparent>
+
+176
+00:18:03.880 --> 00:18:05.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I mean, when she becomes my wife,</c.bg_transparent>
+
+177
+00:18:06.320 --> 00:18:08.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>none of this will be remembered.</c.bg_transparent>
+
+178
+00:18:09.600 --> 00:18:11.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>All this unpleasantness,</c.bg_transparent>
+
+179
+00:18:11.120 --> 00:18:13.840 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>everything that's happened</c.bg_transparent>
+<c.bg_transparent>will be forgotten.</c.bg_transparent>
+
+180
+00:18:13.920 --> 00:18:16.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>We'll focus on the happy days ahead.</c.bg_transparent>
+
+181
+00:18:16.960 --> 00:18:20.000 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Won't we, my love? Huh?</c.bg_transparent>
+
+182
+00:18:29.200 --> 00:18:30.680 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Come on, Peyami Dokumacı.</c.bg_transparent>
+
+183
+00:18:30.760 --> 00:18:32.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Work your magic. Time's tight.</c.bg_transparent>
+
+184
+00:18:33.480 --> 00:18:35.000 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Mr. Dimitri.</c.bg_transparent>
+<c.bg_transparent>-Yes?</c.bg_transparent>
+
+185
+00:18:35.080 --> 00:18:37.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>A moment of your time, please?</c.bg_transparent>
+
+186
+00:18:37.120 --> 00:18:38.800 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I'll give you more than a moment.</c.bg_transparent>
+
+187
+00:18:40.800 --> 00:18:42.080 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>The groom's being summoned.</c.bg_transparent>
+
+188
+00:18:46.080 --> 00:18:47.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I'll be right back.</c.bg_transparent>
+
+189
+00:19:04.120 --> 00:19:05.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Please turn around, Ms. Esvet.</c.bg_transparent>
+
+190
+00:19:15.400 --> 00:19:17.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Suzan, could I ask you for something?</c.bg_transparent>
+
+191
+00:19:18.720 --> 00:19:21.040 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Sure.</c.bg_transparent>
+<c.bg_transparent>-Could you get me some water?</c.bg_transparent>
+
+192
+00:19:24.760 --> 00:19:25.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Of course.</c.bg_transparent>
+
+193
+00:19:33.600 --> 00:19:34.720 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>How's your arm?</c.bg_transparent>
+
+194
+00:19:38.800 --> 00:19:40.160 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Could you turn a bit more?</c.bg_transparent>
+
+195
+00:19:40.760 --> 00:19:43.120 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Mustafa? How is he?</c.bg_transparent>
+
+196
+00:19:44.520 --> 00:19:45.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>How did this happen?</c.bg_transparent>
+
+197
+00:19:46.640 --> 00:19:48.000 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I ripped it.</c.bg_transparent>
+
+198
+00:19:52.880 --> 00:19:54.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Won't you ask why?</c.bg_transparent>
+
+199
+00:20:00.040 --> 00:20:04.120 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Peyami! Is this how it's going to be?</c.bg_transparent>
+<c.bg_transparent>Won't you talk to me?</c.bg_transparent>
+
+200
+00:20:05.040 --> 00:20:06.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Look who I found.</c.bg_transparent>
+
+201
+00:20:07.680 --> 00:20:08.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>An uninvited guest.</c.bg_transparent>
+
+202
+00:20:10.440 --> 00:20:12.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>And you know what she's told me?</c.bg_transparent>
+
+203
+00:20:14.000 --> 00:20:15.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>That she's here with Peyami.</c.bg_transparent>
+
+204
+00:20:16.160 --> 00:20:18.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Peyami and a woman.</c.bg_transparent>
+
+205
+00:20:18.720 --> 00:20:19.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>And such a pretty one.</c.bg_transparent>
+
+206
+00:20:20.480 --> 00:20:21.600 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>My love.</c.bg_transparent>
+
+207
+00:20:21.680 --> 00:20:24.200 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Surely not prettier than you. But, I mean…</c.bg_transparent>
+
+208
+00:20:25.280 --> 00:20:28.160 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>I didn't believe her, of course.</c.bg_transparent>
+<c.bg_transparent>So I brought her here.</c.bg_transparent>
+
+209
+00:20:28.240 --> 00:20:29.600 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Hi. I'm Cemre.</c.bg_transparent>
+
+210
+00:20:31.880 --> 00:20:34.400 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Yes, Dimitri. Cemre is my friend.</c.bg_transparent>
+
+211
+00:20:34.480 --> 00:20:36.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Okay, but what kind of friend?</c.bg_transparent>
+
+212
+00:20:36.840 --> 00:20:38.920 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>A regular friend or a special one?</c.bg_transparent>
+
+213
+00:20:41.000 --> 00:20:43.280 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Got it. Special friend. Since when?</c.bg_transparent>
+
+214
+00:20:44.160 --> 00:20:46.400 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Dimitri.</c.bg_transparent>
+<c.bg_transparent>-Shame on you, Peyami.</c.bg_transparent>
+
+215
+00:20:46.480 --> 00:20:48.800 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>You bring your girlfriend</c.bg_transparent>
+<c.bg_transparent>to your blood brother's wedding,</c.bg_transparent>
+
+216
+00:20:48.880 --> 00:20:50.200 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>and you don't even introduce us.</c.bg_transparent>
+
+217
+00:20:50.280 --> 00:20:52.120 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>If she hadn't drawn my attention</c.bg_transparent>
+<c.bg_transparent>with her dress…</c.bg_transparent>
+
+218
+00:20:53.920 --> 00:20:55.720 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I might have never known.</c.bg_transparent>
+
+219
+00:20:59.200 --> 00:21:02.800 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>But I remember</c.bg_transparent>
+<c.bg_transparent>asking our guests to dress in all white.</c.bg_transparent>
+
+220
+00:21:02.880 --> 00:21:05.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Yes, I'm aware of that,</c.bg_transparent>
+
+221
+00:21:05.880 --> 00:21:08.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>but I'm afraid I can't wear white.</c.bg_transparent>
+
+222
+00:21:09.320 --> 00:21:10.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Oh? Why not?</c.bg_transparent>
+
+223
+00:21:11.880 --> 00:21:13.880 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-It's depressing. Thanks.</c.bg_transparent>
+<c.bg_transparent>-Here.</c.bg_transparent>
+
+224
+00:21:13.960 --> 00:21:15.720 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Depressing? How so?</c.bg_transparent>
+
+225
+00:21:16.440 --> 00:21:19.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I don't know. Death, shrouds…</c.bg_transparent>
+
+226
+00:21:19.400 --> 00:21:20.680 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Shrouds!</c.bg_transparent>
+
+227
+00:21:22.280 --> 00:21:23.600 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I really like this girl.</c.bg_transparent>
+
+228
+00:21:23.680 --> 00:21:25.960 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>She's absolutely hilarious.</c.bg_transparent>
+
+229
+00:21:26.640 --> 00:21:27.680 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Congrats, by the way.</c.bg_transparent>
+
+230
+00:21:28.320 --> 00:21:29.480 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Thank you. So…</c.bg_transparent>
+
+231
+00:21:31.320 --> 00:21:32.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>To life after death.</c.bg_transparent>
+
+232
+00:21:38.800 --> 00:21:43.000 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Peyami, how dare you</c.bg_transparent>
+<c.bg_transparent>leave such a beauty alone downstairs?</c.bg_transparent>
+
+233
+00:21:43.760 --> 00:21:45.000 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Sorry, Cemre.</c.bg_transparent>
+
+234
+00:21:45.080 --> 00:21:47.160 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Peyami is nice and all,</c.bg_transparent>
+
+235
+00:21:47.240 --> 00:21:50.640 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>and I love him to death,</c.bg_transparent>
+<c.bg_transparent>but he doesn't really understand women.</c.bg_transparent>
+
+236
+00:21:50.720 --> 00:21:52.920 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Maybe he's never been with someone</c.bg_transparent>
+
+237
+00:21:53.000 --> 00:21:54.760 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>who can explain properly.</c.bg_transparent>
+
+238
+00:21:57.000 --> 00:21:59.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I'm loving this special friend!</c.bg_transparent>
+
+239
+00:22:02.280 --> 00:22:04.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Aren't you, my love? Huh?</c.bg_transparent>
+
+240
+00:22:07.320 --> 00:22:08.520 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Here, Ms. Esvet.</c.bg_transparent>
+
+241
+00:22:10.120 --> 00:22:11.600 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Do you need any help?</c.bg_transparent>
+
+242
+00:22:12.400 --> 00:22:13.600 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Enjoy yourself.</c.bg_transparent>
+
+243
+00:22:13.680 --> 00:22:16.120 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Cemre, look, this is what Peyami's like.</c.bg_transparent>
+
+244
+00:22:16.720 --> 00:22:18.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>He's so focused on his work.</c.bg_transparent>
+
+245
+00:22:18.400 --> 00:22:20.960 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>He always wants to do everything right.</c.bg_transparent>
+
+246
+00:22:21.040 --> 00:22:23.640 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Sometimes he overdoes it,</c.bg_transparent>
+<c.bg_transparent>even risks his life.</c.bg_transparent>
+
+247
+00:22:23.720 --> 00:22:26.480 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Is that so?</c.bg_transparent>
+<c.bg_transparent>-Yes. I know Peyami best.</c.bg_transparent>
+
+248
+00:22:26.560 --> 00:22:29.520 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>You wouldn't believe</c.bg_transparent>
+<c.bg_transparent>the stories I could tell you.</c.bg_transparent>
+
+249
+00:22:29.600 --> 00:22:33.720 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>For instance,</c.bg_transparent>
+<c.bg_transparent>do you know why his arm's like that?</c.bg_transparent>
+
+250
+00:22:40.600 --> 00:22:42.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>It was our secret, wasn't it? I forgot.</c.bg_transparent>
+
+251
+00:22:42.960 --> 00:22:44.840 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I forgot. I'm such a blabbermouth.</c.bg_transparent>
+
+252
+00:22:44.920 --> 00:22:46.800 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Cemre, this part never happened.</c.bg_transparent>
+
+253
+00:22:47.960 --> 00:22:49.360 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Which part?</c.bg_transparent>
+
+254
+00:22:49.440 --> 00:22:51.440 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Smart, and has a sense of humor!</c.bg_transparent>
+
+255
+00:22:51.520 --> 00:22:54.480 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>How on earth do you get along</c.bg_transparent>
+<c.bg_transparent>with our boring Peyami?</c.bg_transparent>
+
+256
+00:22:57.280 --> 00:22:58.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Okay, Peyami.</c.bg_transparent>
+
+257
+00:22:58.640 --> 00:23:01.520 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Peyami Dokumacı needs silence</c.bg_transparent>
+<c.bg_transparent>when working.</c.bg_transparent>
+
+258
+00:23:01.600 --> 00:23:02.960 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Let's play the quiet game.</c.bg_transparent>
+
+259
+00:23:18.760 --> 00:23:21.000 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Ms. Suzan, may I take a photo, please?</c.bg_transparent>
+
+260
+00:23:21.800 --> 00:23:23.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Okay, smile. Nice.</c.bg_transparent>
+
+261
+00:23:24.800 --> 00:23:26.560 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Thanks.</c.bg_transparent>
+<c.bg_transparent>-They're coming!</c.bg_transparent>
+
+262
+00:23:47.560 --> 00:23:48.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>What's up?</c.bg_transparent>
+
+263
+00:24:01.440 --> 00:24:04.240 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Now I know why you're like this.</c.bg_transparent>
+
+264
+00:24:09.680 --> 00:24:11.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Let's find our spot.</c.bg_transparent>
+
+265
+00:24:15.880 --> 00:24:17.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>I told you, dude.</c.bg_transparent>
+
+266
+00:24:17.960 --> 00:24:20.080 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>My dear. I love you.</c.bg_transparent>
+
+267
+00:24:22.600 --> 00:24:24.120 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-Congratulations.</c.bg_transparent>
+<c.bg_transparent>-Thanks.</c.bg_transparent>
+
+268
+00:24:26.120 --> 00:24:27.160 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Thank you.</c.bg_transparent>
+
+269
+00:24:33.880 --> 00:24:36.160 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You don't have to witness this.</c.bg_transparent>
+
+270
+00:24:44.440 --> 00:24:47.760 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Let's get our witnesses here</c.bg_transparent>
+<c.bg_transparent>to start the ceremony.</c.bg_transparent>
+
+271
+00:26:22.960 --> 00:26:25.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Suzi, where is he? Huh?</c.bg_transparent>
+
+272
+00:26:25.720 --> 00:26:28.560 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>I don't know. He was at the back,</c.bg_transparent>
+<c.bg_transparent>but hasn't been there for a while.</c.bg_transparent>
+
+273
+00:26:28.640 --> 00:26:30.640 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Our witness must have forgotten to come.</c.bg_transparent>
+
+274
+00:26:35.400 --> 00:26:38.640 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Look. The bride and groom are here.</c.bg_transparent>
+<c.bg_transparent>Why do we need a witness?</c.bg_transparent>
+
+275
+00:26:38.720 --> 00:26:40.720 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>As you know, we can't start without one.</c.bg_transparent>
+
+276
+00:26:46.280 --> 00:26:47.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>You. Put that down.</c.bg_transparent>
+
+277
+00:26:47.960 --> 00:26:50.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Niko, take this. Thanks. Come here.</c.bg_transparent>
+
+278
+00:26:50.400 --> 00:26:53.000 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-What's going on?</c.bg_transparent>
+<c.bg_transparent>-A perfectly fine witness. Here.</c.bg_transparent>
+
+279
+00:26:53.080 --> 00:26:55.040 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Perform the ceremony. Now!</c.bg_transparent>
+
+280
+00:26:55.640 --> 00:26:56.880 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>All right.</c.bg_transparent>
+
+281
+00:26:56.960 --> 00:26:58.560 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>So, dear guests,</c.bg_transparent>
+
+282
+00:26:59.120 --> 00:27:02.080 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>welcome to the wedding ceremony</c.bg_transparent>
+
+283
+00:27:02.160 --> 00:27:04.680 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>of Esvet Güngör and Dimitri Aslanoğlu.</c.bg_transparent>
+
+284
+00:27:11.440 --> 00:27:13.160 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>It'll be just you.</c.bg_transparent>
+
+285
+00:27:15.000 --> 00:27:16.080 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Only you.</c.bg_transparent>
+
+286
+00:27:58.160 --> 00:28:00.920 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>Please repeat after me</c.bg_transparent>
+<c.bg_transparent>before the witnesses</c.bg_transparent>
+
+287
+00:28:01.560 --> 00:28:03.000 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>and our guests.</c.bg_transparent>
+
+288
+00:28:15.880 --> 00:28:17.520 position:50.00%,middle align:middle size:80.00% line:79.33% 
+<c.bg_transparent>-I do.</c.bg_transparent>
+<c.bg_transparent>-Yeah!</c.bg_transparent>
+
+289
+00:32:22.320 --> 00:32:27.320 position:50.00%,middle align:middle size:80.00% line:84.67% 
+<c.bg_transparent>Subtitle translation by: Bilge Gündüz</c.bg_transparent>
+
