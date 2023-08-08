@@ -209,11 +209,13 @@ function ExtraCardManager({excrdCaption, rotateCW, rotateCCW}){
   );
 }
 
-function Board({rows, cols, origMap, exCrd}){
+function Board({rows, cols, origMap, exCrd, finish}){
 
 	const [extraCard, setExtraCard] = useState(exCrd);
   const [actMap, setActMap] = useState(origMap);
   const [solPath, setSolPath] = useState([]);
+  const [boardState, setBoardState] = useState("game");
+  const [moveCnt, setMoveCnt] = useState(0);
   
   const turnCW = () => {
   	let newCap = cardMap.get(extraCard).turnCW;
@@ -226,22 +228,35 @@ function Board({rows, cols, origMap, exCrd}){
   	setExtraCard(newCap);
   };
   
+  const afterShift = (newGrid) => {
+  	const newMoveCnt = moveCnt+1;
+  	setMoveCnt(newMoveCnt);
+    let pt = checkPath(newGrid, rows, cols, (parseInt(rows)-1)*parseInt(cols), parseInt(cols)-1);
+    setSolPath(pt);
+    if(pt.length > 0){
+    	//solution found
+      setBoardState("finish");
+      const st1 = setTimeout(() => {
+      	finish(newMoveCnt);
+      	clearTimeout(st1);
+      }, 3000);
+    }
+  };
+  
   const shiftRow = (r, d) => {
+  	if(boardState=="finish") return;
   	const [newGrid, newExCrd] = gridShiftRow(actMap, parseInt(rows), parseInt(cols), r, d, extraCard);
     setActMap( newGrid );
     setExtraCard( newExCrd );
-    let pt = checkPath(newGrid, rows, cols, (parseInt(rows)-1)*parseInt(cols), parseInt(cols)-1);
-    setSolPath(pt);/*
-    console.log(`path: ${checkPath(newGrid, rows, cols, (parseInt(rows)-1)*parseInt(cols), parseInt(cols)-1)}`);*/
+    afterShift(newGrid);
   };
   
   const shiftCol = (c, d) => {
+  	if(boardState=="finish") return;
   	const [newGrid, newExCrd] = gridShiftCol(actMap, parseInt(rows), parseInt(cols), c, d, extraCard);
     setActMap( newGrid );
     setExtraCard( newExCrd );
-    let pt = checkPath(newGrid, rows, cols, (parseInt(rows)-1)*parseInt(cols), parseInt(cols)-1);
-    setSolPath(pt);/*
-    console.log(`path: ${checkPath(newGrid, rows, cols, (parseInt(rows)-1)*parseInt(cols), parseInt(cols)-1)}`);*/
+    afterShift(newGrid);
   };
 
 	const pushable = new Map();
@@ -374,6 +389,54 @@ function Board({rows, cols, origMap, exCrd}){
   );
 }
 
+function Settings({start}){
+
+	const [rowNum, setRowNum] = useState(3);
+	const [colNum, setColNum] = useState(4);
+  
+  const rowNumChanged = (e) => {
+  	setRowNum(e.target.value);
+  };
+  const colNumChanged = (e) => {
+  	setColNum(e.target.value);
+  };
+  const startGame = () => {
+  	//tbd
+    console.log(`Start game: row=${rowNum}, col=${colNum}`);
+    start(rowNum, colNum);
+  };
+  
+   return (
+    <div className="settings">
+    <h3>Set board dimensions!</h3>
+    <label key="labRowNum" htmlFor="rowNum">
+            Rows: 
+    </label>
+    <div id="rowNum">
+      <select value={rowNum} onChange={rowNumChanged}>
+        {[3,4,5,6,7].map((e) => (
+					<option key={"r"+e} value={e}>{e}</option>
+				))}
+      </select>
+    </div>
+    <label key="labColNum" htmlFor="colNum">
+            Columns: 
+    </label>
+    <div id="colNum">
+      <select  value={colNum} onChange={colNumChanged}>
+        {[3,4,5,6,7].map((e) => (
+					<option key={"c"+e} value={e}>{e}</option>
+				))}
+      </select>
+    </div>
+    <button className="startBtn" onClick={startGame}>
+      <span>Start</span>
+    </button>
+    </div>
+    );
+  
+}
+
 function TestApp1({rows, cols}){
   	
   let brd=[];
@@ -395,9 +458,89 @@ exCrd={excrd}
   );
 }
 
+function App(){
+
+	const [gameState, setGameState] = useState("settings");
+	const [rows, setRows] = useState();
+	const [cols, setCols] = useState();
+	const [origGrid, setOrigGrid] = useState([]);
+	const [extraCard, setExtraCard] = useState();
+	const [moveCounter, setMoveCounter] = useState(0);
+  
+  const setupBoard = (inr, inc) => {
+    let brd=[];
+    for(let r=0; r<inr; r++){
+      for(let c=0; c<inc; c++){
+        let idx = Math.floor(Math.random() * parseInt(cards.length));
+        brd.push(cards[idx].caption);
+      }
+    }
+    let excrd = cards[Math.floor(Math.random() * parseInt(cards.length))].caption;
+    
+   setOrigGrid(brd);
+   setExtraCard(excrd);
+    
+  };
+  
+  const startGame = (r,c) => {
+  	setRows(r);
+    setCols(c);
+    setupBoard(r,c);
+    setMoveCounter(0);
+    setGameState("game");
+  };
+  
+  const gameFinished = (mc) => {
+  	setMoveCounter(mc);
+    setGameState("results");
+    const st1 = setTimeout(() => {
+      	setGameState("settings");
+      	clearTimeout(st1);
+      }, 3000);
+  };
+  
+  if(gameState == "settings"){
+ 		return (
+    <Settings
+      start={startGame}
+    />
+    );
+  } else if(gameState == "game"){
+    return (
+     <Board 
+     rows={rows}
+     cols={cols}
+     origMap={origGrid}
+     exCrd={extraCard}
+     finish={gameFinished}
+     />
+    );
+  } else if(gameState == "results"){
+  	return (
+    <div>
+    <h3>Results</h3>
+    <table key="rtb"><thead>
+      <tr>
+        <th key="thr">Rows</th>
+        <th key="thc">Cols</th>
+        <th key="thm">Moves</th>
+      </tr>
+    </thead><tbody>
+      <tr>
+        <td key="tdr">{rows}</td>
+        <td key="tdc">{cols}</td>
+        <td key="tdm">{moveCounter}</td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    );
+  }
+}
+
 ReactDOM.createRoot( 
   document.querySelector('#root')
-).render(<TestApp1 
+).render(/*<TestApp1 
 rows="3"
 cols="4"
-/>);
+/>*/<App />);
