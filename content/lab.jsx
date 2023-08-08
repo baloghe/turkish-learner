@@ -66,12 +66,80 @@ const gridShiftCol = (origArr, rows, cols, c, d, excrd) => {
     return [newGrid, newExCrd];
   };
   
+const idx2coord = (idx, rowNum, colNum) => {
+	const c = idx % parseInt(colNum);
+  const r = (idx - c) / parseInt(colNum);
+  return {row: r, col: c};
+};
+
+const coord2idx = (r, c, colNum) => {
+	return r * colNum + c;
+};
+  
+const checkPath = (inGrid, rowNum, colNum, inStartIdx, inEndIdx) => {
+	const stack = [{idx: inStartIdx, pth:[]}]; //entries: {idx: num, pth:[...num]}
+  while(stack.length > 0 && stack[0].idx != inEndIdx){
+  	let actElem = stack.splice(0,1)[0];
+    let actPos = idx2coord(actElem.idx, rowNum, colNum);
+    let actCard = cardMap.get(inGrid[actElem.idx]);
+    
+    //check if we can leave actElem upwards
+    if(actCard.up && actPos.row > 0){
+    	let neighborIdx = coord2idx(actPos.row-1, actPos.col, colNum);
+      let neighbor = cardMap.get(inGrid[neighborIdx]);
+      //check if neighbor is not already on the actual path
+      if(neighbor.down && (!actElem.pth.includes(neighborIdx))){
+      	let newElem = {idx: neighborIdx, pth: [...actElem.pth, actElem.idx]};
+        stack.unshift(newElem);
+      }
+    }//up
+    //check if we can leave actElem downwards
+    if(actCard.down && actPos.row <rowNum-1){
+    	let neighborIdx = coord2idx(actPos.row+1, actPos.col, colNum);
+    	let neighbor = cardMap.get(inGrid[neighborIdx]);
+      //check if neighbor is not already on the actual path
+      if(neighbor.up && (!actElem.pth.includes(neighborIdx))){
+      	let newElem = {idx: neighborIdx, pth: [...actElem.pth, actElem.idx]};
+        stack.unshift(newElem);
+      }
+    }//down
+    
+    //check if we can leave actElem leftwards
+    if(actCard.left && actPos.col>0){
+    	let neighborIdx = coord2idx(actPos.row, actPos.col-1, colNum);
+    	let neighbor = cardMap.get(inGrid[neighborIdx]);
+      //check if neighbor is not already on the actual path
+      if(neighbor.right && (!actElem.pth.includes(neighborIdx))){
+      	let newElem = {idx: neighborIdx, pth: [...actElem.pth, actElem.idx]};
+        stack.unshift(newElem);
+      }
+    }//left
+    
+    //check if we can leave actElem rightwards
+    if(actCard.right && actPos.col<colNum-1){
+    	let neighborIdx = coord2idx(actPos.row, actPos.col+1, colNum);
+    	let neighbor = cardMap.get(inGrid[neighborIdx]);
+      //check if neighbor is not already on the actual path
+      if(neighbor.left && (!actElem.pth.includes(neighborIdx))){
+      	let newElem = {idx: neighborIdx, pth: [...actElem.pth, actElem.idx]};
+        stack.unshift(newElem);
+      }
+    }//right
+  }//wend
+  //check if a path has been found
+  if(stack.length > 0 && stack[0].idx == inEndIdx){
+  	return stack[0].pth.filter((e,i)=>(i>0));
+  } else {
+  	return [];
+  }
+};
+  
 function Tile({caption, isMovable, special}){
   
   const specClass = {
   	 'S' : "tile-start"
     ,'F' : "tile-finish"
-    ,'E' : "tile-end"
+    ,'P' : "tile-path"
   };
   
   const actClassNames = () => "tile" + " " 
@@ -145,6 +213,7 @@ function Board({rows, cols, origMap, exCrd}){
 
 	const [extraCard, setExtraCard] = useState(exCrd);
   const [actMap, setActMap] = useState(origMap);
+  const [solPath, setSolPath] = useState([]);
   
   const turnCW = () => {
   	let newCap = cardMap.get(extraCard).turnCW;
@@ -161,12 +230,18 @@ function Board({rows, cols, origMap, exCrd}){
   	const [newGrid, newExCrd] = gridShiftRow(actMap, parseInt(rows), parseInt(cols), r, d, extraCard);
     setActMap( newGrid );
     setExtraCard( newExCrd );
+    let pt = checkPath(newGrid, rows, cols, (parseInt(rows)-1)*parseInt(cols), parseInt(cols)-1);
+    setSolPath(pt);/*
+    console.log(`path: ${checkPath(newGrid, rows, cols, (parseInt(rows)-1)*parseInt(cols), parseInt(cols)-1)}`);*/
   };
   
   const shiftCol = (c, d) => {
   	const [newGrid, newExCrd] = gridShiftCol(actMap, parseInt(rows), parseInt(cols), c, d, extraCard);
     setActMap( newGrid );
     setExtraCard( newExCrd );
+    let pt = checkPath(newGrid, rows, cols, (parseInt(rows)-1)*parseInt(cols), parseInt(cols)-1);
+    setSolPath(pt);/*
+    console.log(`path: ${checkPath(newGrid, rows, cols, (parseInt(rows)-1)*parseInt(cols), parseInt(cols)-1)}`);*/
   };
 
 	const pushable = new Map();
@@ -262,6 +337,8 @@ function Board({rows, cols, origMap, exCrd}){
         	spec='S';
         } else if(i==(parseInt(cols)-1)) {
         	spec='F';
+        } else if(solPath.includes(i)){
+        	spec='P';
         }
         ret.push( getTile(actMap[i], true, i, spec) );
       }
@@ -322,5 +399,5 @@ ReactDOM.createRoot(
   document.querySelector('#root')
 ).render(<TestApp1 
 rows="3"
-cols="5"
+cols="4"
 />);
