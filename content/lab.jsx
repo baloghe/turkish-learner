@@ -402,7 +402,7 @@ function Settings({start}){
   };
   const startGame = () => {
   	//tbd
-    console.log(`Start game: row=${rowNum}, col=${colNum}`);
+    //console.log(`Start game: row=${rowNum}, col=${colNum}`);
     start(rowNum, colNum);
   };
   
@@ -466,15 +466,22 @@ function App(){
 	const [origGrid, setOrigGrid] = useState([]);
 	const [extraCard, setExtraCard] = useState();
 	const [moveCounter, setMoveCounter] = useState(0);
+	const [results, setResults] = useState([]);
   
   const setupBoard = (inr, inc) => {
+  	let bNeeded=true;
     let brd=[];
-    for(let r=0; r<inr; r++){
-      for(let c=0; c<inc; c++){
-        let idx = Math.floor(Math.random() * parseInt(cards.length));
-        brd.push(cards[idx].caption);
-      }
-    }
+    while(bNeeded){
+      brd=[];
+      for(let r=0; r<inr; r++){
+        for(let c=0; c<inc; c++){
+          let idx = Math.floor(Math.random() * parseInt(cards.length));
+          brd.push(cards[idx].caption);
+        }//c
+      }//r
+      bNeeded = (checkPath(brd, inr, inc, (inr-1)*inc, inc-1).length>0);
+      if(bNeeded){console.log(`generated board already solved => generate new one`);}
+    }//wend
     let excrd = cards[Math.floor(Math.random() * parseInt(cards.length))].caption;
     
    setOrigGrid(brd);
@@ -492,6 +499,11 @@ function App(){
   
   const gameFinished = (mc) => {
   	setMoveCounter(mc);
+    let newResults = results.map(e=>e);
+		newResults.unshift({r:rows,c:cols,m:mc});
+    newResults.filter((e,i)=>i<5);
+    setResults(newResults);
+    
     setGameState("results");
     const st1 = setTimeout(() => {
       	setGameState("settings");
@@ -526,11 +538,13 @@ function App(){
         <th key="thm">Moves</th>
       </tr>
     </thead><tbody>
-      <tr>
-        <td key="tdr">{rows}</td>
-        <td key="tdc">{cols}</td>
-        <td key="tdm">{moveCounter}</td>
-      </tr>
+      {results.map((e,i)=>(
+        <tr key={"tr"+i}>
+          <td key={"tdr"+i}>{e.r}</td>
+          <td key={"tdc"+i}>{e.c}</td>
+          <td key={"tdm"+i}>{e.m}</td>
+        </tr>
+      ))}
     </tbody>
     </table>
     </div>
