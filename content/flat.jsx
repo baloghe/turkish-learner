@@ -31,8 +31,15 @@ function MeterReadings({readings, actFlat, flats, flatChanged, changeReading}){
     setActMeter(e);
   };
   
-  const readingChangeSubmitted = (newData) => {
-  	console.log(`MeterReadings.readingChangeSubmitted :: ${newData}`);
+  const readingChangeSubmitted = (inFlatKey, inMeter, newData) => {
+  	console.log(`MeterReadings.readingChangeSubmitted :: [${newData.date}, ${newData.last}]`);
+    setState("show");
+    setActMeter(null);
+    changeReading(inFlatKey, inMeter, newData);
+  };
+  
+  const readingChangeCancelled = () => {
+  	console.log(`MeterReadings.readingChangeCancelled`);
     setState("show");
     setActMeter(null);
   };
@@ -68,7 +75,7 @@ function MeterReadings({readings, actFlat, flats, flatChanged, changeReading}){
           <td key={"ms"+i+"-1"}>{e.meter}</td>
           <td key={"ms"+i+"-2"}>{e.last}</td>
           <td key={"ms"+i+"-3"}>{e.unit}</td>
-          <td key={"ms"+i+"-4"}>{date2string(e.date)}</td>
+          <td key={"ms"+i+"-4"}>{e.date}</td>
             <td key={"ms"+i+"-5"}>
               <button className="ChangeBtn" onClick={()=>readingChanged(e.meter)} data-meter={e.meter}>
                 <span>Change</span>
@@ -89,6 +96,7 @@ function MeterReadings({readings, actFlat, flats, flatChanged, changeReading}){
       actMeter={meter}
       actData={readings.filter(e=>e.meter==meter)[0]}
       changeReading={readingChangeSubmitted}
+      cancel={readingChangeCancelled}
       />);
   };
   
@@ -141,7 +149,7 @@ function Payments({payments, actFlat, flats, flatChanged}){
           <td key={"ps"+i+"-1"}>{e.meter}</td>
           <td key={"ps"+i+"-2"}>{e.amount}</td>
           <td key={"ps"+i+"-3"}>{e.ccy}</td>
-          <td key={"ps"+i+"-4"}>{date2string(e.date)}</td>
+          <td key={"ps"+i+"-4"}>{e.date}</td>
             <td key={"ms"+i+"-5"}>
               <button className="startBtn" onClick={()=>changePayment(e.meter)} data-meter={e.meter}>
                 <span>Change</span>
@@ -155,29 +163,36 @@ function Payments({payments, actFlat, flats, flatChanged}){
   );
 }
 
-function ChangeMeterReading({actFlat, actMeter, actData, changeReading}){
+function ChangeMeterReading({actFlat, actMeter, actData, changeReading, cancel}){
 
-console.log(`ChangeMeterReading :: actFlat=${actFlat.key}, actMeter=${actMeter}, actData=${date2string(actData.date)}, ${actData.last}, ${actData.unit}`);
+console.log(`ChangeMeterReading :: actFlat=${actFlat.key}, actMeter=${actMeter}, actData=${actData.date}, ${actData.last}, ${actData.unit}`);
 	
-  const [newData, setNewData] = useState({date: actData.date.getDate()+1, last: actData.last});
+  const [newData, setNewData] = useState({date: date2string(new Date()), last: actData.last});
   
   const dateChanged = e => {
   	const newVal = {date: e.target.value, last: newData.last};
     setNewData(newVal);
+    console.log(`dateChanged: newVal=[${newVal.date}, ${newVal.last}]`);
   };
   
   const readingChanged = e => {
   	const newVal = {date: newData.date, last: e.target.value};
-    setNewData(newVal);  
+    setNewData(newVal); 
+    console.log(`readingChanged: newVal=[${newVal.date}, ${newVal.last}]`); 
   };
   
   const submitChange = () => {
-  	changeReading(actFlat, actMeter, newData);
+  	console.log(`ChangeMeterReading.submitChange ${actFlat.key}.${actMeter} := [${newData.date}, ${newData.last}]`);
+  	changeReading(actFlat.key, actMeter, newData);
+  };
+  
+  const cancelChange = () => {
+  	cancel();
   };
   
 	return (
-  	<div>
-    <table key="crh">
+  <div>
+		<table key="crh">
       <tbody>
         <tr key="crh-flat">
           <td key="crh-flat-key">
@@ -197,7 +212,7 @@ console.log(`ChangeMeterReading :: actFlat=${actFlat.key}, actMeter=${actMeter},
         </tr>
       </tbody>
     </table>
-    <table key="crb">
+        <table key="crb">
     <thead>
       <tr key="crbh">
         <th key="crbh-date">
@@ -238,9 +253,18 @@ console.log(`ChangeMeterReading :: actFlat=${actFlat.key}, actMeter=${actMeter},
     	    {actData.unit}
     	  </td>
     	</tr>
-    </tbody>
+      <tr>
+        <td>
+          <button onClick={cancelChange}>Cancel</button>
+        </td>
+        <td />
+        <td>
+          <button onClick={submitChange}>Submit</button>
+        </td>
+      </tr>
+      </tbody>
     </table>
-    <button onClick={submitChange}>Submit</button>
+    
     </div>
   );
 }
@@ -263,8 +287,16 @@ function App({isDemo, demoData}){
     setActFlat(flats.filter(e=>e.key==key)[0]);
   };
   
-  const changeReading = (newData) => {
-  	console.log(`App :: changeReading ${newData}`);
+  const changeReading = (flatKey, inMeter, newData) => {
+  	console.log(`App :: changeReading ${flatKey}.${inMeter} := ${newData.date}, ${newData.last}]`);
+    if(isDemo){
+    	let newReadings = JSON.parse(JSON.stringify(readings));
+      let idx = newReadings[flatKey].findIndex(e=>e.meter==inMeter);
+      newReadings[flatKey][idx].date = newData.date;
+      newReadings[flatKey][idx].last = newData.last;
+      setReadings(newReadings);
+      console.log(`App :: changeReading done`);
+    }
   };
 	
   return (
@@ -295,24 +327,24 @@ flats : [
   ],
 readings : {
   	 "VISEGRÁDI" : [
-     		 {meter: "GAS", last: 10, unit: "m3", date: new Date('2023-03-31')}
-        ,{meter: "WATER", last: 20, unit: "m3", date: new Date('2023-04-10')}
-        ,{meter: "ELECTRICITY", last: 30, unit: "kWh", date: new Date('2023-04-21')}
+     		 {meter: "GAS", last: 10, unit: "m3", date: '2023-03-31'}
+        ,{meter: "WATER", last: 20, unit: "m3", date: '2023-04-10'}
+        ,{meter: "ELECTRICITY", last: 30, unit: "kWh", date: '2023-04-21'}
     	]
     ,"HUNYADI" : [
-     		 {meter: "WATER", last: 303, unit: "m3", date: new Date('2023-02-28')}
-        ,{meter: "ELECTRICITY", last: 12345, unit: "kWh", date: new Date('2023-01-30')}
+     		 {meter: "WATER", last: 303, unit: "m3", date: '2023-02-28'}
+        ,{meter: "ELECTRICITY", last: 12345, unit: "kWh", date: '2023-01-30'}
     	]
   },
 payments : {
   	 "VISEGRÁDI" : [
-     		 {meter: "GAS", amount: 100, ccy: "HUF", date: new Date('2023-04-10')}
-        ,{meter: "WATER", amount: 210, ccy: "HUF", date: new Date('2023-04-18')}
-        ,{meter: "ELECTRICITY", amount: 320, ccy: "HUF", date: new Date('2023-04-28')}
+     		 {meter: "GAS", amount: 100, ccy: "HUF", date: '2023-04-10'}
+        ,{meter: "WATER", amount: 210, ccy: "HUF", date: '2023-04-18'}
+        ,{meter: "ELECTRICITY", amount: 320, ccy: "HUF", date: '2023-04-28'}
     	]
     ,"HUNYADI" : [
-     		 {meter: "WATER", amount: 400, ccy: "HUF", date: new Date('2023-03-05')}
-        ,{meter: "ELECTRICITY", amount: 500, ccy: "HUF", date: new Date('2023-02-10')}
+     		 {meter: "WATER", amount: 400, ccy: "HUF", date: '2023-03-05'}
+        ,{meter: "ELECTRICITY", amount: 500, ccy: "HUF", date: '2023-02-10'}
     	]
   }
 };
