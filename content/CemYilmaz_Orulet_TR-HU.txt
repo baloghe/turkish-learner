@@ -1,0 +1,686 @@
+Time		Subtitle		Translation
+00:00:14		WEBVTT   -[adam] Mehmet abim, çikolatalı aldım ha. -[gülme sesi]   [adam] Sever misin?   		A csokisat vettem meg. Szereted? 
+00:00:18		 [Mehmet] Sade püsküütten iyidir be koçum.   		Jobb, mint a keksz. 
+00:00:19		 -[adam] Püsküüt. -[gülerler]   		Keksz! 
+00:00:20		 Başkan, sarı mı istiyorsun, beyaz mı?   		Főnök, limonádét vagy narancsitalt? 
+00:00:22		 -Vay vay vay. -Sen beyazdan koy.   		- Nahát, nahát! - Limonádé. 
+00:00:24		 -Abi gel, gel. -Vay, başkanım!   		- Csatlakozz hozzánk, testvér! - Főnök! 
+00:00:27		 -Kaç oldun Mehmet abi? -66'ya bağladık be gülüm.   		- Szóval hány éves vagy? - Hatvanhat, haver. 
+00:00:30		 -Hiç göstermiyorsun vallahi. -İstemedin ki göstereyim.   		- Nem nézel ki annyinak. - Nem szóltál, hogy kellene. 
+00:00:36		 ♪ İyi ki doğdun... ♪   		Boldog szülinapot... 
+00:00:37		 Bir dakika, bir dakika, bir dakika. Üflesin de rahatlayalım.   		Fújd el a gyertyákat, és faljuk fel a tortát! 
+00:00:40		 -Hadi Mehmet abiciğim! -Üfleyeceğim de gaza gelme.   		- Hajrá, Mehmet! - Megpróbálom, de ne reménykedjetek! 
+00:00:43		 -♪ İyi ki doğdun Başkan! ♪ -[adam] Helal Başkan!   		- Boldog szülinapot, drága főnök! - Ez az! 
+00:00:47		 Bravo Başkan.   		Gyerünk, főnök! 
+00:00:48		 Yapıştır!   		Gyerünk! 
+00:00:53		 [Mehmet] Kapıda yat bir saat.   Ondan sonra, "Alo, Salih Ağa sağlık ocağına."   		Vagy egy órát vártam ott. Aztán azt mondta: "A kórházba." 
+00:00:57		 -On kağıt, oh. Ye Mehmet, ye. -[gülerler]   		Tíz dollárért. Hogy képzeli? 
+00:01:00		 Bir de fiş, aman ya Rabbi.   		Elképesztő. Jó ég! 
+00:01:02		 -On liraya? -Tabii, dünyayı aldık ya.   		- Tíz dollárért? - Igen, mintha az olyan sok lenne. 
+00:01:06		 -İyi akşamlar. -İyi akşamlar, buyurun.   		- Jó estét. - Jó estét. 
+00:01:09		 -Taksi hangisi? -Bende.   		- Kié az első kocsi a sorban? - Az enyém. 
+00:01:15		 Zamanlaman kötü Güven abi.   		Rossz időzítés, Guven testvér. 
+00:01:27		 Sırayı yaktırırdım da neyse işte.   		Engem nem érdekel a sor, de mindegy. 
+00:01:29		 -Konuştun mu kızla? -Yok.   		- Beszéltél a lánnyal? - Nem. 
+00:01:30		 Ya yok, ne konuşması abi. İki ay oldu, iki ay!   		Kizárt, főnök. Két hónapja volt. Két hónapja! 
+00:01:34		 Oğlum, belki konuşmak istemiyorum.   		Mi van, ha nem akarok beszélni vele? 
+00:01:36		 Ya ben o kızı hiç görmedim, yeni taşındı galiba.   		Még sosem láttam ezt a lányt. Biztos most költözött ide. 
+00:01:39		 Abi, geçen bunun arabaya binmiş, yol boyu kızı aynadan kesmiş bizimki.   		Nemrég ő vitte taxival, főnök. És végig bámulta a csajt. 
+00:01:43		 -Kesin durağa şikayet edecek var ya. -Ne alakası var ya?   		- Szerintem panaszt fog tenni. - Nem fog. 
+00:01:47		 Ne o, âşık mı oldun ibiş? Git konuş o zaman.   		Beleszerettél? Akkor beszélned kell vele. 
+00:01:50		 Instagram'dan bul, Facebook'tan bul abi.   		Keresd meg az Instagramon vagy a Facebookon! 
+00:01:53		 Bana bırak, beş dakikada bulurum diyorum, bana da bırakmıyorsun ha.   		Percek alatt megtalálnám, ha hagynád, de nem hagyod. 
+00:01:55		 Abi, belki konuşmak istemiyorum.   		Talán nem akarok beszélni vele. 
+00:01:58		 Ben öyle uzun uzun onun gözlerine bakayım, o bana baksın.   		Inkább szemezni akarok vele órákon keresztül. 
+00:02:01		 Öyle uzun uzun, karşılıklı yani.   		Csak mi ketten összefonódott tekintettel. 
+00:02:03		 -Kız senden uzun yalnız ha. -[aynı anda] Siktir lan.   		- Magasabb, mint te. - Menj a francba! 
+00:02:07		 Hayır, gözlerini denk getirebilirsen... [güler]   		Lehet, hogy nem érsz fel a szeméig. 
+00:02:09		 -Sikerim bak belanı ha! -[adam] Pasta getireyim mi abi?   		- Húzz innen! - Kérsz tortát, tesó? 
+00:02:13		 İbneye bak!   		Az a rohadék! 
+00:02:23		 -♪ Gözlerimde senin gözlerin kaldı ♪ -[eşlik eder]   		A tekinteted az enyémbe fonódott 
+00:02:28		 ♪ Ellerimde senin ellerin kaldı ♪   		Kezed a kezemben 
+00:02:33		 -♪ Giden yıllarımda yıllarım kaldı ♪ -[ses yükselir]   		Oly sok évet vesztegettem el nélküled 
+00:02:39		 Ya bu kafayı yemiş arkadaş ya. Tövbe ya Rabbi.   		Megőrült. Te jó ég! 
+00:02:42		 -♪ Sabah olmadan ♪ -[eşlik eder]   		Napkelte előtt 
+00:02:45		 ♪ Seni düşündüm sabah olmadan ♪   		Rád gondoltam Napkelte előtt 
+00:02:54		 Kolay gelsin, bir mendil rica edebilir miyim acaba?   		Jó napot, papír zsebkendőt szeretnék kérni. 
+00:02:59		 Aa... Bir de şu naneli sakızdan.   		És rágót. 
+00:03:04		 Sakızı ben ikram etsem size?   		Meghívhatlak a rágóra? 
+00:03:12		 Güven, ne yapıyorsun oğlum öyle, tuhaf tuhaf hareketler müşteriye.   		Miért viselkedsz ilyen furán a vásárlókkal, Guven? 
+00:03:15		 -Ne yaptım oğlum? -Ya bir git Allah'ını seversen ya.   		- Mi rosszat tettem? - Csak húzz innen, az ég szerelmére! 
+00:03:17		 Allah Allah.   		Jóságos ég! 
+00:03:27		 Ya siz ne yapıyorsunuz Allah aşkına?   		Mégis mi ez az egész? 
+00:03:29		 Özür dilerim.   		Sajnálom. 
+00:03:31		 Yani... Bir şey demeyeyim diyorum ama dayanamıyorum artık.   		Próbálok nem szemét lenni, de elegem van. 
+00:03:35		 [kadın] Her gün, her yerdesiniz be kardeşim.   Hayır, tanışıyor muyuz? Yok.   		Minden nap összefutunk, bármerre járok. Ismerjük egymást? Nem. 
+00:03:39		 Ya, bu nedir böyle sokakta yürüyen her kadına?   		Minden nőt letámad az utcán? 
+00:03:42		 Şey, ben orada, sakız vermek anlamında değil de...   		Nem, dehogy. Nem akartam feldühíteni a rágóval. 
+00:03:45		 -Ee? -[Güven] Yani böyle bir vesile olsun...   		- Tényleg? - Csak ürügy volt... 
+00:03:48		 [kekeler] Bir konuşma gibi bir şey, yani...   		hogy szóba elegyedjünk, vagy ilyesmi... 
+00:03:51		 -Tabii orada bir kadına... -Bak kardeşim,   		- Persze leszólítani egy nőt... - Nézze, 
+00:03:53		 kadınla erkekle bir alakası yok bunun.   		nem az a lényeg, hogy nő vagyok. 
+00:03:54		 Yani, bir insan hiç tanımadığı birine merhaba der, selam der, ben bunu anlarım.   		Hanem hogy leszólít egy idegent. Ráadásul tegezve. 
+00:03:59		 Yani bir de koskoca adamsınız.   		Egy felnőtt férfi! 
+00:04:02		 Siz böyle hangi filmde, hangi dizide görüyorsunuz bunları?   		Melyik tévéműsorból vette azt a mozdulatot? 
+00:04:05		 -Yok, ben dizi izlemiyorum. Ben orada... -[kadın iç çeker]   Ee... Saçmaladım da yani,   		Nem nézek tévét. Oké, nem volt jó ötlet. 
+00:04:08		 terbiyesizlik yapmak anlamında bir şey yapmak istemedim.   		De nem akartam megsérteni. 
+00:04:10		 Hayır, nedir yani, iş o noktaya gelir diye illa böyle tedbirli mi gezelim, bu mu?   		Jobb, ha egy nőnél mindig van ilyen? 
+00:04:15		 Yok, gaza gerek yok ya, öyle bir şeye gerek yok yani.   		Semmi szükség a sprayre. Tényleg semmi szükség. 
+00:04:17		 Gerek var diye demiyorum zaten, sakız arıyorum çantamda.   		Tudom, hogy nincs. Igazából rágót kerestem. 
+00:04:22		 -Alabilir miyim onu? -Tamam, ben bunu hak ettim. Tamam.   		- Visszakaphatnám? - Oké, megérdemlem a spray-t, 
+00:04:25		 Ama siz, ne olur sakızı kabul edin.   		de kérem, fogadja el a rágót! 
+00:04:27		 -Alabilir miyim lütfen? -O zaman ismini söyle vereyim.   		- Megkaphatnám a spray-t? - Mondja meg a nevét, és visszaadom. 
+00:04:32		 -Aa! -Tamam o zaman, al. Al!   		Jó. Tessék! 
+00:04:36		 Ya, ne yapıyorsun sen ya? Ver şunu bana!   		Mit művel? Adja vissza! 
+00:04:40		 -Biber... Biber şeyi... -[kadın kekeler]   		Paprika... paprikaspray. 
+00:04:43		 İyi misiniz? Ya, ne yaptın kardeşim ya?   		Jól van? Miért csinálta ezt? 
+00:04:45		 Dur, dur. İyiyim iyiyim. Bir şeyim yok. Bir şeyim yok. Ben hak ettim ama.   		Jól vagyok, minden oké. Megérdemeltem. 
+00:04:48		 -İyi misin, görebiliyor musun beni? -Çok az görüyorum.   		- Lát? Jól van? - Látok, bár alig. 
+00:04:51		 -[kadın] Nasıl göreceksin... -Çok az görüyorum da   		- Hogy volt képes... - Alig látom magát. 
+00:04:53		 ama çok az görüyorum, yani daha fazla görüşsek?   		Úgy értem, örülnék, ha gyakrabban látnám magát. 
+00:04:56		 Üf!   		Jó ég! 
+00:04:58		 Bir... Bir yüzünü falan yıkaman lazım senin.   		Mossa meg az arcát! 
+00:05:01		 -Tamam, affettin mi ama? -Ben gidiyorum, geç kaldım bak.   		- Oké, de megbocsátott? - Késésben vagyok, mennem kell. 
+00:05:04		 Tamam ama ismini söylemedin bak.   		Nem mondta meg a nevét. 
+00:05:06		 -Bir su tutun gözünüze. -[Güven] Tamam.   		- Mosson arcot és szemet! - Oké. 
+00:05:08		 Görüşürüz!   		Viszlát! 
+00:05:12		 Ne oldu lan, hayırdır?   		Mi bajod? 
+00:05:14		 -Kimsin? -Benim, Caner.   		- Ki vagy? - Én vagyok az, Caner. 
+00:05:16		 Kız çok tatlı ya. [iç çeker]   		Olyan édes! 
+00:05:19		 -Gidiyor mu? -Gidiyor.   		- Elmegy? - Igen. 
+00:05:21		 -Meral'miş adı. -Meral miymiş?   		- Úgy tudom, Meralnak hívják. - Meral? 
+00:05:24		 -Ha. -Keşke sana sorsaydım.   		Tőled kellett volna megkérdeznem. 
+00:05:26		 E, ne olacak senin bu kızla hâlin?   		Mit tervezel a csajjal? 
+00:05:28		 Abi, var ya,   		Haver... 
+00:05:30		 gözleri gözümde, bütün ömrüm boyunca karşısına otururum abi.   		Egész hátralevő életemben csak bámulnék a szemébe. 
+00:05:34		 Gel yıkayalım şu gözleri o zaman, hadi.   		Akkor jobb, ha kimosod a szemed. Gyere! 
+00:05:37		 Nasıl yaktı, biliyor musun?   		Jaj, de ég a szemem! 
+00:05:51		 -Bereket versin. -[müşteri] Eyvallah.   		- Szép napot. - Kösz. 
+00:05:56		 [Güven] 95-95.   		Kilencvenöt. 
+00:05:58		 Başkan, ben 20 dakikaya duraktayım. Sapa yerdeyim çok ya.   		Húsz perc múlva ott leszek a droszton. Most a semmi közepén vagyok. 
+00:06:01		 -[Başkan] Tamamdır. -Eyvallah.   		- Rendben. - Kösz. 
+00:06:11		 Ha?   		Igen? 
+00:06:12		 Abi, yakın mı? Arabayı bırakacağım be.   		Vége a műszakomnak. A közelbe megy? 
+00:06:14		 Dur, dur.   Neredesin lan? Nerede olduğunu söyle.   		Várj! Hol a picsában vagy? Mondd meg, hol vagy! 
+00:06:17		 [adam] Tamam, yakın o zaman.   		Oké, az nincs messze. 
+00:06:25		 -Müzik rahatsız ediyor mu abi? -[arabesk müzik]   Anlayamadım?   		- Zavarja a zene, uram? - Tessék? 
+00:06:28		 -Müzik kalsın mı? -Aç! İyice aç amına koyayım!   		- A zene rendben van így? - Hangosabban! Adjon rá kakaót! 
+00:06:32		 -Anlamadım. -Ya tamam gülüm, tamam, açık kalsın.   		- Tessék? - Rendben van, haver. Hangosítsa fel! 
+00:06:42		 [adam] Alo!   Gece gece ne ibnelik yapıyorsun lan?   		Mi a francot csinálsz éjnek évadján? 
+00:06:46		 [adam] Ya yok ya, ne kafam iyi olacak.   		Dehogy, miért lennék részeg? 
+00:06:51		 Yanımda yanımda.   		Igen, elhoztam. 
+00:06:53		 Geldi, geldi. Ne diyor bana, biliyor musun?   		Igen. Tudod, mit mondott? 
+00:06:56		 [adam] Sen diyor, gel, konuşalım.   Göt!   		Azt mondta, beszélnünk kell. Micsoda seggfej! 
+00:07:03		 [adam] Ya, bırak Allah aşkına ya.   		Nem, rohadtul leszarom. 
+00:07:06		 Ben var ya, onu ters düz ederim. Beni biliyor mu o?   		Másodpercek alatt kifingatom. Nem tud rólam sokat. 
+00:07:10		 Birader, şöyle sağlı git.   		Testvér, jobbra! 
+00:07:13		 Dur, mesaj atıyor galiba göt, arayacağım seni.   		Várj, üzenetet kaptam a seggfejtől. Visszahívlak. 
+00:07:19		 İleride bir köprü mü varmış, geçit?   		Itt valahol van egy híd, ugye? 
+00:07:21		 -Buraları bilmiyorum abi ben. -Tamam, düz git diyor işte.   		- Nem igazán ismerem ezt a környéket. - Oké, menjen egyenesen! 
+00:07:24		 Ha, tamam. Geçit varmış, geçit. Bir arkadaşı alacağız oradan.   		Van itt valahol egy híd. Egy barátom ott vár. 
+00:07:35		 [nefesle] Bir şey mi oldu?   		Akar valamit mondani? 
+00:07:43		 Trafiğe bakıyorum abi.   		A mögöttünk lévő autókat figyelem. 
+00:07:46		 Allah Allah.   		Tényleg? 
+00:07:48		 Sen şekilli şekilli cevap vereceğine yoluna git.   		Ne feleseljen, inkább vezessen! 
+00:07:51		 -Gidiyoruz abi işte. -[adam] E gideceksin tabii!   		- Vezetek. - Helyes. 
+00:07:55		 -Taksimetreyi açtın mı lan sen? -Açık abi taksimetre.   		- Be van kapcsolva a taxaméter? - Be van kapcsolva, uram. 
+00:08:18		 -[adam] Gel lan, gel! -[adam 2] İyi akşamlar.   		- Szállj be! - Jó estét! 
+00:08:20		 -Gel. -Ne haber lan, eşekoğlueşek?   		- Gyerünk! - Mizu, te hülye fasz? 
+00:08:24		 -Gel, gel. -Kay lan kay, yayılma.   		- Gyerünk! - Csússz odébb! 
+00:08:26		 -Gel bakalım. -Şoför Bey, devam edelim.   		- Rendben. - Menjünk! 
+00:08:28		 -Düz devam. -Nasıl düz abi?   		- Menjen egyenesen! - Pontosan hova? 
+00:08:31		 Pınarköy girişinden bir gir, sorun yok ya, buradan beş dakika.   		A Pinarkoy kijárat felé! Öt percre van innen. 
+00:08:37		 -[adam 2] Ne yaptın lan? -[adam] Neyi ne yaptım?   		- Mi a faszt műveltél? - Mire gondolsz? 
+00:08:40		 Yok bir şey işte, söyle dedin, söyledim.   		Megtettem, amit mondtál. Beszéltem vele. Nem nagy ügy. 
+00:08:42		 Sen niye gece gece işkillendin lan?   		Mitől lettél ilyen gyanakvó az éjszaka közepén? 
+00:08:45		 -Kafan güzel mi? -He, güzel.   [onaylar nidalar]   		- Részeg vagy? - Igen. 
+00:08:48		 -Yavşaksın, yavşak! -[gülerler]   		Rohadék! 
+00:08:51		 -[adam 2] Ver şunu, ver. -[adam] Al, al, al.   		- Add ide! - Tessék, itt van. 
+00:08:53		 -Ne yavşak olacağım ya Allah aşkına. -[öksürme sesi]   		Nem vagyok rohadék. 
+00:08:55		 Birader, aç şunun sesini. Aç, aç.   		Testvér, tekerd fel a hangerőt! 
+00:08:58		 -[adam 2] Oh! -[adam] Aç, aç, aç.   		Fel, fel, fel! 
+00:09:01		 [adam 2] Çok seviyorum lan seni. Çok seviyorum seni!   		Kurvára szeretlek, tesó. Szeretlek! 
+00:09:06		 Merak etme, benden sana yanlış olmaz.   		Ne aggódj semmi miatt! Melletted leszek. 
+00:09:09		 -Ya bilmez miyim kardeşim ya. -Benden sana yanlış olmaz!   		- Tudom, tesó. - Mindig melletted leszek! 
+00:09:12		 Sen benim kardeşimsin.   		Olyan vagy nekem, mint egy testvér. 
+00:09:14		 [adam 2] Gerekirse sırtımız açılıp kapanırız, açılıp kapanırız.   		Ha valaki rád lőne, a golyó útjába állnék. 
+00:09:18		 -Açılıp kapanırız. Ver şunu, ver. -[adam] Al, al.   		- Ha arra lenne szükség. Add ide! - Tessék. 
+00:09:21		 Seviyor musun lan beni, ha?   		Szeretsz, ember? 
+00:09:23		 Seviyorum tabii lan, kardeşimsin abi sen benim.   		Kurvára. Olyan vagy nekem, mint egy testvér. 
+00:09:25		 -Seviyorsun? Bir daha söyle. -Seni seviyorum.   		- Tényleg? Mondd még egyszer! - Kurvára szeretlek! 
+00:09:27		 Cevap vermedin iki kere. İki kere!   		Kétszer hívtalak, és nem vetted fel. Kétszer! 
+00:09:31		 Yahu duymadım.   		Nem hallottam. 
+00:09:47		 [adam 2] Birader, bak şu, az ileride şurada bizi bırakıver be.   		Testvér, sétáljunk itt egyet! 
+00:09:50		 Bak şurada. Bak şurada ha.   		Itt álljon meg! 
+00:09:53		 [adam 2] Hah, burası.   		Igen, itt. 
+00:09:55		 [adam 2] Taksimetreyi kapatma ha, geliyoruz.   		Ne kapcsolja ki a taxamétert, visszajövünk. 
+00:09:58		 -[adam] İndik mi? -[adam 2] Hadi indik, indik, gel.   		- Kiszállunk? - Igen, gyere! 
+00:09:59		 Atla bakayım, hop!   		Gyerünk! 
+00:10:01		 Bekle bizi ha, geleceğiz.   		Várjon meg, visszajövünk! 
+00:10:05		 Abi, burada beklenir mi ya?   		Ez nem túl jó hely a várakozásra. 
+00:10:09		 Al sen şunu.   		Tessék, tegye el! 
+00:10:11		 Biz de döneceğiz ya, beş dakika bekle.   		Csak tíz perc, és jövünk is. 
+00:10:14		 -[adam] Çıkarayım mı? -[adam 2] Dur lan dur, daha değil.   		- Kipróbálhatom? - Még ne! Várj! 
+00:10:19		 -Abi, burada beklenir mi ya? -Beş dakika ya, bekle!   		- Ez nem jó hely a várakozásra. - Csak öt perc! 
+00:10:23		 -[adam 2] Dur, bana bak dur! -[adam] Ha?   		- Várj már! - Mi van? 
+00:10:25		 [adam 2] Acele ediyorsun! Acele ediyorsun!   		Ne siess ennyire! Ne rohanj! 
+00:10:28		 Gelsene lan!   		Gyere már! 
+00:10:29		 -[gülerler] -[adam 2] Gel.   		Gyere! 
+00:10:53		 -95-90. -[anlaşılmaz ses]   		Kilencvenöt, kilencven. 
+00:10:54		 90... Başkan, gelmiyor sesin başkan.   		Kilencven. Főnök, nem hallak. 
+00:11:21		 -[adam] İnsan rahatlıyor ha. -[köpek havlaması]   		Nagyon megnyugtató. 
+00:11:25		 [adam 2] Ulan... İyi ki aklımıza... Öf be...   		Basszus! Örülök, hogy eszünkbe jutott. 
+00:11:29		 -Bak, bak, bak. -[silah sesi]   		Ezt figyuzd! 
+00:11:31		 -[silah sesleri] -Al! Al!   		Figyuzd! 
+00:11:37		 [adam] Dur lan, dur. Ver onu, ver.   		Várj! Add ide! 
+00:11:39		 -Ver, ver, ver. -[adam 2] Dur ulan, al işte.   		- Add ide! - Tessék, itt van. 
+00:11:41		 Bu tarafa tut.   		Erre. 
+00:11:42		 -[adam] Ver. -[adam 2] Yavaş, yavaş.   		- Így. - Nyugi! 
+00:11:44		 -Nefesini tut. -[silah sesi]   		Tartsd vissza a lélegzeted! 
+00:11:47		 -[adam] Nasıl ama? -[adam 2] Ağaca lan, ağaca, ağaca.   		- Mit gondolsz? - A fa. A kibaszott fa. 
+00:11:59		 [adam 2] Sakin, sakin.   		Nyugi! 
+00:12:05		 [adam 2] Tadını çıkar, tadını.   		Élvezd ki, ember! 
+00:12:10		 -[adam 2] At bakayım şimdi. -[silah sesi]   		Oké, lőj! 
+00:12:12		 -Gönder bakayım şimdi. -[silah sesi]   		Add ide! 
+00:12:21		 Bırak, ver, ver! Geri zekalı! [güler]   		Add ide, te, idióta! 
+00:12:27		 [adam 2] Bırak bakalım, böyle.   		Hadd nézzem! 
+00:12:31		 O, taksici kardeşim, gel gel.   		Sofőr úr, jöjjön ide! 
+00:12:34		 -Yok, yok abi, yok. -[adam 2] Ya gel be oğlum, gel.   		- Nem, köszönöm, uram. - Jöjjön már! 
+00:12:37		 Stres atıyoruz. Günün yorgunluğu, iti kopuğu falan.   		Csak lazítunk. Stresszes elviselni az embereket. 
+00:12:39		 Anlarsın sen, gel iki dakika.   		Biztos érti. Jöjjön csak ide! 
+00:12:40		 Biz kötü insanlar değiliz. İş adamıyız biz ya.   		Nem vagyunk rosszfiúk. Üzletemberek vagyunk. 
+00:12:43		 Ya gel, gel, gel kardeşim.   		- Vissza kell mennem a kocsihoz. - Jöjjön már ide, ember! 
+00:12:47		 Gel işte, biz de döneceğiz ya, gel. Gel. [güler]   		Mind visszamegyünk együtt. 
+00:12:52		 Versene şunu ya. Şuradan fare mi geçti, ona bir sıkayım ben.   		Add ide! Láttam ott egy egeret, le akarom lőni. 
+00:12:55		 -Ne faresi salak, saçmalama! -Abi, ben gideyim.   		- Milyen egeret? Baromság! - Uram, mennem kell. 
+00:12:57		 Gel güzel kardeşim, gel bak, bak.   		Jöjjön már, drága testvér! 
+00:12:59		 Benim, bütün gün direksiyon sallayan,   		Minden nap sokat és keményen dolgozol. 
+00:13:03		 emekçi, taksici kardeşim, o da sıksın. Al şunu.   		Neked is kijár egy kis lövöldözés. Tessék. 
+00:13:05		 -Yok abi, vallahi sağ ol. -Al şunu.   		- Nem, uram. Köszönöm, de nem. - Fogja, és lőjön! 
+00:13:08		 Ya sık amına koyayım! Ne bu ya...   		Csak lőjön! Mi a fasz baja van? 
+00:13:10		 -Lan bırak! Sen ona bakma. -Ben gideyim abi. Abi, yapma ne olur.   		- Fogd be! Ne is törődjön vele! - Uram, nekem el kell mennem. 
+00:13:14		 Korktun mu birader? Askerliği mi yapmadın?   		Fél? Nem tanult meg lőni a seregben? 
+00:13:17		 -Yok abi, ne alakası var. -Geç şu tarafa. Yapma lan!   		- Nem félek, miért félnék? - Tessék, és kuss! 
+00:13:20		 -Tamam, bir tane atayım. -Tamam, bir tane, sakin, ağaçlara.   		- Oké, csak egyszer. - Oké, egyszer. Nyugi! 
+00:13:24		 Tamam abi. Gözünü seveyim, dur abi, ne olur.   		Rendben, uram. Kérem, hagyja abba, az ég szerelmére! 
+00:13:29		 -Bak, bak. -[silah sesi]   		Lássuk! 
+00:13:31		 -Tamam abi al. -Celal!   		- Oké, uram. Tessék. - Celal! 
+00:13:33		 Celal, ne diyorsun?   		Celal, mit gondolsz? 
+00:13:35		 -Müthiş! -Ulan senden beteri de varmış.   		- Szuper! - Nem is olyan rossz! 
+00:13:37		 Bu ne lan! Bu ne! Olmaz.   		Mi a szar volt ez? Nem. 
+00:13:39		 -Bana tutma lan onu. -Yapma be! Tamam, ver şunu.   		- Ne hadonássz a fegyverrel! - Oké, add ide! 
+00:13:42		 -Tamam abi. -Şurayı görüyor musun? Bak.   		- Rendben, uram. - Látod, hogy célzok? 
+00:13:44		 [Celal] Öyle babam da tutar lan. Öyle babam da tutar.   		Így könnyű. Segítesz neki a célzásban. Rohadt könnyű. 
+00:13:47		 -Dur abi, ne olur... -Yapma lan! Tut, ileriye.   		- Uram, kérem! - Kuss! Célozz! 
+00:13:49		 -Şöyle sık ya biraz. -Abi, parmağım...   		- Tartsd erősen! - Uram, az ujjam... 
+00:13:51		 Keyfini çıkar!   		Élvezd ki! 
+00:13:58		 Adam...   		De... 
+00:14:00		 [Güven] Abi!   		Uram! 
+00:14:02		 [adam 2] Amına koyduğumun ibnesi seni!   		Rohadt kis buzi! 
+00:14:06		 [korkuyla] Lan ne yaptın? Adamı vurdun!   		Mi a faszt csináltál? Lelőtted! 
+00:14:09		 -Oğlum, sakin, bir anlık böyle panik. -[Güven] Polis gelecek!   		- Nyugi, haver! Ne ess pánikba! - Hívom a rendőrséget! 
+00:14:12		 Çık! Çık, yukarı çık! Yukarı çık! Çık! Polis gelecek buraya!   		Gyerünk! Vissza a kocsihoz! Hívom a rendőrséget. 
+00:14:15		 Polis gelecek! Çık yukarı!   		Jön a rendőrség! Gyerünk! 
+00:14:17		 -Kaza oldu lan, dur dur. -Geç, yukarı geç!   		- Baleset volt, hagyd abba! - Menjünk vissza! 
+00:14:21		 Geç, yukarı geç! Polis gelecek buraya!   		Vissza a kocsihoz! Hívom a rendőrséget! 
+00:14:23		 -Sakin, sakin. -[Güven] Yukarı çık!   		- Nyugi! - Gyerünk! 
+00:14:25		 [ağlamaklı] Geç yukarı! Geç!   		Mozgás! Gyerünk! 
+00:14:29		 -[bağırır] Lan, adamı vurdun! -Yok... Dur...   		- Lelőtted! - Nem! Várj! 
+00:14:31		 Lan, adamı vurdun!   		Lelőtted, bassza meg! 
+00:14:32		 [adam 2] Olmaz bir şey, sakin ol. Orada, o dursun, dur.   		Minden rendben, nyugodj meg! Szépen itt hagyjuk, és kész. 
+00:14:35		 -Sakin. -[Güven] Geç buraya!   		- Nyugi! - Gyerünk! 
+00:14:38		 -[adam 2] Ulan, bir kaza oldu, dur. -[Güven] Bin, arabaya bin!   		- Baleset volt. Várj! - Szállj be a kocsiba! 
+00:14:42		 Polis gelecek buraya, bin arabaya!   		A rendőrség bármelyik pillanatban itt lehet. Beszállni! 
+00:14:45		 Bin arabaya. Arabaya.   		Beszállni! Szállj be a kocsiba! 
+00:14:54		 Kımıldama bak!   		Meg ne mozdulj! 
+00:14:57		 Çal amına koyayım, hadi!   		Gyerünk már! 
+00:14:59		 Kıpırdama diyorum bak!   		Azt mondtam, ne mozdulj! 
+00:15:03		 Alo!   		Halló! 
+00:15:06		 Kıpırdama.   		Ne mozdulj! 
+00:15:11		 Lan, hadi lan hadi!   		Basszus! 
+00:15:20		 Taksici!   		Sofőr? 
+00:15:51		 Şurada sakin sakin konuşup konuyu kapatacağız. Tamam mı gülüm?   		Most tiszta fejjel megbeszélhetjük, oké, haver? 
+00:15:57		 Abi, böyle bir şey var mı?   		Hogy tehettél ilyet? 
+00:15:59		 -Adın ne? -Güven.   		- Mi a neved? - Guven. 
+00:16:02		 Bak Güven kardeşim, sen bu ibnenin kim olduğunu biliyor musun?   		Nézd, Guven testvér! Van fogalmad róla, ki volt az a kis buzi? 
+00:16:06		 Sen onu düşünme. Ben güzel güzel düşündüm konuyu.   		Ne aggódj miatta! Megvolt rá az okom. 
+00:16:10		 Sakince konuşup çözeceğiz.   		Nem lesz gond. 
+00:16:13		 Abi, adamı vurduk, orada bıraktık.   		Uram, lelőttük, és ott hagytuk. 
+00:16:17		 Vurduk yok. "Vurdum."   		Nem mi lőttük le. Te lőtted le. 
+00:16:27		 [adam 2] Delikanlı, bir çay ver bana.   		Fiatalember, hozzon egy teát! 
+00:16:32		 [adam 2] Uyudu eşekoğlueşek hah.   		Kurvára alszik. 
+00:16:33		 Abi, beni sal ne olur. Beni bırak gideyim, bak, ne olur diyorum.   		Uram, engedjen el, kérem! Könyörgök, engedjen el! 
+00:16:38		 Güven kardeşim...   		Guven testvér.... 
+00:16:42		 [adam 2] ...burada şimdilik dört bin lira var.   		Itt van 4000 líra. 
+00:16:44		 Şimdi sana şöyle desem, yani olaya şöyle baksam.   		Elmondom, mi történt. 
+00:16:48		 Bu herif yolda bana sarkıntılık yaptı desek.   		A fickó rád támadt, miközben vezettél. 
+00:16:52		 Silah çekti, boğuştuk, aldım vurdum desek?   		Elővette a fegyvert, te kicsavartad a kezéből, és lelőtted. 
+00:16:55		 Abi, ne alakası var, beni niye dahil ediyorsun olaya?   		Uram, miről beszél? Miért akar belekeverni? 
+00:16:58		 Ya, yok, bu benim fikrim de...   		Hallgasd meg a javaslatomat! 
+00:17:00		 Öyle desek 200 bin işini görür mü?   		Esetleg 200 000 líra elég lenne, hogy így lásd a helyzetet? 
+00:17:03		 Ne işi abi?   		Hogy hogy lássam? 
+00:17:04		 Beni delirtmeye mi çalışıyorsun ya? Benim ne alakam var konuyla?   		Miért akar az őrületbe kergetni? Semmi közöm a történtekhez. 
+00:17:07		 [adam 2] Bana bak lan.   		Ide figyelj! 
+00:17:09		 Orada sana sıkar, ilerlerdim. Ama yapmadım. Bana artistlik yapma.   		Lelőhettelek, és ott hagyhattalak volna. De nem tettem. Szóval légy együttműködő! 
+00:17:13		 Bu herif yolda beni soymaya kalktı.   Arabadan telefonu aldı, ıssızda gasp falan.   		Azt mondod, megpróbált kirabolni, kényszerített, hogy az erdőbe menjetek, 
+00:17:19		 Bir de tuhaf tuhaf hareketler. Yani boğuştuk işte.   		furán viselkedett, fegyvert rántott. 
+00:17:23		 Aldım, vurdum. Nefsi müdafaa.   		Elvetted a fegyverét, és lelőtted. Önvédelem volt. 
+00:17:25		 Bunu söyle, gel benden 200 bini al.   		Ezt mondod a rendőrségnek, aztán jöhetsz a 200.000 lírádért. 
+00:17:31		 Bir de... Silahta parmak izin var.   		És... a te ujjlenyomatod van a pisztolyon. 
+00:17:34		 Bak şimdi... [güler]   		Ehhez mit szólsz? 
+00:17:41		 Al, al, al.   		Tessék, fogd! 
+00:17:47		 Bak yine sende. Yine parmak izin var.   		Megint. Még több ujjlenyomat. 
+00:18:39		 Burada bir adam oturuyordu.   		Ült itt egy fickó. 
+00:18:42		 Şiir mi? "Burada bir adam oturuyordu."   		Ez egy versből van? "Ült itt egy fickó." 
+00:18:46		 Ben oturuyorum. Bir çay alabilir miyim?   		Most én ülök itt. Kaphatok teát? 
+00:18:49		 [garson] Buyur abi.   		Tessék. 
+00:18:50		 Kardeş, bakar mısın? Burada bir bey vardı karşımda.   		Elnézést, testvér. Ült itt az előbb egy úr. 
+00:18:52		 -Var abi, evet? -Hayır, benim karşımda oturan adam nerede?   		- Igen, itt van. - Nem ő. Hol van az, aki velem volt? 
+00:18:55		 Abi, vallahi bakmadım, dikkat etmedim.   		Nem emlékszem rá. 
+00:18:57		 Siz değil misiniz abi, karşısında oturan?   		Nem ő az? 
+00:19:01		 Sinirleriniz mi bozuk kardeşim?   		Rosszak az idegeid, testvér? 
+00:19:22		 Gitmiş.   		Elment. 
+00:19:25		 -Taksi sizin mi, dışarıdaki? -Çalışmıyorum abi ben.   		- A magáé a taxi? - Ma éjjel nem dolgozom. 
+00:19:27		 Öyle mi? Böyle durumlarda hemen güvenlik birimlerine haber vermek lazım.   		Tényleg? Tudja, ilyen esetekben értesíteni kell a hatóságokat. 
+00:19:34		 Alo, 155 mi? Bir saniye Memur Bey.   		Halló, rendőrség? Egy pillanat, biztos úr. 
+00:19:39		 -Neresi oğlum burası? -[garson] Pınarköy abi.   		- Hol is vagyunk, fiam? - Pinarköy, uram. 
+00:19:41		 İyi nöbetler efendim.   		Halló! 
+00:19:42		 Taksici bir esnafımız burada yol beğenmiyor, müşteri seçiyor.   		Van egy taxis, aki nem hajlandó elvinni. 
+00:19:46		 Nasıl yardımcı olabilirsiniz?   		Tudna segíteni? 
+00:19:48		 Ben Tuncay Uğurlu, Dışişleri'nden.   		Tuncay Ugurlu vagyok a külügyminisztérumból. 
+00:19:51		 Paris Büyükelçisi Fuat Uğurlu'nun kardeşiyim.   		Fuat Ugurlu párizsi nagykövet testvére vagyok. 
+00:19:53		 Ortanca, evet.   		Nem a legkisebb, nem. 
+00:19:55		 Tamam, siz memur gönderin ben bekliyorum.   		Oké, küldjön ide néhány rendőrt! 
+00:19:58		 [garson] Adresi verseydim.   		Megmondhattam volna a címet. 
+00:20:00		 Uydudan bulurlar. Sen dalga mı geçiyorsun yavrum?   		Megtalálják a helyet a műholdról. Viccelsz? 
+00:20:03		 Şu aleti her yerden okuyorlar. Tuncay Uğurlu, tak bitti.   		A Tuncay Ugurlu név számít. Engem megtalálnak, bárhol is vagyok. 
+00:20:08		 Polisi karıştırmak istemezdim ama   		Örültem volna, ha nem kell értesítenem a rendőrséget, 
+00:20:11		 gelsinler işlem yapılsın, her şey ortaya çıksın.   		de ez a szabály. 
+00:20:15		 -Siz nereye gideceksiniz abi? -Hah, şöyle ya.   		- Hova akar menni, uram? - Ez a beszéd! 
+00:20:19		 Valla nereye gideceğiz yavrum, tek yön var, aşağıya doğru gideceğiz işte.   		Innen csak egy út van. Irány a belváros. 
+00:20:22		 Çayı şuradan alıver yavrum.   		Visszahozhatod a teát, fiam. 
+00:20:26		 [garson] Abi, çorbaların parası?   		Uram, ki fog fizetni a levesért? 
+00:20:29		 Rica edeceğim, sizden para mı alacağız?   		Ó, kérlek, ne! Nem fogadhatom el a pénzedet. 
+00:20:32		 İyi akşamlar.   		Szép estét. 
+00:21:01		 Baltalimanı'nda ev var benim.   		Van egy házam Baltalimani közelében. 
+00:21:08		 Romatizma... Ama öyle güzel denk geliyor ki...   		Reumás vagyok. Hát, igen. 
+00:21:13		 ...ekim dedi mi başlıyor böyle alttan yağmurla beraber.   		Az esővel együtt jön ki rajtam, mindig októberben. 
+00:21:17		 Ama benim sigorta attı mı tabii... Tuncay diyorum, hiç bulaşma, hiç!   		Néha mérgelődöm miatta, aztán azt mondom magamnak: "Kitartás!" 
+00:21:23		 Kışı hep benim rezidansta geçiriyorum zaten.   		Télen amúgy is a városban maradok. 
+00:21:25		 Sağ olsun Fahri Bey bu sene her şeyi yeniledi. Mis gibi, mis.   		Hálás vagyok Mr. Fahrinak, aki az egész házat felújította. 
+00:21:30		 Yoksa insan katil olur ya.   		Különben elviselhetetlen lenne. 
+00:21:33		 [Tuncay] Bu apartman hayatı ne zormuş kardeşim.   		Ház helyett lakásban lakni. Szörnyű. 
+00:21:35		 Bak şimdi, yönetici dış cephe için para topluyor, tamam mı?   		Ezt hallgassa meg! A házfelügyelő szedte be a pénzt a felújításért. 
+00:21:40		 Altı numara vermiyor diye dedikodu yapmışlar.   		A lakók összesúgtak a hátam mögött, hogy nem vagyok hajlandó fizetni. 
+00:21:44		 Ulan ben kışın evde oturmuyorum ki Hollanda lalesi!   		Télen ott sem lakom, seggfejek! 
+00:21:49		 Babadan emlak zenginiyiz hesabı çekemiyorlar tabii.   		Féltékenyek rám, mert gazdag az apám. 
+00:21:52		 Bıçak çektim yöneticiye. Dedim, geliyor baba, bak geliyor.   		Késsel fenyegettem a házfelügyelőt. 
+00:21:56		 Geçen sene balta, bu sene bıçak!   		Tavaly fejszével, idén késsel. 
+00:22:00		 Terörist kaynıyor bina ha, kimseye söyleme.   		A ház tele van kibaszott őrültekkel. De ha ezt mondanám nekik... 
+00:22:05		 Uydudan hepsini alıyor zaten ibneler, ne söyleyeceksin?   		Persze lehet, hogy most is hallanak a műholdjukkal. 
+00:22:11		 Sizin işler zor, farkındayım.   		Gondolom, stresszes a munkája. 
+00:22:15		 Ama bizimkiler de zor be.   		De az enyém is. 
+00:22:19		 Dışişleri baba!   		Külügyek. 
+00:22:22		 Bütün dünya başımda.   		Az egész világ ügyei. 
+00:22:24		 Abi, siz nereye gidiyorsunuz tam olarak?   		Uram, hova vigyem? 
+00:22:27		 Bakırköy.   		Bakirköy. 
+00:22:28		 Şaka mı yapıyorsun abi?   		Viccel velem, uram? 
+00:22:30		 Şakası mı kalmış yavrum. Artık 22 sene oldu ya.   		Nem viccelek, ember. Huszonkét év. 
+00:22:35		 Hastanenin altı komple altın.   		A kórház alatt aranybánya van. 
+00:22:39		 Bu kadar kaldı şu an.   		Most csak ennyi van nálam. 
+00:22:41		 Gidip bir posta daha çekip nisana kadar oh sen sağ, ben selamet.   		Elmegyek még többért, és akkor áprilisig stílusosan utazgathatok. 
+00:22:46		 ATM mi diyorsunuz? İşte onun gibi.   		Olyan, mint egy bankautomata. 
+00:22:51		 [Tunca] Şarj oluyorum orada ben.   		Feltöltöm a készleteket. 
+00:22:54		 Bunu siz anlayamazsınız.   		De ezt maga úgysem érti. 
+00:22:56		 Abi, bir müddet böyle konuşmadan gidelim mi?   		Uram, mi lenne, ha egy darabig nem beszélne? 
+00:22:59		 Tabii, tabii canım. Sonra bol bol konuşuruz.   		Oké, haver. Rengeteg időnk lesz még hosszú beszélgetésekre. 
+00:23:11		 [Tuncay] Tamam.   		Rendben. 
+00:23:19		 -Şöyle takdim edeyim. -Tamam, gerek yok, gerek yok.   		- Itt a pénze. - Nem kell. 
+00:23:22		 Al şunu hadi, al.   		Vegye csak el! 
+00:23:25		 Bak, başına kötü bir şey gelirse her zaman beklerim.   		Ha bajba kerülne, csak keressen meg! 
+00:23:29		 Tuncay abi diyeceksin. Zaten uydudan falan bana haberi gelir.   		Csak mondja be a nevemet! A műholdon keresztül talán úgyis hallani fogom. 
+00:23:33		 Anladın?   Hadi iyi işler.   		Érti? Minden jót! 
+00:23:37		 [Tuncay] Faik! Aç bakayım lan kapıyı!   		Faik! Nyisd ki a kaput! 
+00:23:42		 -Hoş geldin Tuncay Bey. -[Tuncay] Hoş bulduk.   		- Üdvözlöm, Mr.Tuncay. - Köszönöm. 
+00:23:46		 Al bakalım altınını.   		Itt az aranya. 
+00:23:48		 -Ya ne gerek vardı. -[Tuncay] Olur mu canım.   		- Erre semmi szükség. - Ugyan már! 
+00:23:50		 -Kalabalık mı? Nasıl durumlar? -Her şey yolunda, bıraktığın gibi.   		Sokan vannak? Hogy mennek a dolgok? Minden oké. Úgy, mint mikor elment. 
+00:23:54		 Hadi bakalım. İyi nöbetler.   		Remek. Jó éjt! 
+00:23:58		 [Tuncay bağırarak] Uyanın lan!   		Ébresztő, basszátok meg! 
+00:24:00		 Uyanın! Tuncay abiniz giriş yapıyor.   		Ébresztő! Tuncay érkezett meg a birtokra! 
+00:24:04		 Hop! Uyanın!   		Ébresztő! 
+00:24:07		 Tuncay abiniz geliyor!   		Itt van a bátyus, Tuncay! 
+00:25:34		 Geçmiş olsun diyelim...   		Ami megtörtént, megtörtént. 
+00:25:36		 Adam ölmüş.   		Meghalt. 
+00:25:39		 Ölmüş mü?   		Meghalt? 
+00:25:42		 Şimdi bak Güven, arabada kim var dedin?   		Nézze, Guven! Azt mondta, volt valaki a taxiban. 
+00:25:45		 Bu Celal Keçilel, vurulan.   		Egy Celal Kecilel nevű férfit lőttek le. 
+00:25:48		 [polis] Senin vurduğun o mu?   		Maga lőtte le? 
+00:25:49		 [kekeler] Abi, ben vurmadım, bana vurdurdu işte öbürü.   		Uram, nem én lőttem le. A másik férfi kényszerített rá. 
+00:25:53		 Parayı verdi, vur mu dedi?   		Fizetett érte, hogy lelője? 
+00:25:56		 Sonra para teklif etti. Şimdi bunlar arkadaş herhâlde abi.   		Nem, csak utána ajánlott pénzt. 
+00:25:57		 Bunlar, ikisi arabaya bindiler...   		Szerintem barátok voltak, uram. Mindketten beszálltak a kocsiba. 
+00:26:01		 Şimdi bak Güven, MOBESE geldi.   		Nézze, Guven! Megvan a biztonsági kamera felvétele. 
+00:26:04		 Bu arabaya Celal binmiş, sonrası yok.   		Csak Celal szállt be a taxiba, senki más. 
+00:26:07		 Çorba içtiğimiz yerde yanımda biri var dedin,   		Azt mondta, találkozott valakivel a kávézóban, 
+00:26:09		 onu da hastaneye bırakmışsın.   		akit a kórházba vitt. 
+00:26:12		 -Öbür dediğin kim? -Öbür dediğim vuran.   		- Ki volt még ott? - A másik. A lövöldöző. 
+00:26:14		 Şu hastaneye bıraktığım, o başka,   		A kórházba egy harmadikat vittem. 
+00:26:16		 o amına koyduğumun delisi, onunla bir alakası yok abi.   		Az egy őrült volt. Neki semmi köze a lövöldözéshez. 
+00:26:19		 Hangisi?   		Melyiknek? 
+00:26:20		 Hangisi... Abi hepsi deli zaten, bana denk geldi yani.   		Amelyik... Mind őrült volt. Mind pont engem talált meg. 
+00:26:23		 Tuncay mı? Garson diyor işte, oturuyordu diyor.   		Szóval Tuncayvel volt?  A pincér azt mondta, Tuncay volt a kávézóban. 
+00:26:26		 Hayır, o oturan dediği, oturan dediği, o benim hastaneye bıraktığım değil.   		Nem, nem Tuncay. Őt a kórházba vittem. 
+00:26:31		 Vuran çorbacıda... Çorbacı yani... Oradaki garson çocuk hatırlamıyor mu?   		A lövöldöző is ott volt a kávézóban. A pincér rá nem emlékszik? 
+00:26:35		 -Hatırlıyor işte, Tuncay diyor! -Tuncay değil abi, o sonra.   		- De. Emlékszik Tuncayre. - Nem, uram. Tuncay csak később jött. 
+00:26:39		 Tamam, onu geç, o deli zaten biz baktık ona. Konuyla alakası yok, o sonra zaten.   		Oké, felejtsük el Tuncayt! Utánanéztünk. Mentálisan beteg. 
+00:26:44		 Abi, o sonra. Vuran... Vuran da çorbacıda.   		Uram, Tuncay később jött. De a lövöldöző... 
+00:26:46		 [amir] Güven kardeşim...   		Guven testvér, 
+00:26:48		 Sen buraya kontak numaralarını falan veriver bana.   		felveheti valakivel a kapcsolatot. Kivel akarja? 
+00:26:51		 Ben senin bu işten bir şey anlamadım.   		Egy szót sem értek abból, amit mondott. 
+00:26:53		 Senin işin uzun.   		Egy darabig bent tartjuk. 
+00:26:55		 Savcı tutuklama diyecek zaten bu ifadeyle, parmak izi falan...   		A vallomása és az ujjlenyomatok alapján... 
+00:27:00		 Yatacaksın yani sen, bu.   		az ügyész vádat fog emelni. 
+00:27:02		 Abi, lütfen.   		Uram, kérem! 
+00:27:04		 Tamam oğlum, içeride kafanı toplarsın, daha güzel anlatırsın, tamam?   		Szedje össze magát, aztán próbálja meg ismét elmondani, mi történt! 
+00:27:09		 -Tamam, hadi. -[Güven] Abi, lütfen!   		- Menjünk! - Kérem, uram! 
+00:27:13		 Abi, lütfen!   		Kérem, uram! 
+00:27:26		 Hayır abi, çocuğun zaten öyle bir durumu var. Yok.   		Nem, uram. Rendes, becsületes ember. 
+00:27:31		 Burada bir akrabası var, amcası, onunla da görüşmüyorlar.   		Van itt egy rokona, a nagybátyja. De nem beszélnek egymással. 
+00:27:35		 Ne diyor?   Anladım abi, anladım, tamam.   		Mit mondott? Rendben, uram. Értem. 
+00:27:38		 Gidilmesi gereken bir yer varsa biz gideriz abi.   Eyvallah, tamam.   		Megtesszük, amit kell. Rendben, oké. 
+00:27:42		 Kafam almıyor böyle bir şeyi ya.   		Nem fér a fejembe. 
+00:27:45		 -Avukat girmiş mi devreye? -Abi, avukatla görüştüm.   		- És az ügyvéd? - Vele beszéltem. 
+00:27:48		 Kendini yerden yere atıyormuş.   		Azt mondta, Guvennek nem áll jól a szénája. 
+00:27:50		 Ya böyle bir şey olabilir mi? Bu çocuk... Nasıl ya?   		Hogy történhetett ez? Az a kölyök... Mégis hogy? 
+00:27:53		 Böyle durumda inmeyecek taksiden aşağıya.   		Ilyen veszélyes helyzetben a sofőrnek nem szabad elhagyni az autót. 
+00:27:56		 Abi o değil de, silahın üstünde parmak izi falan varmış, avukat öyle dedi.   		Az ügyvéd szerint Guven ujjlenyomata van a fegyveren. 
+00:28:02		 Hastaneye götüreceklermiş, cuma günü de kurula çıkacakmış.   		Guvent kórházba viszik, és bizottság elé állítják. 
+00:28:05		 -Ne kurulu ya? -Abi, üstünü başını yırtıyormuş.   		- Milyen bizottság. - Úgy viselkedett, mint aki megőrült. 
+00:28:08		 Ben delirdim, bana bunları kim yaptıysa çıksın diyormuş ortaya.   		Az ügyvéd szerint azt kiabálta: "Elvesztettem a józan eszem!" 
+00:28:12		 Vay aslanım, vay koçum be, yazık çocuğa ya.   		Szegény fiú!  Olyan szomorú. 
+00:28:16		 -Sen inanır mısın böyle bir şeye? -[iç çekme sesi]   		Tényleg ez történik? 
+00:28:19		 Ben inanmam.   		Hihetetlen! 
+00:28:38		 Öksür.   		Köhögjön! 
+00:28:39		 Abi, herkese anlattık, daha ne anlatayım ya?   		Már mindent elmondtam. Mit mondhatnék még? 
+00:28:42		 Öksür kardeşim, öksür.   		Köhögjön, ember! 
+00:28:49		 -Sühan Hocalara mı gideceksiniz buradan? -[polis] Evet hocam.   		- Beszélt doktor Suhannal? - Igen, doki. 
+00:28:52		 Cezaevinde ilaç falan aldı mı?   		Kapott gyógyszert a börtönben? 
+00:28:54		 Aldım, aldım, aldım.   		Igen, kaptam. 
+00:28:57		 Geç kardeşim, şurada üstünü değiştir.   		Gyerünk! Ott átöltözhet. 
+00:29:01		 Böyle mi değiştireyim, nasıl değiştireyim?   		Hogyan öltözzek át? Így? 
+00:29:07		 Ne bekliyoruz abi şimdi?   		Mire várunk, uram? 
+00:29:08		 Akli dengene bakacak işte hocalar.   		Az orvosok megvizsgálják, beszámítható-e mentálisan. 
+00:29:11		 -Aklı dengeme bakacaklar... Tamam. -[kapı sesi]   		És ha beszámítható vagyok... 
+00:29:14		 Hocam, tutuklunun durumu için.   		A fogvatartott aktája. 
+00:29:19		 A2'de kalsın bu.   		Kísérje az A2-be! 
+00:29:21		 Yeşim Hocalar geldiği zaman beraber bakalım.   		Megvizsgáljuk, amint doktor Yesim ideér. 
+00:29:23		 -[asistan] Tamam hocam -Bir de fotokopi çektirelim.   Bizim makine arızalı.   		- Rendben, uram. - Ebből kérek egy másolatot. 
+00:29:26		 -Ver cezaevinden gelen kağıdı. -Bu hocam.   		- Kérem a börtön által küldött aktát. - Itt van. 
+00:29:29		 Ne kadar bekleriz?   		Meddig kell várnunk? 
+00:29:32		 Bu, öğleden sonraya kalır. Mesai saatinde hallolur.   		Tizenkettő után megcsináljuk. Öt órára végeznek. 
+00:29:36		 -Al. -Tamam hocam.   		- Tessék. - Rendben, uram. 
+00:29:38		 Siz biraz bekleyin, ben şimdi hasta bakıcı yolluyorum.   		Várjon egy kicsit! Küldök egy futárt. 
+00:29:41		 -Tamam mı? -Tamam.   		- Oké? - Oké. 
+00:29:46		 Tuncay Bey? Hayırdır, ne yapıyorsunuz?   		Mr. Tuncay? Mit keres itt? 
+00:29:49		 Melikeciğim, resim dersine girecek olan arkadaş gelmedi.   		Melike, ki kellett hagynunk a festésórát, mert a barátom nem jött el. 
+00:29:53		 Ben de temizlik kolu başkanı seçiyorum. Sühan Hoca'ya onaylatacağım.   		Azért jöttem, hogy kiválasszam a takarítócsoport vezetőjét. 
+00:29:57		 Sakal, bundan sonra temizlik kolu başkanı.   		Szakáll, te leszel a takarítócsoport vezetője! 
+00:30:00		 -Değil mi yavrum? -Evet abi.   		- Oké, haver? - Igen, tesó. 
+00:30:01		 -Tamam, hadi çok dolaşmayın ama burada. -Tamam canım.   		Oké, de ne mászkáljanak összevissza! 
+00:30:14		 -[asistan] Tuncay Bey, hadi ama! -Tamam ya.   		- Mr. Tuncay, hagyja! - Rendben. 
+00:30:19		 Deli raporu içinse bana geleceksin.   		Tőlem kellene igazolást kérned. 
+00:30:24		 -[Tuncay] Taksici? -Tanıdın, değil mi?   		- A taxis? - Emlékszik rám? 
+00:30:26		 Ne çabuk ya.   		Milyen gyorsan! 
+00:30:28		 Ulan ben 22 senede delirdim, sen üç gün önce sapasağlamdın.   		Nekem 22 évembe telt, hogy megőrüljek. Neked három nap alatt sikerült? 
+00:30:32		 Delirdim deme, yemezler.   		Ne próbáld beadni, hogy őrült vagy! Nem fogják bevenni. 
+00:30:35		 Hadi beyefendi, şöyle devam edin lütfen.   		Kérem, uram, menjen el innen! 
+00:30:37		 Memur Bey, biz raporluyuz, o bölümü geçtik!   		Biztos úr, papírom van róla, hogy őrült vagyok. Túl vagyok az ilyesmin! 
+00:30:42		 Şurada dur, buraya geç, hazır ol, rahat falan, çok geride kaldı ya!   		Gyere ide, maradj ott, nyugodj meg! Én már túl vagyok az ilyen parancsokon! 
+00:30:45		 -Değil mi lan Sakal? -Elbette.   		- Igaz, Szakáll? - Abszolút! 
+00:30:50		 Taksici kardeş, deliysen bana bir işaret çakacaktın orada.   		Szegény taxis, valami jelet kellett volna adnod. 
+00:30:53		 Yoksa burası kırtasiye, buradan sana bir şey çıkmaz.   		Nem hiszem, hogy megkapod, amiért jöttél. 
+00:30:59		 Deli misin lan? Doğru söyle.   		Őrült vagy? De őszintén! 
+00:31:02		 Bak, numara yapıyorsan yemeyiz ha, ona göre.   		Nem fogjuk bevenni, ha megpróbálsz trükközni. 
+00:31:06		 A Blok'a gelirsin, orada itibar sorunu yaşatırım.   		Az "A" blokkba visznek, ahol én magam vizsgállak meg. 
+00:31:09		 [polis] Ne oluyor?   		Mi folyik itt? 
+00:31:10		 Dışişlerinden Tuncay Uğurlu. Gasp mı, cinayet mi?   		Tuncay Ugurlu vagyok, külügyminisztérium. Gyilkosság vagy zsarolás? 
+00:31:14		 Kadına şiddetse hemen dövelim taksici kardeşi.   		Megverhetjük a taxist. Erőszakoskodott egy nővel. 
+00:31:17		 Tuncay, işine bak, ben seni çok iyi tanıyorum, hadi devam et.   		Tuncay, túl jól ismerlek. Törődj a magad dolgával! 
+00:31:20		 Uydudan izliyorlar, görüyorsunuz değil mi?   		Látjátok? A műholdon keresztül lehallgatnak. 
+00:31:25		 Al bakalım.   		Tessék. 
+00:31:28		 Rüşvet değil, yanlış anlama.   		Ne érts félre, nem kenőpénz. 
+00:31:31		 Çikolata, direkt!   		Csokoládé. 
+00:31:36		 Hadi çocuklar. Sile sile ilerliyoruz, hop!   		Gyerünk, fiúk, takarításra fel! 
+00:31:43		 [Tuncay] Sil, sil.   		Törölgessetek! 
+00:31:46		 Buyurun.   		Jöjjön velem! 
+00:32:40		 Otursun abi buraya.   		Ültesse le oda! 
+00:32:44		 Açalım onu.   		Vegye le a bilincset! 
+00:32:54		 -Nasılız, iyi miyiz? -İyiyiz.   		Hogy van? Jól? 
+00:32:59		 Hadi bakalım, içelim bunları.   		Vegye be ezeket a tablettákat! 
+00:33:01		 Burada mı kalacağım ben şimdi?   		Itt kell maradnom? 
+00:33:03		 Ama sen daha önce burada kaldın mı?   		Előfordult már, hogy itt kellett maradnia? 
+00:33:05		 Meral niye geldi?   		Miért van itt Meral? 
+00:33:08		 -Meral gelmedi ki, Meral niye gelsin? -Geldi ya, girişte gördüm Meral'i.   		- Meral nincs itt. Miért lenne? - Itt van. Láttam a bejáratnál. 
+00:33:14		 -Hadi bakalım. -İyi.   		- Gyerünk! - Rendben. 
+00:33:17		 Ne diyeceğim şimdi ben ya, ne? Deli değilim mi diyeceğim, ne diyeceğim?   		Mit mondjak? Hogy nem vagyok őrült? Mit mondhatnék? 
+00:33:21		 Kim dedi sana delisin diye? Ama sen şimdi sıkıntı yapıyorsun.   		Ki mondta, hogy őrült? Ne izguljon ennyire! Nyugalom! 
+00:33:24		 Deliyim desem, diyecek yok deli değilsin. Kim inanacak bana?   		Ha azt mondom, őrült vagyok, úgysem hisz nekem. Nem hisznek nekem. 
+00:33:28		 Ben deli değilim diye bir şey vardır ya...   		Mindig mindenki azt mondja, hogy nem őrült. Klisé. 
+00:33:34		 Bastır buraya.   		Nyomja meg! 
+00:33:37		 Tamam.   		Rendben. 
+00:33:44		 Yat biraz sen şimdi. Sonra gelip yemeğe götüreceğim seni.   		Feküdjön le egy kicsit! Aztán leviszem a kávézóba. 
+00:33:47		 Yemeğe değil de bana bir telefon açtırır mısın, ne olur?   		Inkább olyan helyre vigyen, ahonnan telefonálhatok! 
+00:33:50		 Tamam, telefona da götüreceğim. Götüreceğim seni telefona.   		Oké. Felhívhat, akit csak akar. 
+00:34:09		 Ağaçları kırmızı yaparsın, güneşi yeşil yaparsın,   		Fessétek a fákat pirosra, a napot zöldre, 
+00:34:13		 kafanda soru işareti kalmaz.   		és minden rendben lesz. 
+00:34:21		 -Işık, bu ne oğlum? -Araba!   		- Isik, mi ez, fiam? - Autó! 
+00:34:23		 Saçmalama oğlum, hadi sen çık dolaş biraz, hadi.   		Ne légy nevetséges, fiam! Men ki levegőzni! Gyerünk! 
+00:34:30		 [Tuncay] Evet, güzel.   Ayzek.   		- Igen, nagyon jó! - Isaac! 
+00:34:33		 Hadi kardeşim.   		Menj innen, tesó! 
+00:34:35		 Herkes misin lan sen?   		Minden kurva szerepet eljátszol? 
+00:34:37		 -[Tuncay] Televizyon izleyeceğim şimdi. -[adam] Erkek misin!   		- Tévézni fogok. - Férfi vagy te? 
+00:34:39		 Sonra hepinize not vereceğim.   		Aztán kiosztom a pontokat. 
+00:34:47		 -[Tunca] Sakal. -Buyur abi.   		- Szakáll! - Igen, tesó! 
+00:34:49		 Püsküvitleri banıp bana ver.   		Mártogass nekem egy kekszet teába! 
+00:34:54		 -[Tuncay] Haberler iyi. -[Sakal güler]   [Tuncay] Her şey yolunda.   		Jó hírek. Minden rendben. 
+00:35:16		 -Ne dediler? -Abi, ne olur...   		- Mit mondtak? - Kérlek, testvér! 
+00:35:19		 Televizyondan aldım haberleri.   		A tévében hallottam a hírt. 
+00:35:23		 Senin başına bir olay gelmiş.   		Jelen voltál egy szerencsétlen eseményen. 
+00:35:26		 Buradan kurula girip deli raporuyla yırtmacalar gibi mi?   		El akarod kerülni a vádemelést azzal, hogy őrültnek nyilváníttatod magad? 
+00:35:30		 Abi, bak, bir haftadır uyumadım, ne olur.   		Testvér, nézd! Egy hete nem aludtam. 
+00:35:33		 Şimdi şöyle...   		Az a helyzet, hogy... 
+00:35:35		 ...buradaki arkadaşlar yıllarını vermiş.   		Ezek a srácok már évek óta itt vannak. 
+00:35:38		 Bedeller ödenmiş.   		Mind nagy árat fizettek. 
+00:35:40		 Bak hiç kimseden "Ben deli değilim." vesaire hiç duyuyor musun?   		Hallottál olyan szöveget, hogy "nem vagyok őrült", 
+00:35:43		 Veya "Ben bilmem kimim." falan?   		vagy "ez és ez vagyok!" 
+00:35:46		 -"Napolyon'um ben!" vardır mesela. -[gülerler]   		Biztos ismered a "Napóleon vagyok" dumát. 
+00:35:49		 Var mıdır öyle bir şey, Sakal?   		Mit gondolsz, Szakáll? 
+00:35:50		 -Yoktur abi. -Yoktur.   		- Hülyeség, tesó. - Hülyeség. 
+00:35:53		 Şimdi, bizim bir onay vermemiz lazım.   		A mi jóváhagyásunkra van szükséged. 
+00:35:57		 -Altına işeme var mı? -Hayır abiciğim.   		- Be szoktál pisilni? - Nem, tesó. 
+00:35:59		 -Şuraya kakanı yapabilir misin? -Hayır abi, niye yapayım ya?   		- Tudsz asztalra kakilni? - Nem, testvér. Miért tennék ilyet? 
+00:36:02		 -Ben yaparım. -Sakal, sen bir işine bak, hadi.   		- Én tudok. - Szakáll, sétálj egyet! 
+00:36:08		 Bir iki saat bakacağım.   		Pár óráig szemmel tartalak. 
+00:36:11		 Eğer bir anormallik görürsem...   		Ha valami szokatlant látok, 
+00:36:16		 ...hemen okurum seni bak.   		azonnal leleplezlek. 
+00:36:19		 Burası otel değil.   		Ez itt nem hotel. 
+00:36:24		 Bak, burada ihtiyacı olan biri gelir kalır, değil mi güzel kardeşim?   		Az jöhet ide, aki rászorul. 
+00:36:29		 Hocayı mı ayarladın rapor versin diye?   		Lefizetted a dokit az igazolásért? 
+00:36:32		 [Tuncay] Şimdi bir sakinleştirici falan,   		Tudod... 
+00:36:34		 bugün kurulda asıl performansı çakman lazım, biliyorsun değil mi?   		ma elő kell adnod magad a bizottságnak. Tudod, ugye? 
+00:36:39		 Abi, o gece benim başıma neler geldi, sen biliyor musun?   		Testvér, tudod, mi történt aznap éjjel? 
+00:36:42		 Evet, buraya da geldiler. Her şey bağlantılı, dedim.   		Igen, ide is eljöttek. Minden összefügg. 
+00:36:46		 Şimdi benim bir geçmişim var, raporum var.   		Nekem itt már múlta van, és papírom is van róla. 
+00:36:49		 O kadar kolay değil yani. Polise söyledim...   		Beszéltem a rendőrséggel. 
+00:36:53		 ...ben kurtarırım onu dedim, iyi çocuk dedim ama...   		Azt mondtam nekik, hogy megmentelek, hogy jó ember vagy. 
+00:36:59		 [Tuncay] ...deli numarasıyla olmaz.   		Nem mentheted meg magad azzal, ha előadod az őrültet. 
+00:37:05		 Yemezler.   		Nem fogják bevenni. 
+00:37:17		 Alo, Mehmet abi, Güven ben.   		Szia, Mehmet testvér! Én vagyok az, Guven. 
+00:37:19		 Güvenciğim, nasılsın?   		Guven, hogy vagy, fiam? 
+00:37:21		 [Mehmet] Herkes bir şey söyleyip duruyor, huzursuzuz burada be oğlum.   		Mindenféléket beszélnek. Aggódunk érted. 
+00:37:24		 Abi, işte başımıza böyle bir şey geldi, ben...   		Véletlenül voltam a helyszínen. Tudod... 
+00:37:27		 Beni hastaneye getirdiler de.   		Behoztak a pszichiátriára. 
+00:37:29		 Gerekirse gelelim biz hastaneye ya.   		Meglátogathatunk, ha akarod. 
+00:37:31		 Yok, yok... Abi...   		Nem, nem. Testvér... 
+00:37:33		 ...ben böyle bir şey yapmadım, biliyorsunuz değil mi?   		ugye tudjátok, hogy nem öltem meg senkit? 
+00:37:35		 Ya biliyoruz Güven, biz sana inanıyoruz be güzelim. Ah be oğlum be.   		Persze, hogy tudjuk, Guven. Hiszünk neked, szegény fiam. 
+00:37:40		 Abi, şey acaba, benim şeyime,   		Testvér, azt szeretném kérni, 
+00:37:43		 savcılığa bir gitseniz, orada benim durumumu bir sorsanız.   		hogy nézzetek utána, mi van a vádemeléssel. 
+00:37:46		 Ben bilmiyorum ki hiçbir şey. Hastaneye getirdiler.   		Én nem tudok, mert nem engednek el innen. 
+00:37:50		 Benim sizden başka kimsem yok abi.   		Nincs senkim, csak ti, fiúk. 
+00:37:53		 Tamam, ben alakadar olurum o hususla, tamam sen rahat ol oğlum.   		Oké, elintézem. Ne aggódj, fiam! 
+00:37:56		 Tamam abi, selam söyle herkese.   		Oké, testvér. Mindenkit üdvözlök. 
+00:37:58		 [Mehmet] Öptüm yavrum, hadi.   		Jól van, fiam. Vigyázz magadra! 
+00:38:04		 Eyvallah.   		Köszönöm. 
+00:38:24		 Kolay gelsin Memur Bey.   		Jó napot, biztos úr! 
+00:38:26		 İlgileneceğim.   		Majd én vigyázok rá. 
+00:38:56		 Buyurun, şöyle bir hava alalım.   		Menjünk sétálni! 
+00:39:00		 Kapı kilitli değil miydi? Polis?   		Nem volt bezárva az ajtó? És a rendőrök? 
+00:39:03		 Arkadaşlar ilgileniyor, buyurun.   		Az embereim dolgoznak rajta. Gyere, kérlek! 
+00:39:11		 Hem size bir önerim olacak.   		Szeretnék tenni egy javaslatot. 
+00:39:13		 -Kaçma anlamında mı? -Gibi gibi. Buyurun.   		- Szökés? - Olyasmi. 
+00:39:48		 Amfibik, kapıyı kapat.   		Amfibik, csukd be az ajtót! 
+00:39:55		 Evet, hoş geldiniz.   		Helyes. 
+00:40:09		 Beyler, mısır.   		És a popcorn. 
+00:40:14		 Kediyi al, uyudu.   		Fogd a macskát, alszik. 
+00:40:19		 Evet, Güven Bey.   Kurulumuz şu şekilde karar verdi.   		Rendben, Mr. Guven. A bizottságunk meghozta az ítéletet. 
+00:40:24		 -Sana yardım edeceğiz. -[Güven] Abi, bak, böyle yani,   		- Segítünk neked. - Testvér, nézd! 
+00:40:27		 işte biz içeridekiler akıllıyız, dışarıdakiler deli, işte biz, ne bileyim,   		Az a benyomásom, hogy azt hiszed, hogy akik kint vannak, őrültek, 
+00:40:31		 suçlu toplum, falan gibi klasik şeylere girmeyeceksin, değil mi?   		és ti vagytok az épeszűek, és a társadalom a hibás. Így van? 
+00:40:35		 -[idrar sesi] -Güven Bey kardeşim, bakın,   şu an altıma işiyorum.   		Nézd, drága tesó! Most bevizelek a gatyámba. 
+00:40:40		 [Tuncay] Sen ne diyorsun lan düdük makarnası?   		Miről beszélsz, te hülye? 
+00:40:43		 Ben, Kılçık, Sakal, Mübaşir ve Amfibik,   		Én, Szakáll, Kilcik, Mubasir és Amfibik 
+00:40:46		 burada deliliğin onur ve şerefini kurtarmaya çalışıyoruz.   		próbáljuk megmenteni az őrület becsületét. 
+00:40:50		 Saat üç.   		Három óra van. 
+00:40:52		 Birazdan, hastanenin en kezzap akıllı hocasının karşısında...   		Át akarod verni a bizottságot, amit a kórház legokosabb orvosa vezet? 
+00:41:03		 ...gibi şeylerle mi geçeceksin kuruldan?   		Ilyesmiket akarsz csinálni megtévesztésképpen? 
+00:41:08		 Şimdi sana bu işin püf noktalarını anlatacağım,   		Elmondok néhány fontos dolgot, 
+00:41:11		 yağ gibi çıkacaksın, tertemiz kağıdını alacaksın.   		amivel könnyen megkapod a papírt. 
+00:41:15		 Oh, mis.   		Gyerekjáték. 
+00:41:17		 Amfibik, arkadaşın derhal donunu başına geçirin.   		Amfibik, húzd a gatyáját a fejére! 
+00:41:21		 Hayır, bir dakika dur ya... Yok dur...   		Ne, egy pillanat! Ne! 
+00:41:23		 Dat! Yandın.   		Megbuktál! 
+00:41:29		 Abi, ben deli değilim ki.   		De nem vagyok őrült. 
+00:41:31		 Mübaşir, arkadaşımıza cinayetten kaç yıl verirsin?   		Mubasir, hány évre ítéled a barátunkat gyilkosságért? 
+00:41:35		 32!   		Harminckettőre. 
+00:41:36		 32 yıl verdi size. Aldınız mı?   		Harminckettő. Érted? 
+00:41:40		 Yani, mesela şöyle şeyler yapabiliyorum ben.   		Csinálhatok például ilyesmiket. 
+00:41:44		 -Bu, yani böyle... -Kasıyorsun kendini.   		- Vagy ilyesmiket. - Nem kellene ilyen feszültnek lenned. 
+00:41:48		 Mısır verin eline.   		Adj popcornt! 
+00:41:54		 -Bu mu? -[Tuncay] Kulağına sokma!   		- És ez? - Ne tedd a füledbe! 
+00:41:56		 Kulağına sokma, ilk akla gelendir. Unutma, akıl yok.   		Mindenkinek ez jut először eszébe. És neked nincs eszed. 
+00:42:01		 Ne diyeyim yani, Dışişleri'ndenim mi diyeyim, ne diyeyim?   		Akkor? Mondjam, hogy a külügynél dolgozom? 
+00:42:04		 Uydudan haber alıyorum mu, ne diyeyim yani?   		Hogy műholdas infókat kapok? 
+00:42:06		 Vay anasını. Bak, bak, bak, bak.   		Szent szar! Nocsak, nocsak! 
+00:42:09		 -Koçum, dosyana baktım. -Uydudan mı?   		- Megnéztem az aktádat, barátom. - A műholdon keresztül? 
+00:42:12		 20 sene rahat yatarsın.   		Legalább 20 évre ítélnek. 
+00:42:15		 Sen hiç hapisten kaçtın mı?   		Szöktél már meg börtönből? 
+00:42:17		 Abi, benim trafik cezam yok ya, ne hapsi?   		Még tilosban parkolásért sem bírságoltak meg. 
+00:42:19		 Cezaevinden kaçabilir misin? Kaçamazsın.   		Meg tudsz szökni a börtönből? Nem. 
+00:42:23		 Ben bu hastaneden kaç kere çıktım çocuklar?   		Én hányszor szöktem meg ebből a kórházból? 
+00:42:25		 Bu sene üç.   		Idén háromszor. 
+00:42:26		 Deliyim deyip burada kalacaksan bu şekilde olmaz.   		Ha meg akarod játszani az őrültet, ne így csináld! 
+00:42:31		 Doktorların bu hallerini yemeyeceğini biliyorsun, değil mi?   		A dokik ezt nem veszik be. 
+00:42:34		 [Tuncay] Şimdi şöyle yapacağız,   		Elmondom, mit teszünk. 
+00:42:37		 bir saat içinde ben sana her şeyi öğretemem.   		Egy óra alatt nem tudok mindent megtanítani. 
+00:42:40		 -Ama diskoya inersek... -Ay!   		De ha lemegyünk a klubba... 
+00:42:44		 -Bir aydınlanma yaşatabilirim sana. -Aydınlanma mı?   		- Segíthetek megvilágosodni. - Megvilágosodni? 
+00:42:49		 Değil bu kurul,   		Hogy át tudd verni a bizottságot. 
+00:42:50		 akademinin karşısına çıksan Oscar'ı eve gönderirler.   		Az Akadémia Oscart adna, ha látná azt a produkciót. 
+00:42:54		 "Abi, törene gelmene gerek yok." derler.   		Azt mondanák: "El sem kell jönnöd a díjátadóra." 
+00:42:58		 Ne dersin?   		Mit mondasz? 
+00:43:01		 Ne varmış diskoda?   		Mi van abban a klubban? 
+00:43:03		 Buradan çıkış biletin.   		A menekülési esélyed. 
+00:43:13		 -Alo Gürkan, sen hastanede misin? -[Gürkan] Evet amirim.   		- Gurkan, a kórházban vagy? - Igen, uram. 
+00:43:17		 -Bu Güven yanında mı? -Odada amirim, kilitli.   		- Veled van Guven? - Be van zárva egy szobába. 
+00:43:19		 Ona bir geçmiş olsun de, iş bitti.   		Mondd meg neki a jó hírt, hogy vége! 
+00:43:22		 Oğlanda bir şey yok. Bekle beni orada, ben bir savcıya kadar gidip geleceğim.   		Elmegyek az ügyészhez, aztán odamegyek. Várj meg! 
+00:43:27		 [Gürkan] Tamam amirim.   		Rendben, uram. 
+00:43:36		 [amir] İmzala şunu.   		Írja alá! 
+00:43:40		 Nasıl insanlarsınız siz ya?   		Miféle ember maga? 
+00:43:42		 Bilmem.   		Fogalmam sincs. 
+00:43:46		 -Bana bir su verir misiniz? -Veremem, işim var.   		- Kérhetek egy pohár vizet? - Nem. Dolgom van. 
+00:44:07		 Memur Bey, bir müsaade eder misin? Buyurun, buyurun.   		Elnézést, uraim! Gyerünk, erre! 
+00:44:14		 Gel, gel, gel.   		Gyerünk! 
+00:44:16		 Güven! Güven, hadi çıkıyorsun. Güven!   		Guven! Szabad vagy! Guven! 
+00:44:24		 -Nerede oğlum bu, içeride değil. -Buradaydı abi.   		- Hol a fenében van? - Itt volt. 
+00:44:31		 [Tuncay] Ölü!   		Senki! 
+00:44:34		 Efendim?   		Igen? 
+00:44:36		 -Makine çalışıyor mu? -Vallahi, makine soğuk.   		- Működik a gép? - Hideg. 
+00:44:41		 -Merhaba. -Arkadaş sınava girecek de.   		- Helló. - Nemsokára vizsgáznia kell. 
+00:44:43		 Bir akide şekeri alacaktık, zihin açıklığı için.   		Úgy gondoltam, ha meglátogat, az segít megtisztítani a gondolatait. 
+00:44:48		 Sıfır laptop isterim... Gıcır.   		Egy új laptop az ára. 
+00:44:52		 Sıfır laptop uyuyor mu?   		Egy laptop. Oké? 
+00:44:55		 -Para mı vereceğiz? -Yok, öpücük de olur.   		- Pénzzel fizetünk? - Nem, csókkal is fizethetsz. 
+00:44:59		 Tamam, tamam, ben kefilim. Sıfır laptop, okey miyiz?   		Rendben. Kezeskedem róla. Rendben, egy laptop. 
+00:45:05		 -[kapıyı açar] Gelin bakayım. -Geç.   		- Gyere be! - Menj! 
+00:45:14		 Buyurun.   		Íme. 
+00:45:15		 Sakal, kaldır şunu.   		Szakáll, vedd le a lepedőt! 
+00:45:19		 Abi, hayırdır?   		Testvér, mi folyik itt? 
+00:45:20		 80'lerden bir hatıra. Gel bakayım, oturuyorsun şöyle.   		Ereklye a 80-as évekből. Gyere, ülj le! 
+00:45:24		 Ölü kardeşimiz çok güzel ayarlayacak.   		Mr. Senki elrendezi az ügyedet. 
+00:45:27		 Kurulun karşısında altına da işedin mi oldu bu iş.   		Ha a bizottság előtt bevizelsz, meg is van a papír. 
+00:45:29		 -Abi, bir sakatlık çıkmasın? -Oğlum, ben sana özgürlüğü vadediyorum.   		- Biztonságos? - Fiam, ez a szabadságod garanciája. 
+00:45:33		 Hem yarın hastaneden tüyme işini konuşuruz ya.   		Holnap már meg is szervezhetjük a szökést a kórházból. 
+00:45:36		 Gel şu soru işaretini alalım kafadan, gel.   		Tiszítsd meg az elméd! Gyerünk! 
+00:45:42		 -Şunu da ağzına alıyorsun. -Ya of...   		- Tedd a szádba! - Mi a... 
+00:45:45		 Ya, ben katil değilim.   		Nem vagyok gyilkos. 
+00:45:46		 -Biz de değiliz. -Biz deliyiz.   		- Mi sem. - Őrültek vagyunk. 
+00:45:49		 -Ben deli de değilim. -Ben de değilim ama hayat işte.   		- De én őrült sem vagyok. - Én sem, mégis itt vagyok. 
+00:45:52		 Hadi, bağlayın elini kolunu, çabuk. Amfibik, Mübaşir, koğuşu kollayın.   		Gyorsan, kötözzétek meg kezét-lábát! Figyeljetek, nem jön-e valaki! 
+00:45:57		 [Ölü] Evet. Yaslan, yaslan.   		Jó. Dőlj hátra! 
+00:46:01		 Aç abi. Aç, aç, aç.   		Gyerünk, nyisd ki az ajtót! 
+00:46:07		 -Nasıl ya? -[polis] Nerede abi adam?   		- Hogy lehet ez? - Hol van? 
+00:46:10		 Diskoya gittiler, dermişim.   		Szerintem elmentek a klubba. 
+00:46:12		 Tuncaylarla, yürüyün, yürüyün!   		Tuncayvel van. Gyerünk! 
+00:46:16		 [Güven] Abi, çok vermeyeceksin, değil mi?   		Testvér, nem adsz túl sokat, ugye? 
+00:46:18		 Merak etme, borcunu hatırlayacak kadar veriyorum.   		Ne aggódj, a laptopra azért emlékezni fogsz. 
+00:46:22		 -Hadi, hadi. -[Güven] Yani abi...   		- Gyerünk! - De... 
+00:46:26		 Tamam beyler, sessiz. Kardeş, hazır mısın?   		Oké, srácok, halkan. Testvér, készen állsz? 
+00:46:29		 -[Güven] İyi olacak mı peki? -Hadi, hayırlı yolculuklar.   		- Rendben lesz? - Jó utat! 
+00:46:35		 -Ne oldu ya? -[Güven] Ne oldu?   		- Mi történt? - Mi ez? 
+00:46:37		 [Ölü] Tamam, tamam. Sakin, bir şey yok, geliyor.   		Rendben. Semmi baj. Nyugi! Még egyszer. 
+00:46:45		 Buyurun Memur Bey.   		Segíthetek? 
+00:46:48		 Sühan Hoca'daki dosya için getirdim ama odasında mı kendisi?   		Hoztam egy aktát doktor Suhannak. A szobájában van? 
+00:46:51		 Yeşim Hocalarla toplantıdalar, bir on dakikaya çıkarlar.   		Megbeszélésen van. Tíz perc múlva itt lesz. 
+00:46:54		 Ha. Biz tutukluyu çıkaracaktık da.   		Szabadon lehet bocsátani a fogvatartottat. 
+00:46:56		 -Bu 2A'da olanı mı? -Güven Balcı.   		- Aki az A2-ben van? - Guven Balcit. 
+00:47:02		 Hazır.   		Mehet? 
+00:47:14		 Tamam gibi.   		Úgy tűnik, oké. 
+00:47:16		 Güzel. Güven, bak bakayım lan!   		Jó. Guven, nézz rám! 
+00:47:21		 Mis... Tatlılaştı.   		Szép. Nagyon szép. 
+00:47:23		 -Yükleyin beyler, hadi. -Hadi, gel, hadi.   		- Vigyétek! - Gyerünk! 
+00:47:28		 -[Güven] Abi yapmayın. -Çabuk çabuk.   		- Kérlek, ne! - Gyorsan! 
+00:47:31		 [Tuncay] Hadi, çabuk.   		Gyorsan! 
+00:47:35		 Getir yavaş, yavaş, tamam.   		Nyugalom! 
+00:47:39		 Bırak bende, tamam.   		Oké, megvan. 
+00:47:51		 -Nerede lan çocuk? -Burada değil ama kalbimizde yaşıyor.   		- Hol a fenében van? - Itt nincs, de a szívünkben igen. 
+00:47:56		 -Hangi çocuk? -Güven! Güven!   		- Kiről beszélsz? - Guven! 
+00:47:58		 Çıkalım hadi yatakhaneye. Hadi, hadi yatakhaneye.   		Menjünk fel! A hálóterembe. Gyerünk! 
+00:48:04		 Ana binaya geçti.   		A főépületbe ment. 
+00:48:06		 Kurula girecekti... Galiba.   		A bizottsággal van találkozója. Azt hiszem. 
+00:48:31		 Hoş geldin Güven, biraz daha iyi misin?   		Üdv, Guven! Jobban van? 
+00:48:37		 -Amirim! -Oğlum, ne oldu?   		- Uram! - Mi történt? 
+00:48:38		 -Güven, amirim. Kurula girmiş. -Kurula girmeyecek adam, ne kurulu ya?   		- Guven a bizottság előtt van. - A bizottság előtt? Miért vitték oda? 
+00:48:47		 -Hocam bu, tutuklu olan arkadaş galiba. -[doktor 2] Evet.   		- Uram, ez az a fogvatartott? - Igen. 
+00:48:50		 [doktor] Bunun durumunda bir değişiklik oldu, bunun yazısı gelecekti...   		Változás állt be az állapotában. 
+00:48:54		 Hocam, kusura bakmayın.   		- Tessék! - Elnézést, doktor úr! 
+00:48:56		 Bir telaş oldu da bir an bulamadık arkadaşı. Bu, savcılıktan belgesi.   		Beletelt egy kis időbe, hogy megtaláljuk. Itt van az aktája. 
+00:49:00		 Biz de bunu bekliyorduk.   		Ezt az aktát vártuk. 
+00:49:03		 Güven Balcı, hadi geçmiş olsun. Seni tutmayacağız artık burada.   		Jó hír, Guven Balci. Nem tartjuk itt. 
+00:49:08		 Güven kardeşim, hadi serbestsin.   		Guven testvér, szabadon távozhat. 
+00:49:10		 [amir] Hadi kalk. İmzamızı atalım gidelim. Hadi kardeşim.   		Aláírjuk a papírokat, és szabadon távozhat. 
+00:49:14		 -[sesler boğulur] -[doktor] Güven?   		Guven? 
+00:49:16		 -[doktor 2] Hocam duymuyor galiba. -[doktor 3] Güven, iyi misin?   		- Szerintem nem hallja. - Guven, jól van? 
+00:49:21		 [doktor] Güven?   		Guven? 
+00:49:24		 Bu şekilde burada kalması daha iyi olur. Biz zaten ailesine haber veririz.   		Jobb, ha itt marad, amíg ilyen állapotban van. 
+00:49:35		 Hemşire Hanım, hastayı alabiliriz. [ses yankılanır]   		Nővér, elviheti a beteget. 
+00:50:57		 [Mehmet] Ne o, âşık mı oldun ibiş? Git konuş o zaman.   		Beleszerettél? Akkor beszélned kell vele. 
+00:51:00		 [adam] Instagram'dan bul, Facebook'tan bul abi.   		Keresd meg az Instagramon vagy a Facebookon! 
+00:51:03		 Bana bırak, beş dakikada bulurum diyorum, bana da bırakmıyor ha.   		Percek alatt megtalálnám, ha hagynád, de nem hagyod. 
+00:51:06		 [Güven] Abi, belki konuşmak istemiyorum.   		Talán nem akarok beszélni vele. 
+00:51:08		 Ben öyle uzun uzun onun gözlerine bakayım, o bana baksın.   		Inkább szemezni akarok vele órákon keresztül. 
+00:51:11		 Öyle uzun uzun, karşılık yani.   		Csak mi ketten összefonódott tekintettel. 
+00:51:16		 Gözleri gözümde, bütün ömrüm boyunca karşısına otururum abi.   		Egész hátralevő életemben csak bámulnék a szemébe. 
+00:51:29		 Âşıkların dostu delilerdir.  		Az őrültek a szerelmesek igaz barátai. 
