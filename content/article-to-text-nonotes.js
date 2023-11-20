@@ -63,7 +63,7 @@ function getAllSections(){
 	//  2) sections to be visited (recursively) are s1n1 and its siblings
 	
 	return Array.from(document.getElementById('s1n1').parentNode.childNodes)
-	          .map(n=>getSection(n))
+	          .map(n=>getSection(n,1))
 			  .join('\n')
 			  ;
 }
