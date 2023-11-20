@@ -1,14 +1,26 @@
-
 /* example: https://www.cairn.info/revue-guerres-mondiales-et-conflits-contemporains-2001-2-page-167.htm */
 
 function getHeader(ndRoot, headLevel){
 	return '<h' + (headLevel+1) + '>' + ndRoot.textContent + '</h' + (headLevel+1) + '>';
 }
+function quoteText(ndQuote){
+	let nd = Array.from(ndQuote.childNodes).filter(e=>e.nodeName=='DIV')[0];
+	nd = Array.from(nd.childNodes).filter(e=>e.nodeType==3);
+	return '<p>"' + getItalic( nd.map(e=>e.textContent).join('') ) + '"</p>';
+}
+function getItalic(txt){
+	return '<i>' + txt + '</i>';
+}
 function getPara(ndRoot){
 	return '<p>' 
 			+ Array.from(ndRoot.childNodes)
-				.filter(n=>(n.nodeName=='SPAN' || n.nodeName=='EM' || n.nodeType==3))
-				.map(n=>n.textContent)
+				.filter(n=>(n.nodeName=='SPAN' || n.nodeName=='EM' || n.nodeType==3 ))
+				.map(n=> {
+						if (n.nodeName=='EM'){
+							return getItalic(n.textContent);
+						} else return n.textContent;
+					}
+				)
 				.join('')
 			+ '</p>';
 }
@@ -22,6 +34,7 @@ function getSection(ndRoot, headLevel){
 							|| n.nodeName=='H5' 
 							|| n.nodeName=='P' 
 							|| n.nodeName=='SECTION'
+							|| n.nodeName=='BLOCKQUOTE'
 							)
 						)
 				;
@@ -31,10 +44,12 @@ function getSection(ndRoot, headLevel){
 			return getHeader(n, headLevel);
 		} else if(n.nodeName=='P') {
 			return getPara(n);
+		} else if(n.nodeName=='BLOCKQUOTE') {
+			return quoteText(n);
 		} else if(n.nodeName=='SECTION') {
 			return getSection(n, headLevel+1);
 		}
-	}).join('\n');
+	}).join(' ');
 }
 
 /*
