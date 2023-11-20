@@ -55,3 +55,19 @@ function getSection(ndRoot, headLevel){
 /*
 usage: getSection( document.getElementById('s1n1') ,1)
 */
+
+
+function getAllSections(){
+	//Assumptions:
+	//  1) there always exists a section with id='s1n1'
+	//  2) sections to be visited (recursively) are s1n1 and its siblings
+	
+	return Array.from(document.getElementById('s1n1').parentNode.childNodes)
+	          .map(n=>getSection(n))
+			  .join('\n')
+			  ;
+}
+
+/* returns the content of an entire CAIRN article
+usage: getAllSections()
+*/
