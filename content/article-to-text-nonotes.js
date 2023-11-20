@@ -7,7 +7,7 @@ function getHeader(ndRoot, headLevel){
 function getPara(ndRoot){
 	return '<p>' 
 			+ Array.from(ndRoot.childNodes)
-				.filter(n=>(n.nodeName=='SPAN' || n.nodeType==3))
+				.filter(n=>(n.nodeName=='SPAN' || n.nodeName=='EM' || n.nodeType==3))
 				.map(n=>n.textContent)
 				.join('')
 			+ '</p>';
