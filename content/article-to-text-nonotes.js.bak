@@ -66,6 +66,6 @@ function getAsana(ndRoot){
 
 /*
 usage: 
-CAIRN (https://www.cairn.info/)  :: getSection( document.getElementById('s1n1') ,1)
+CAIRN ()  :: getSection( document.getElementById('s1n1') ,1)
 ASANA (https://asana.com/)  :: getAsana(document.getElementById('__next')).join('')
 */
