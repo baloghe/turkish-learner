@@ -12,7 +12,7 @@ const date2string = dd => {
     ;
 };
 
-function MeterReadings({readings, actFlat, flats, flatChanged, changeReading}){
+function MeterReadings({readings, actFlat, flats, flatChanged, changeReading, valueBeingChanged}){
 	
   const [state, setState] = useState("show");
   const [actMeter, setActMeter] = useState();
@@ -20,13 +20,9 @@ function MeterReadings({readings, actFlat, flats, flatChanged, changeReading}){
   //readings: [...{meter: "", last: num, unit: "", date: date}]
   console.log(`MeterReadings :: ${readings.map((e,i)=>i+":"+e.meter)}`);
   
-  const flatSelected = (e) => {
-  	//console.log(`flatSelected :: ${e.target.value}`);
-    flatChanged(e.target.value);
-  };
-  
   const readingChanged = (e) => {
-  	console.log(`MeterReadings.readingChanged :: ${e}`);  
+  	console.log(`MeterReadings.readingChanged :: ${e}`);
+    valueBeingChanged(true);
     setState("change");
     setActMeter(e);
   };
@@ -42,23 +38,13 @@ function MeterReadings({readings, actFlat, flats, flatChanged, changeReading}){
   	console.log(`MeterReadings.readingChangeCancelled`);
     setState("show");
     setActMeter(null);
+    valueBeingChanged(false);
   };
   
   const getReadingsPane = () => {
   	return (
   <div>
   <h3>Meter Readings</h3>
-      <table key="flat"><tbody><tr><td key="selflat">
-        <select value={actFlat.key} onChange={flatSelected}>
-          {flats.map((e) => (
-            <option key={"f"+e.key} value={e.key}>{e.key}</option>
-          ))}
-        </select>
-      </td><td key="flatdesc">
-      <span className="flatdesc">{actFlat.desc}</span>
-      </td>
-      </tr></tbody>
-    </table>
     <table id="meters" key="meters">
       <thead>
         <tr>
@@ -105,34 +91,118 @@ function MeterReadings({readings, actFlat, flats, flatChanged, changeReading}){
   );
 }
 
-function Payments({payments, actFlat, flats, flatChanged}){
+function ServiceInfo({serviceData}){
 
-	//payments: [...{meter: "", amount: num, ccy: "", date: date}]
-  console.log(`payments :: ${payments.map((e,i)=>i+":"+e.meter)}`);
+	const [visible, setVisible] = useState(false);
   
-  const flatSelected = (e) => {
-  	//console.log(`flatSelected :: ${e.target.value}`);
-    flatChanged(e.target.value);
+  const getContractual = () => {
+  	if(   (!serviceData.contractual)
+       || Object.keys(serviceData.contractual).length === 0
+      ) return null;
+    //otherwise...
+    return (
+    <table id="contractual" key="contractual">
+      <tbody>
+      {Object.keys(serviceData.contractual).map((k,i) => {
+      	<tr key={"cont-"+i}>
+          <td key={i+"-1"}>{k}</td>
+          <td key={i+"-2"}>{serviceData.contractual[k]}</td>
+        </tr>
+      })}
+      </tbody>
+    </table>
+    );
+	};
+    
+    const getElectronic = () => {
+  	if(   (!serviceData.electronic)
+       || Object.keys(serviceData.electronic).length === 0
+      ) return null;
+    //otherwise...
+    return (
+      <div>
+    	<a href={serviceData.electronic.url} target="_blank">{serviceData.electronic.url}</a>
+      <p key="u"><b>User: </b> {serviceData.electronic.user}</p>
+      <p key="p"><b>Pw: </b> {serviceData.electronic.pw}</p>
+      </div>
+    );
+    };
+  
+  
+  const changeVisibility = () => {
+  	let prv=visible;
+    setVisible(!prv);
   };
   
-  const changePayment = (e) => {
-  	console.log(`changePayment :: ${e}`);  
+  const allTogether = () => {
+  	return (
+    <div className="srvInfo">
+      <p>Readable meter: {serviceData.readable ? "YES" : "NO"}</p>
+      {getContractual()}
+      {getElectronic()}
+      {serviceData.comment}
+      </div>
+    );
   };
   
   return (
+  	<div>
+      <button className="visBtn" onClick={changeVisibility}>
+        <span>{serviceData.provider}</span>
+      </button>
+      {visible ? allTogether() : null}
+    </div>
+  );
+  
+}
+
+function Services({services, payments, actFlat, flats, flatChanged, changePayment, valueBeingChanged}){
+	
+  const [state, setState] = useState("show");
+  const [actService, setActService] = useState();
+
+	//payments: [...{meter: "", amount: num, ccy: "", date: date}]
+  console.log(`payments :: ${payments.map((e,i)=>i+":"+e.service)}`);
+  
+  const getServPayView = () => {
+  	//get last payment for each provider when exists
+    if(services==null) return null;
+    let ret = JSON.parse(JSON.stringify(services));
+    ret.forEach(e=>{
+    	let lp = payments.filter(f=>f.service==e.service);
+      if(lp.length > 0){
+      	e["lastPayment"] = lp[0];
+      }
+    });
+    return ret;
+  };
+  
+  const changePaymentStarted = (e) => {
+  	console.log(`changePaymentStarted :: ${e}`);
+    valueBeingChanged(true);
+    setState("change");
+    setActService(e);
+  };
+  
+  const paymentChangeSubmitted = (inFlatKey, inService, newData) => {
+  	console.log(`Providers.paymentChangeSubmitted :: [${newData.date}, ${newData.last}]`);
+    setState("show");
+    setActService(null);
+    changePayment(inFlatKey, inService, newData);
+  };
+  
+  const paymentChangeCancelled = () => {
+  	console.log(`Providers.paymentChangeCancelled`);
+    setState("show");
+    setActService(null);
+    valueBeingChanged(false);
+  };
+  
+  const getPaymentsPane = () => {
+  let sp = getServPayView();
+  return (
   <div>
-  <h3>Payments</h3>
-      <table key="flat"><tbody><tr><td key="selflat">
-        <select value={actFlat.key} onChange={flatSelected}>
-          {flats.map((e) => (
-            <option key={"f"+e.key} value={e.key}>{e.key}</option>
-          ))}
-        </select>
-      </td><td key="flatdesc">
-      <span className="flatdesc">{actFlat.desc}</span>
-      </td>
-      </tr></tbody>
-    </table>
+  <h3>Providers and payments</h3>
     <table id="payments" key="payments">
       <thead>
         <tr>
@@ -141,25 +211,45 @@ function Payments({payments, actFlat, flats, flatChanged}){
           <th key="psh3"></th>
           <th key="psh4">Date</th>
           <th key="psh5"></th>
+          <th key="psh6"></th>
         </tr>
       </thead>
       <tbody>
-      {payments.map((e,i) => (
+      {sp.map((e,i) => (
       	<tr key={"psr"+i}>
-          <td key={"ps"+i+"-1"}>{e.meter}</td>
-          <td key={"ps"+i+"-2"}>{e.amount}</td>
-          <td key={"ps"+i+"-3"}>{e.ccy}</td>
-          <td key={"ps"+i+"-4"}>{e.date}</td>
+          <td key={"ps"+i+"-1"}>{e.service}</td>
+          <td key={"ps"+i+"-2"}>{e.lastPayment ? e.lastPayment.amount : null}</td>
+          <td key={"ps"+i+"-3"}>{e.lastPayment ? e.lastPayment.ccy : null}</td>
+          <td key={"ps"+i+"-4"}>{e.lastPayment ? e.lastPayment.date : null}</td>
             <td key={"ms"+i+"-5"}>
-              <button className="startBtn" onClick={()=>changePayment(e.meter)} data-meter={e.meter}>
+              <button className="startBtn" onClick={()=>changePayment(e.service)} data-meter={e.service}>
                 <span>Change</span>
               </button>
+            </td>
+            <td key={"ms"+i+"-6"}>
+              <ServiceInfo serviceData={e} />
             </td>
         </tr>
       ))}
       </tbody>
     </table>
   </div>
+  )
+  };
+  
+  const getChangePane = (service) => {
+  	return (
+    <ChangePayment 
+      actFlat={actFlat}
+      actService={service}
+      actData={providers.filter(e=>e.service==service)[0]}
+      changePayment={paymentChangeSubmitted}
+      cancel={paymentChangeCancelled}
+      />);
+  };
+  
+  return (
+  	state=="show" ? getPaymentsPane() : getChangePane(actMeter)
   );
 }
 
@@ -194,14 +284,6 @@ console.log(`ChangeMeterReading :: actFlat=${actFlat.key}, actMeter=${actMeter},
   <div>
 		<table key="crh">
       <tbody>
-        <tr key="crh-flat">
-          <td key="crh-flat-key">
-            {actFlat.key}
-          </td>
-          <td key="crh-flat-desc">
-            {actFlat.desc}
-          </td>
-        </tr>
         <tr key="crh-meter">
           <td key="crh-meter-key">
             {actMeter}
@@ -269,21 +351,19 @@ console.log(`ChangeMeterReading :: actFlat=${actFlat.key}, actMeter=${actMeter},
   );
 }
 
-function Provider({actFlat, actMeter, actData}){
-return (<div></div>
-  );
-}
-
 
 function App({isDemo, demoData}){
 
 	const [actFlat, setActFlat] = useState(isDemo ? (demoData.flats[0] ? demoData.flats[0] : 'N/A') : 'N/A');
   const [flats, setFlats] = useState(isDemo ? demoData.flats : []);
   const [readings, setReadings] = useState(isDemo ? demoData.readings : {});
+  const [services, setServices] = useState(isDemo ? demoData.services : {});
   const [payments, setPayments] = useState(isDemo ? demoData.payments : {});
+  const [valueIsChanging, setValueIsChanging] = useState(false);
 
-	const changeFlat = (key) => {
+	const changeFlat = (e) => {
   	//console.log(`App.changeFlat :: to ${key}`);
+    let key=e.target.value;
     setActFlat(flats.filter(e=>e.key==key)[0]);
   };
   
@@ -295,27 +375,80 @@ function App({isDemo, demoData}){
       newReadings[flatKey][idx].date = newData.date;
       newReadings[flatKey][idx].last = newData.last;
       setReadings(newReadings);
+      setValueIsChanging(false);
       console.log(`App :: changeReading done`);
     }
   };
+  
+  const changePayment = (flatKey, inProvider, newData) => {
+  	console.log(`App :: changePayment ${flatKey}.${inProvider} := ${newData.date}, ${newData.last}]`);
+    if(isDemo){
+      setValueIsChanging(false);
+      console.log(`App :: changePayment done`);
+    }
+  };
+  
+  const valueBeingChanged = (b) => {
+  	setValueIsChanging(b);
+  };
+  
+  const getFlatSelector = (b) => {
+  	if(b){
+    	return (
+      		<select value={actFlat.key} onChange={changeFlat}
+              disabled="disabled">
+            {flats.map((e) => (
+              <option key={"f"+e.key} value={e.key}>{e.key}</option>
+            ))}
+          </select>
+      );
+    } else {
+    	return (
+      		<select value={actFlat.key} onChange={changeFlat}>
+            {flats.map((e) => (
+              <option key={"f"+e.key} value={e.key}>{e.key}</option>
+            ))}
+          </select>
+      );    
+    }
+  }
+  
+  const condServices = (b) => {
+  	if(b) return (
+    <Services
+      services={services[actFlat.key]}
+      payments={payments[actFlat.key]}
+      actFlat={actFlat}
+      flats={flats}
+      flatChanged={changeFlat}
+      changePayment={changePayment}
+      valueBeingChanged={valueBeingChanged}
+    />
+    );
+  }
 	
   return (
-  	
+  	<div>
+      <table key="flat"><tbody><tr><td key="selflat">
+          {getFlatSelector(valueIsChanging)}
+        </td><td key="flatdesc">
+        <span className="flatdesc">{actFlat.desc}</span>
+        </td>
+        </tr></tbody>
+      </table>
   	<MeterReadings
       readings={readings[actFlat.key]}
       actFlat={actFlat}
       flats={flats}
       flatChanged={changeFlat}
       changeReading={changeReading}
+      valueBeingChanged={valueBeingChanged}
     />
-    /*
-  	<Payments
-      payments={payments[actFlat.key]}
-      actFlat={actFlat}
-      flats={flats}
-      flatChanged={changeFlat}
-    />
-    */
+    
+    {condServices(services[actFlat.key])}
+    
+    </div>
+    
   );
   
 }
@@ -338,15 +471,44 @@ readings : {
   },
 payments : {
   	 "VISEGRÁDI" : [
-     		 {meter: "GAS", amount: 100, ccy: "HUF", date: '2023-04-10'}
-        ,{meter: "WATER", amount: 210, ccy: "HUF", date: '2023-04-18'}
-        ,{meter: "ELECTRICITY", amount: 320, ccy: "HUF", date: '2023-04-28'}
+     		 {service: "GAS", amount: 100, ccy: "HUF", date: '2023-04-10'}
+        ,{service: "WATER", amount: 210, ccy: "HUF", date: '2023-04-18'}
+        ,{service: "ELECTRICITY", amount: 320, ccy: "HUF", date: '2023-04-28'}
     	]
     ,"HUNYADI" : [
-     		 {meter: "WATER", amount: 400, ccy: "HUF", date: '2023-03-05'}
-        ,{meter: "ELECTRICITY", amount: 500, ccy: "HUF", date: '2023-02-10'}
+     		 {service: "WATER", amount: 400, ccy: "HUF", date: '2023-03-05'}
+        ,{service: "ELECTRICITY", amount: 500, ccy: "HUF", date: '2023-02-10'}
     	]
-  }
+  },
+services : {
+  	 "HUNYADI" : [
+     		 {service: "GAS", readable: true, provider: "MVM"
+         			,electronic: {url: "https://www.vodafone.hu/myvodafone/szolgaltatasaim", user: "ibalogh@gmail.hu", pw: "PW1"}
+              ,comment: "nagyapa nevében havonta belép-fizet"
+              ,contractual: {"Vevő/Fizető azon":"5000279499"}
+         }
+        ,{service: "ELECTRICITY", readable: true, provider: "MVM"
+         			,electronic: {url: "https://ker.mvmnext.hu", user: "KUTAI JUDIT", pw: "PW2"}
+              ,comment: "Bérlő diktál, Judit elektr. fizet, Bérlő átutalja. Diktálás hónap 1-8. közt"
+              ,contractual: {"Vevő/Fizető azon":"5000279499"}
+         }
+        ,{service: "INTERNET", readable: false, provider: "MVM"
+         			,electronic: {url: "https://www.vodafone.hu/myvodafone/szolgaltatasaim", user: "ibalogh@gmail.hu", pw: "PW3"}
+              ,comment: "nagyapa nevében havonta belép-fizet"
+              ,contractual: {"Vevő/Fizető azon":"5000279499"}
+         }
+        ,{service: "GARBAGE", readable: false, provider: "MOHU", comment: "postán levelet küld, átutalással fizethető"}
+        ,{service: "INSURANCE", readable: false, provider: "UNIQA", comment: "Csoportos beszedés Raiffeisen számlán"
+              ,contractual: {"Ktvszám":"WK01837177"}}
+     ]
+    ,"VISEGRÁDI" : [
+     		 {service: "ELECTRICITY", readable: true, provider: "MVM"
+         			,electronic: {url: "https://ker.mvmnext.hu", user: "BALOGHE79", pw: "PW5"}
+              ,comment: "gmail.hu-ra jön levél, vagy MVM honlapon fizet"
+              ,contractual: {"Vevő/Fizető azon":"5000123456"}
+         }
+     ]
+}
 };
 
 ReactDOM.createRoot( 
