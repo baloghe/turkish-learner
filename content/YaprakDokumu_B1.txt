@@ -1,8 +1,8 @@
 Anneciğim biz Pervin'lere gidiyoruz.	Mom, we are going to Pervin's.
 Babacığım o küçücük çiçekle ne için uğraşıp duruyorsunuz?	Daddy, why are you bothering with that tiny flower?
 Bahçede koca koca çiçekler varken.	While there are huge flowers in the garden.
-Mühim olan bu küçücük çiçeği büyütmek sonra donunda gurur duymaktır küçük hanımlar.	The important thing, little ladies, is to grow this tiny flower and then be proud of it.
-Adını Minnoş koyalım mı?	Should we name him Minnosh?
+Mühim olan bu küçücük çiçeği büyütmek sonrada onunla gurur duymaktır küçük hanımlar.	The important thing, little ladies, is to grow this tiny flower and then be proud of it.
+Adını Minnoş koyalım mı?	Should we call it Little Darling?
 Aman baba iyi bak da çabuk büyüsün.	Oh dad, take care so that it grows up quickly.
 Belki meyve verir de bizleri doyurur.	Maybe it will bear fruit and feed us.
 
@@ -24,14 +24,14 @@ Hep aynı laflar. Bıktım artık. Göreceksin!	Always the same words. I'm fed u
 Çok heyecanlıyım Şevket.	I'm very excited, Şevket.
 Sanki başarısız olacağım gibi his var içimde.	I feel like I will fail.
 Heyecan bende de var ama çok çalıştım.	I'm excited too, but I worked hard.
-Bu imtihanları verip Mektebi bitirmek zorundayım.	I have to pass these exams and finish school.
+Bu imtihanları verip mektebi bitirmek zorundayım.	I have to pass these exams and finish school.
 Sen kendine güveniyorsun demek?	So you are confident in yourself?
 Elbette güvenmek muvaffakiyetin yarısı demek, değil mi?	Of course, trusting is half the success, right?
 
 
 Sizi dikkatinizi çekmek için çağırdım Leman. I called you to warn you, Leman.
 İş arkadaşlarımızdan hakkınızda şikayetler var.	Our colleagues are complaining about you.
-Ne hususta acaba? Vaz effendim Alı Akalı?	I wonder about what?
+Ne hususta acaba? Vazifendim ile alakalı?	I wonder about what? Is it related to my duty?
 Hayır. Fazla konuşup fazla gülüyormuşsunuz. Dikkatleri dağılıyormuş.	No. You talk too much and laugh too much. They get distracted.
 Affedersiniz. Gülmek suçsa işime son verebilirsiniz.	I am sorry. If laughing is a crime, you can fire me.
 Hayır hayır. Gülmek size çok yakışıyor.	No no. Laughing suits you very well.
@@ -48,7 +48,7 @@ Canını sıkacak bir şey mi yaptım?	Did I do something to upset you?
 Beni çok düşündürüyor bu münasebet.	This relationship makes me think a lot.
 Galiba fazla uzattık bu işi.	I think we've been doing this for too long.
 Ne var bunda düşünecek?	What's there to think about?
-Annemden istersin beni evleniriz olur biter sevgilim.	You can ask my mother for me, we can marry you, that's it, darling.
+Annemden istersin beni, evleniriz olur biter sevgilim.	You ask my mother for me, we get married, that's all done, darling.
 Sana kaç defa söyledim?	How many times have I told you?
 Biliyorsun benim evlenmeye hiç niyetim yok.	You know I have no intention of getting married.
 
@@ -62,4 +62,28 @@ Yavrum evladım, hamilelik son silahın senin.	My dear child, pregnancy is your 
 Dayak düşürmem diye evlenmeye mecbur kalır.	He is forced to marry so that he won't get beaten.
 Evlenmeyeceğine daha baştan söyledi bana anne.	Mom told me from the beginning that she wouldn't get married.
 Söylesin. Dayatacaksın dedim sana.	Tell him. I told you to impose it.
-Daha olmazsa, Ali Rıza Bey'i açarım meseleği.	If not, I will bring up the issue to Ali Rıza Bey.
+Daha olmazsa, Ali Rıza Bey'i açarım meseleyi.	If not, I will bring up the issue to Ali Rıza Bey.
+
+
+Bankamızın sizin gibi genç, dinamik, tahsilli insanlara ihtiyacı var.	Our bank needs young, dynamic, educated people like you.
+Alim Aziz Bey'in tavsiyesi benim için çok önemli bir yer tutar.	Alim Aziz Bey's advice is very important for me.
+Teşekkür ederim efendim. Sizi mahcup etmeyeceğime inanabilirsiniz.	Thank you sir. You can believe that I will not embarrass you.
+Şevket Bey anlıyorum da şu anda personel ihtiyacımız olmasına rağmen açık kadromuz yok.	Mr. Şevket, I understand that although we need personnel, we do not have any open positions.
+Umum müdürlükten yeni kadrolar istedim.	I asked for new staff from the general directorate.
+Çok yakında gelir zannediyorum.	I think it will come very soon.
+İstediğim kadrolar arasında size uygun sizin memnun olabileceğiniz işler de var.	Among the positions I want, there are also jobs that are suitable for you and that you will be satisfied with.
+Çok teşekkür ederim efendim.	Thank you very much sir.
+Ancak bir süre beklememiz lazım.	But we have to wait for a while.
+İşe alınacağınız zaman size haber verirler.	They will let you know when you will be hired.
+Ama şunu da bilmenizi istiyorum.	But I also want you to know this.
+İşe alınmadan evvel sizinle usulen de olsa bir mülakat yapılacaktır.	Before you are hired, you will be interviewed formally.
+Mülakatta başarılı olacağıma emin olabilirsiniz efendim.	You can be sure that I will be successful in the interview, sir.
+Şevket Bey, Alim Aziz Bey'e hürmetlerimi iletirin.	Şevket Bey, convey my respects to Alim Aziz Bey.
+Sağ olun efendim!	Thank you sir!
+Güle güle yavrum!	Goodbye my son!
+
+
+Çok özür dilerim hanımefendi!	I'm so sorry ma'am!
+Rica ederim.	No problem.
+Şey mazur görün. Müdür Beyle iş hususunda konuştum da.	Well, excuse me. I talked to the manager about work.
+Heyecanım o yüzden. Müsadenizle hanımefendi!	That's why I'm excited. With your permission, ma'am!
