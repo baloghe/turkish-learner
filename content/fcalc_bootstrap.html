@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <!--
+    button {
+      height: 60px;
+      font-size: 2rem!important;
+    }
+
+    .res {
+      font-size: 2rem!important;
+    }
+    
+    .bgrpcnt {
+      display: grid;
+      grid-gap: 20px;
+      padding: 20px;
+    }
+    -->
     <title>f-calc</title>
   </head>
   <body>
     
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Flask Calculator</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+<nav class="navbar">
+  <div class="container-sm">
+    <div id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Calc</a>
@@ -28,70 +40,70 @@
   </div>
 </nav>
 
+<!-- result -->
+<div class="col container-sm">
+  <p class="res">RES</p>
+</div>
+
 <div class="row align-items-start">
   
 <!-- numeric buttons + brackets -->
-<div class="col container-sm">
+<div class="col container-sm bgrpcnt">
 
   <div class="btn-toolbar" role="toolbar" aria-label="tb-b123">
     <div class="btn-group me-2" role="group" aria-label="b123">
-      <button type="button" class="btn btn-outline-primary">1</button>
-      <button type="button" class="btn btn-outline-secondary">2</button>
-      <button type="button" class="btn btn-outline-success">3</button>
+      <button type="button" class="btn mr-3 btn-outline-primary">1</button>
+      <button type="button" class="btn mr-3 btn-outline-secondary">2</button>
+      <button type="button" class="btn mr-3 btn-outline-success">3</button>
     </div>
   </div>
   <div class="btn-toolbar" role="toolbar" aria-label="tb-b456">
     <div class="btn-group me-2" role="group" aria-label="b456">
-      <button type="button" class="btn btn-outline-danger">4</button>
-      <button type="button" class="btn btn-outline-info">5</button>
-      <button type="button" class="btn btn-outline-primary">6</button>
+      <button type="button" class="btn mr-3 btn-outline-danger">4</button>
+      <button type="button" class="btn mr-3 btn-outline-info">5</button>
+      <button type="button" class="btn mr-3 btn-outline-primary">6</button>
     </div>
   </div>
   <div class="btn-toolbar" role="toolbar" aria-label="tb-b789">
     <div class="btn-group me-2" role="group" aria-label="b789">
-      <button type="button" class="btn btn-outline-secondary">7</button>
-      <button type="button" class="btn btn-outline-success">8</button>
-      <button type="button" class="btn btn-outline-danger">9</button>
+      <button type="button" class="btn mr-3 btn-outline-secondary">7</button>
+      <button type="button" class="btn mr-3 btn-outline-success">8</button>
+      <button type="button" class="btn mr-3 btn-outline-danger">9</button>
     </div>
   </div>
   <div class="btn-toolbar" role="toolbar" aria-label="tb-b0">
-      <button type="button" class="btn btn-outline-secondary">(</button>
-      <button type="button" class="btn btn-outline-danger">0</button>
-      <button type="button" class="btn btn-outline-danger">)</button>
+      <button type="button" class="btn mr-3 btn-outline-secondary">(</button>
+      <button type="button" class="btn mr-3 btn-outline-danger">0</button>
+      <button type="button" class="btn mr-3 btn-outline-danger">)</button>
   </div>
 </div>
 
 <!-- operators -->
-<div class="col container-sm">
+<div class="col container-sm bgrpcnt">
   <div class="btn-toolbar" role="toolbar" aria-label="tb-b0">
     <div class="btn-group me-2" role="group" aria-label="b123">
-      <button type="button" class="btn btn-outline-primary">+</button>
-      <button type="button" class="btn btn-outline-primary">(.)<sup>n</sup></button>
+      <button type="button" class="btn mr-3 btn-outline-primary">+</button>
+      <button type="button" class="btn mr-3 btn-outline-primary">(.)<sup>n</sup></button>
     </div>
   </div>
   <div class="btn-toolbar" role="toolbar" aria-label="tb-b0">
     <div class="btn-group me-2" role="group" aria-label="b123">
-      <button type="button" class="btn btn-outline-secondary">-</button>
-      <button type="button" class="btn btn-outline-secondary">ln(.)</button>
+      <button type="button" class="btn mr-3 btn-outline-secondary">-</button>
+      <button type="button" class="btn mr-3 btn-outline-secondary">ln(.)</button>
     </div>
   </div>
   <div class="btn-toolbar" role="toolbar" aria-label="tb-b0">
     <div class="btn-group me-2" role="group" aria-label="b123">
-      <button type="button" class="btn btn-outline-success">*</button>
-      <button type="button" class="btn btn-outline-success">&Sqrt;</button>
+      <button type="button" class="btn mr-3 btn-outline-success">*</button>
+      <button type="button" class="btn mr-3 btn-outline-success">&Sqrt;</button>
     </div>
   </div>
   <div class="btn-toolbar" role="toolbar" aria-label="tb-b0">
     <div class="btn-group me-2" role="group" aria-label="b123">
-      <button type="button" class="btn btn-outline-success">/</button>
-      <button type="button" class="btn btn-outline-success">,</button>
+      <button type="button" class="btn mr-3 btn-outline-success">/</button>
+      <button type="button" class="btn mr-3 btn-outline-success">,</button>
     </div>
   </div>
-</div>
-
-<!-- result -->
-<div class="col container-sm">
-  <p>RES</p>
 </div>
 
 </div>
