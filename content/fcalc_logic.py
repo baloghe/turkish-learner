@@ -40,13 +40,13 @@ all_digs = []
 all_ops = []
 all_fns = []
 for x in symbols.keys():
-  if (x["t"] == "inop" and x != "MI") or x["t"] == "fn":
+  if (symbols[x]["t"] == "inop" and x != "MI") or symbols[x]["t"] == "fn":
     all_inops_fns.append(x)
-  if x["t"] == "dig":
+  if symbols[x]["t"] == "dig":
     all_digs.append(x)
-  if x["t"] == "inop":
+  if symbols[x]["t"] == "inop":
     all_ops.append(x)
-  if x["t"] == "fn":
+  if symbols[x]["t"] == "fn":
     all_fns.append(x)
 
 
@@ -71,6 +71,8 @@ def symlist_to_string():
   return " ".join(tmp)
 
 def reset():
+  global symlist, opstack, brackets, opcount, numcoll, state
+  
   symlist = [] 
   opstack = [] 
   brackets = []
@@ -91,7 +93,9 @@ def reset():
   }
 
 def add_symbol(sym):
-  print(f"addsymbol: {sym}:p{symbols[sym]["p"]}, top: {opstack.top()}:p{symbols[opstack.top()]["p"]}")
+  global symlist, state
+  
+  print(f"addsymbol: {sym}:p{symbols[sym]['p']}")
   
   # reject unexpected symbol and quit
   if not state[sym]:
@@ -105,8 +109,8 @@ def add_symbol(sym):
   handle_symbol(sym)
   
   # find out if a result is available
-  if len(opstack) == 1 and opstack.top() == "NUMBER":
-    state["RESULT"] = opstack.top()["s"]
+  if len(opstack) == 1 and opstack[-1] == "NUMBER":
+    state["RESULT"] = opstack[-1]["s"]
     state["STATE"] = "result"
   else:
     if len(opstack) == 0:
@@ -122,20 +126,34 @@ def add_symbol(sym):
   calc_state()
   
 def enable_symbol(symarr):
+  global state
   for s in symarr:
     state[s] = True
   
 def disable_symbol(symarr):
+  global state
   for s in symarr:
     state[s] = False
     
-def handle_symbol(sym):
-  # TBD
-  return
+def handle_brackets(sym):
+  global brackets
+  if len(brackets) > 0 and  brackets[-1] == "OB" and sym == "CB":
+    brackets.pop()
+    print(f"brackets: top OB removed -> len={len(brackets)}")
+  else:
+    brackets.append(sym)
+    print(f"brackets: append {sym} -> len={len(brackets)}")
   
-def calc_state(sym):
+def handle_symbol(sym):
+  # TBD correctly. For the sake of testing, just put the symbol in
+  opstack.append(sym)
+  if sym == "OB" or sym == "CB":
+    handle_brackets(sym)
+  
+def calc_state():
+  global state
   # empty stack
-  if len(opstack) == 0
+  if len(opstack) == 0:
     enable_symbol(["OB","SQ","LN","MI"] + all_digs)
     disable_symbol(["CB"] + all_ops)
     return
@@ -145,19 +163,25 @@ def calc_state(sym):
     disable_symbol(["OB","MI"] + all_inops_fns)
     enable_symbol(["CB"] + all_digs)
   else: # at least one element in stack
-    tp = opstack.top()
+    last = opstack[-1]
+    tp = symbols[last]
     tpt = tp["t"]
     if tpt == "dig":
       enable_symbol(symbols.keys())
     elif tpt == "fn" or tpt == "inop":
       enable_symbol(["OB"] + all_digs + all_fns)
       disable_symbol(["CB"] + all_ops)
+    elif last == "CB":
+      disable_symbol(["OB"] + all_digs + all_fns)
+      enable_symbol(["CB"] + all_ops)
   
   # special care for closing brackets: enable only when at least one is open
-  if len(brackets) > 0:
+  if len(brackets) > 0 and opstack[-1] != "OB":
     state["CB"] = True
+    print("CB -> True")
   else:
     state["CB"] = False
+    print("CB -> False")
   
   
 # test definitions
@@ -166,8 +190,20 @@ def tst_symlist_to_string():
   symlist = ["OB","B1","B2","PL","B3","DC","B9","CB","PO","B2","MI","B2","DC","B0"]
   print(symlist_to_string())
 
-
+def print_state():
+  e = []
+  d = []
+  for k in state.keys():
+    if k != "STATE" and k != "RESULT" and k != "EXPRESSION":
+      if state[k]:
+        e.append(k)
+      else:
+        d.append(k)
+  print(f"enabled: {','.join(e)} , disabled: {','.join(d)}")
 
 #tests
-tst_symlist_to_string()
-
+reset()
+add_symbol("OB")
+add_symbol("B2")
+add_symbol("CB")
+print_state()
