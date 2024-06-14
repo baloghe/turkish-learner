@@ -193,6 +193,8 @@ def to_polish_form(slist):
     else:
       if len(opstack) == 0:
         opstack.append(act)
+      elif act["k"] == "OB":
+        opstack.append(act)
       elif act["k"] == "CB":
         oppop = opstack.pop()
         while oppop["k"] != "OB":
@@ -202,11 +204,16 @@ def to_polish_form(slist):
         opstack.append(act)
       else:
         top = opstack[-1]
-        while top["p"] >= act["p"] and len(opstack) > 0:
+        while len(opstack) > 0 and top["p"] >= act["p"] and top["k"] != "OB":
           top = opstack.pop()
           polform.append(top)
+          if len(opstack) > 0:
+            top = opstack[-1]
+          else:
+            top = None
           
         opstack.append(act)
+    #print(f"  opstack: {symlist_to_string(opstack)}  ;  pf={symlist_to_string(polform)}")
     ptr += 1
   
   while len(opstack) > 0:
@@ -246,8 +253,8 @@ def eval_polish_form(pf):
       num = float(act["s"])
       args.append(num)
     elif act["t"] == "fn":
-      act = args.pop()
-      value = eval_fn(act["k"], [act])
+      act1 = args.pop()
+      value = eval_fn(act["k"], [act1])
       args.append(value)
     elif act["t"] == "inop":
       act2 = args.pop()
@@ -335,7 +342,9 @@ def print_state():
 
 #tests
 def tst_polform():
-  lst = [ {"k":"OB","p":3,"s":"(","t":"bracket"}
+  lst = [ {"k":"SQ","p":4,"s":"&sqrt;","t":"fn"}
+         ,{"k":"OB","p":3,"s":"(","t":"bracket"}
+         ,{"k":"OB","p":3,"s":"(","t":"bracket"}
          ,{"k":"OB","p":3,"s":"(","t":"bracket"}
          ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
          ,{"k":"PL","p":1,"s":"+","t":"inop"}
@@ -346,6 +355,7 @@ def tst_polform():
          ,{"k":"NUMBER","p":0,"s":"3","t":"number"}
          ,{"k":"PL","p":1,"s":"+","t":"inop"}
          ,{"k":"NUMBER","p":0,"s":"4","t":"number"}
+         ,{"k":"CB","p":3,"s":")","t":"bracket"}
          ,{"k":"MU","p":2,"s":"*","t":"inop"}
          ,{"k":"NUMBER","p":0,"s":"2","t":"number"}
          ,{"k":"MI","p":1,"s":"-","t":"inop"}
@@ -354,8 +364,9 @@ def tst_polform():
          ,{"k":"DI","p":2,"s":"/","t":"inop"}
          ,{"k":"OB","p":3,"s":"(","t":"bracket"}
          ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
-         ,{"k":"PL","p":1,"s":"+","t":"inop"}
-         ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
+         ,{"k":"MI","p":1,"s":"-","t":"inop"}
+         ,{"k":"NUMBER","p":0,"s":"4","t":"number"}
+         ,{"k":"CB","p":3,"s":")","t":"bracket"}
          ,{"k":"CB","p":3,"s":")","t":"bracket"}
         ]
         
