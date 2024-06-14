@@ -1,10 +1,11 @@
 # Online Python - IDE, Editor, Compiler, Interpreter
 
+import math
+
 maxopnum = 20   # max number of operators
 
 state = {}      # state
 symlist = []    # symbols as typed by the user
-opstack = []    # operational stack 
 brackets = []   # separate stack to ensure proper bracketing
 opcount = 0     # number of operators in stack
 dccount = 0     # number of decimal points in the current number literal
@@ -26,8 +27,8 @@ symbols = {
   ,"CB": {"k":"CB","p":3,"s":")","t":"bracket"}
   ,"MU": {"k":"MU","p":2,"s":"*","t":"inop"}
   ,"DI": {"k":"DI","p":2,"s":"/","t":"inop"}
-  ,"PL": {"k":"PL","p":2,"s":"+","t":"inop"}
-  ,"MI": {"k":"MI","p":2,"s":"-","t":"inop"}
+  ,"PL": {"k":"PL","p":1,"s":"+","t":"inop"}
+  ,"MI": {"k":"MI","p":1,"s":"-","t":"inop"}
   ,"PO": {"k":"PO","p":4,"s":"^","t":"inop"}
   ,"LN": {"k":"LN","p":4,"s":"LN","t":"fn"}
   ,"SQ": {"k":"SQ","p":4,"s":"&sqrt;","t":"fn"}
@@ -51,41 +52,20 @@ for x in symbols.keys():
     all_fns.append(x)
 
 
-def symlist_to_string():
-  if symlist == None or len(symlist) == 0:
+def symlist_to_string(slist):
+  if slist == None or len(slist) == 0:
     return ""
     
   tmp = []
-  num = ""
-  for s in symlist:
-    if symbols[s]["t"] == "dig":
-      num = num + symbols[s]["s"]
-    else:
-      if num:
-        tmp.append(num)
-        num = ""
-      tmp.append(symbols[s]["s"])
-        
-  if num:
-    tmp.append(num)
-    
-  return " ".join(tmp)
-
-def opstack_to_string():
-  if opstack == None or len(opstack) == 0:
-    return ""
-    
-  tmp = []
-  for e in opstack:
+  for e in slist:
     tmp.append(e["s"])
   
   return " ".join(tmp)
 
 def reset():
-  global symlist, opstack, brackets, opcount, numcoll, state
+  global symlist, brackets, opcount, numcoll, state
   
   symlist = []
-  opstack = []
   brackets = []
   opcount = 0
   dccount = 0
@@ -104,7 +84,7 @@ def reset():
   }
 
 def add_symbol(sym):
-  global symlist, state
+  global state
   
   print(f"addsymbol: {sym}:p{symbols[sym]['p']}")
   
@@ -113,14 +93,11 @@ def add_symbol(sym):
     print(f"  unexpected symbol, do nothing")
     return
   
-  # add to symlist
-  symlist.append(sym)
-  
   # add to operational + eventually bracket stack
   handle_symbol(sym)
     
   # expression
-  state["EXPRESSION"] = symlist_to_string()
+  state["EXPRESSION"] = symlist_to_string(symlist)
     
   # decide on state
   calc_state()
@@ -165,7 +142,7 @@ def get_symbol(sym):
   }
   
 def handle_symbol(sym):
-  global opcount, dccount, opstack
+  global opcount, dccount, symlist
   
   sss = symbols[sym]
   
@@ -176,10 +153,10 @@ def handle_symbol(sym):
   # operational stack
   elem = None
   if sss["t"] == "dig":
-    if len(opstack) == 0 or opstack[-1]["k"] != "NUMBER":
+    if len(symlist) == 0 or symlist[-1]["k"] != "NUMBER":
       elem = get_symbol("NUMBER")
     else:
-      elem = opstack.pop()
+      elem = symlist.pop()
     elem["s"] += sss["s"]
     if sss["k"] == "DC":
       dccount = 1
@@ -187,7 +164,7 @@ def handle_symbol(sym):
     elem = get_symbol(sym)
     dccount = 0
   
-  opstack.append(elem)
+  symlist.append(elem)
   
   # operation counter
   if sss["t"] == "fn" or sss["t"] == "inop":
@@ -195,7 +172,7 @@ def handle_symbol(sym):
   
 def copy_stack():
   ret = []
-  for e in opstack:
+  for e in symlist:
     elem = { "k":e["k"]
           ,"p":e["p"]
           ,"s":e["s"]
@@ -203,21 +180,99 @@ def copy_stack():
     }
     ret.append(elem)
   return ret
+
+def to_polish_form(slist):
+  error = 0
+  polform = []
+  opstack = []
+  ptr = 0
+  while ptr < len(slist) and error == 0:
+    act = slist[ptr]
+    if act["t"] == "number":
+      polform.append(act)
+    else:
+      if len(opstack) == 0:
+        opstack.append(act)
+      elif act["k"] == "CB":
+        oppop = opstack.pop()
+        while oppop["k"] != "OB":
+          polform.append(oppop)
+          oppop = opstack.pop()
+      elif act["p"] > opstack[-1]["p"]:
+        opstack.append(act)
+      else:
+        top = opstack[-1]
+        while top["p"] >= act["p"] and len(opstack) > 0:
+          top = opstack.pop()
+          polform.append(top)
+          
+        opstack.append(act)
+    ptr += 1
   
+  while len(opstack) > 0:
+    oppop = opstack.pop()
+    polform.append(oppop)
+    
+  return polform
+
+def eval_fn(fn, arglist):
+  if fn == "LN" and len(arglist) > 0 and arglist[0] > 0:
+    return math.log(arglist[0])
+  elif fn == "SQ" and len(arglist) > 0 and arglist[0] >= 0:
+    return math.sqrt(arglist[0])
+  else:
+    return None
+    
+def eval_inop(fn, arglist):
+  if fn == "PL" and len(arglist) > 1:
+    return arglist[0] + arglist[1]
+  elif fn == "MI" and len(arglist) > 1:
+    return arglist[0] - arglist[1]
+  elif fn == "MU" and len(arglist) > 1:
+    return arglist[0] * arglist[1]
+  elif fn == "DI" and len(arglist) > 1 and arglist[1] != 0:
+    return arglist[0] / arglist[1]
+  elif fn == "PO" and len(arglist) > 1:
+    return math.pow(arglist[0] , arglist[1])
+  else:
+    return None
+
+def eval_polish_form(pf):
+  args = []
+  ptr = 0
+  while ptr < len(pf):
+    act = pf[ptr]
+    if act["t"] == "number":
+      num = float(act["s"])
+      args.append(num)
+    elif act["t"] == "fn":
+      act = args.pop()
+      value = eval_fn(act["k"], [act])
+      args.append(value)
+    elif act["t"] == "inop":
+      act2 = args.pop()
+      act1 = args.pop()
+      value = eval_inop(act["k"], [act1,act2])
+      args.append(value)
+    else:
+      print(f"  ERR: ptr={ptr} -> type={act['t']}")
+    print(f"  ptr={ptr} -> args={args}")
+    ptr += 1
+  
+  return args[0]
+
 def eval_stack():
-  if len(opstack) == 0:
+  if len(symlist) == 0:
     return {"state": "empty", "value": None}
     
-  if len(opstack) == 1:
-    if opstack[-1]["t"] == "number":
-      return {"state": "ok", "value": float(opstack[-1]["s"])}
+  if len(symlist) == 1:
+    if symlist[-1]["t"] == "number":
+      return {"state": "ok", "value": float(symlist[-1]["s"])}
     else:
       return {"state": "error", "value": None}
     
-  scop = copy_stack()
-  error = 0
-  while len(scop) > 1 and error == 0:
-    # TBD
+  # transform to polish form and evaluate
+  polform = to_polish_form(symlist)
   
   if error == 1 or scop[-1]["t"] != "number":
     return {"state": "error", "value": None}
@@ -227,7 +282,7 @@ def eval_stack():
 def calc_state():
   global state
   # empty stack
-  if len(opstack) == 0:
+  if len(symlist) == 0:
     enable_symbol(["OB","SQ","LN","MI"] + all_digs)
     disable_symbol(["CB"] + all_ops)
     print("  calc_state: stack is empty")
@@ -238,7 +293,7 @@ def calc_state():
     disable_symbol(["OB","MI"] + all_inops_fns)
     enable_symbol(["CB"] + all_digs)
   else: # at least one element in stack
-    last = opstack[-1]
+    last = symlist[-1]
     tpt = last["t"]
     tpk = last["k"]
     if tpt == "number":
@@ -254,10 +309,10 @@ def calc_state():
   # special care for closing brackets: enable only when at least one is open
   if len(brackets) > 0 and tpk != "OB":
     state["CB"] = True
-    print("CB -> True")
+    #print("CB -> True")
   else:
     state["CB"] = False
-    print("CB -> False")
+    #print("CB -> False")
   
   # special care for decimal separator
   if dccount > 0:
@@ -266,10 +321,6 @@ def calc_state():
   
   
 # test definitions
-def tst_symlist_to_string():
-  reset()
-  symlist = ["OB","B1","B2","PL","B3","DC","B9","CB","PO","B2","MI","B2","DC","B0"]
-  print(symlist_to_string())
 
 def print_state():
   e = []
@@ -283,10 +334,43 @@ def print_state():
   print(f"enabled: {','.join(e)} , disabled: {','.join(d)}")
 
 #tests
-reset()
-add_symbol("OB")
-add_symbol("B2")
-add_symbol("DC")
-add_symbol("B2")
-add_symbol("CB")
-print(opstack_to_string())
+def tst_polform():
+  lst = [ {"k":"OB","p":3,"s":"(","t":"bracket"}
+         ,{"k":"OB","p":3,"s":"(","t":"bracket"}
+         ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
+         ,{"k":"PL","p":1,"s":"+","t":"inop"}
+         ,{"k":"NUMBER","p":0,"s":"2","t":"number"}
+         ,{"k":"CB","p":3,"s":")","t":"bracket"}
+         ,{"k":"MI","p":1,"s":"-","t":"inop"}
+         ,{"k":"OB","p":3,"s":"(","t":"bracket"}
+         ,{"k":"NUMBER","p":0,"s":"3","t":"number"}
+         ,{"k":"PL","p":1,"s":"+","t":"inop"}
+         ,{"k":"NUMBER","p":0,"s":"4","t":"number"}
+         ,{"k":"MU","p":2,"s":"*","t":"inop"}
+         ,{"k":"NUMBER","p":0,"s":"2","t":"number"}
+         ,{"k":"MI","p":1,"s":"-","t":"inop"}
+         ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
+         ,{"k":"CB","p":3,"s":")","t":"bracket"}
+         ,{"k":"DI","p":2,"s":"/","t":"inop"}
+         ,{"k":"OB","p":3,"s":"(","t":"bracket"}
+         ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
+         ,{"k":"PL","p":1,"s":"+","t":"inop"}
+         ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
+         ,{"k":"CB","p":3,"s":")","t":"bracket"}
+        ]
+        
+  print(f"orig: {symlist_to_string(lst)}")
+  pf = to_polish_form(lst)
+  print(f"pf: {symlist_to_string(pf)}")
+  val = eval_polish_form(pf)
+  print(f"val: {val}")
+
+tst_polform()
+
+#reset()
+#add_symbol("OB")
+#add_symbol("B2")
+#add_symbol("DC")
+#add_symbol("B2")
+#add_symbol("CB")
+#print(symlist_to_string())
