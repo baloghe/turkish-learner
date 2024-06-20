@@ -404,6 +404,21 @@ def eval_polish_form(pf):
   
   print(f"eval_polish_form :: args[0]={args[0]}")
   return args[0]
+
+  
+  # special care for closing brackets: enable only when at least one is open
+  # --> finally omitted since we want to enable user to post-bracket the entire expression
+  #if len(brackets) > 0 and tpk != "OB":
+  #  state["CB"] = True
+  #  #print("CB -> True")
+  #else:
+  #  state["CB"] = False
+    #print("CB -> False")
+  
+  # special care for decimal separator
+  # --> finally delegated to the front-end
+  #if dccount > 0:
+  #   disable_symbol(["DC"])
   
   
   
@@ -446,102 +461,17 @@ def tst_polform():
   print(f"pf: {symlist_to_string(pf)}")
   val = eval_polish_form(pf)
   print(f"val: {val}")
-
-def tst_divbyzero():
-  c = Calculator()
-  lst = [ {"k":"NUMBER","p":0,"s":"1","t":"number"}
-         ,c.symbols["DI"]
-         ,{"k":"NUMBER","p":0,"s":"0","t":"number"}
-        ]
-    
-  val = None
-  error = ""
-  print(f"orig: {symlist_to_string(lst)}")
-  pf = to_polish_form(lst)
-  print(f"pf: {symlist_to_string(pf)}")
-  try:
-    val = eval_polish_form(pf)
-  except ZeroDivisionError:
-    val = None
-    error = "unexpected value during evaluation"
-  except ValueError:
-    val = None
-    error = "unexpected value during evaluation"
-  except IndexError:
-    val = None
-    error = "malformed expression"
   
-  print(f"val: {val}, error: {error}")
-
-def tst_malformed1():
-  c = Calculator()
-  lst = [ c.symbols["OB"]
-         ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
-         ,c.symbols["PL"]
-         ,c.symbols["CB"]
-        ]
-    
-  val = None
-  error = ""
-  print(f"orig: {symlist_to_string(lst)}")
-  pf = to_polish_form(lst)
-  print(f"pf: {symlist_to_string(pf)}")
-  try:
-    val = eval_polish_form(pf)
-  except ZeroDivisionError:
-    val = None
-    error = "unexpected value during evaluation"
-  except ValueError:
-    val = None
-    error = "unexpected value during evaluation"
-  except IndexError:
-    val = None
-    error = "malformed expression"
+  exp_PF = "1 2 + 3 4 + 2 * - 1 - 1 4 - / &sqrt;"
   
-  print(f"val: {val}, error: {error}")
+  assert symlist_to_string(pf) == exp_PF , f"polish form: actual |{symlist_to_string(pf)}| vs expected |{exp_PF}|"
+  assert val == 2 , f"value: actual |{val}| vs expected |2|"
 
-def tst_malformed2():
-  c = Calculator()
-  lst = [ c.symbols["CB"]
-         ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
-         ,c.symbols["PL"]
-         ,{"k":"NUMBER","p":0,"s":"2","t":"number"}
-        ]
-    
+def tst_malformed_factory(lst, exp_Error):
   val = None
   error = ""
-  print(f"orig: {symlist_to_string(lst)}")
-  pf = to_polish_form(lst)
-  print(f"pf: {symlist_to_string(pf)}")
   try:
-    val = eval_polish_form(pf)
-  except ZeroDivisionError:
-    val = None
-    error = "unexpected value during evaluation"
-  except ValueError:
-    val = None
-    error = "unexpected value during evaluation"
-  except IndexError:
-    val = None
-    error = "malformed expression"
-  except MalformedExpression:
-    val = None
-    error = "malformed expression"
-  
-  print(f"val: {val}, error: {error}")
-
-def tst_malformed3():
-  c = Calculator()
-  lst = [ {"k":"NUMBER","p":0,"s":"1","t":"number"}
-         ,c.symbols["PL"]
-         ,{"k":"NUMBER","p":0,"s":"2","t":"number"}
-         ,c.symbols["CB"]
-        ]
-    
-  val = None
-  error = ""
-  print(f"orig: {symlist_to_string(lst)}")
-  try:
+    print(f"orig: {symlist_to_string(lst)}")
     pf = to_polish_form(lst)
     print(f"pf: {symlist_to_string(pf)}")
     val = eval_polish_form(pf)
@@ -557,40 +487,82 @@ def tst_malformed3():
   except MalformedExpression:
     val = None
     error = "malformed expression"
+    
+  assert val == None , f"value: actual |{val}| vs expected |None|"
+  assert error == exp_Error , f"value: actual |{error}| vs expected |{exp_Error}|"
+    
   
-  print(f"val: {val}, error: {error}")
- 
- 
-def tst_addsym1():
+
+def tst_divbyzero():
   c = Calculator()
-  
-  lst = [{"sym":"NUMBER","numliteral":"12.3"}
-        ,{"sym":"PL","numliteral":None}
-        ,{"sym":"NUMBER","numliteral":"2.7"}
+  lst = [ {"k":"NUMBER","p":0,"s":"1","t":"number"}
+         ,c.symbols["DI"]
+         ,{"k":"NUMBER","p":0,"s":"0","t":"number"}
         ]
+    
+  tst_malformed_factory(lst,"unexpected value during evaluation")
+
+def tst_malformed1():
+  c = Calculator()
+  lst = [ c.symbols["OB"]
+         ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
+         ,c.symbols["PL"]
+         ,c.symbols["CB"]
+        ]
+    
+  tst_malformed_factory(lst,"malformed expression")
+
+def tst_malformed2():
+  c = Calculator()
+  lst = [ c.symbols["CB"]
+         ,{"k":"NUMBER","p":0,"s":"1","t":"number"}
+         ,c.symbols["PL"]
+         ,{"k":"NUMBER","p":0,"s":"2","t":"number"}
+        ]
+    
+  tst_malformed_factory(lst,"malformed expression")
+
+def tst_malformed3():
+  c = Calculator()
+  lst = [ {"k":"NUMBER","p":0,"s":"1","t":"number"}
+         ,c.symbols["PL"]
+         ,{"k":"NUMBER","p":0,"s":"2","t":"number"}
+         ,c.symbols["CB"]
+        ]
+    
+  tst_malformed_factory(lst,"malformed expression")
+ 
+
+def tst_addsym_factory(lst, exp_Expr, exp_Res, exp_Stat):
+  c = Calculator()
         
   for e in lst:
     c.add_symbol(e["sym"], e["numliteral"])
     
   c.print_state()
   
-def tst_addsym2():
-  c = Calculator()
+  assert c.state["EXPRESSION"] == exp_Expr , f"Expression: actual |{c.state['EXPRESSION']}| vs expected |{exp_Expr}|"
+  assert abs(float(c.state["RESULT"]) - float(exp_Res)) < 0.00001  , f"Expression: actual |{c.state['RESULT']}| vs expected |{exp_Res}|"
+  assert c.state["STATE"] == exp_Stat , f"Expression: actual |{c.state['STATE']}| vs expected |{exp_Stat}|"
+ 
+def tst_addsym1():
+  lst = [{"sym":"NUMBER","numliteral":"12.3"}
+        ,{"sym":"PL","numliteral":None}
+        ,{"sym":"NUMBER","numliteral":"2.7"}
+        ]
+        
+  tst_addsym_factory(lst, "12.3 + 2.7", "15", "result")
   
+def tst_addsym2():
   lst = [{"sym":"NUMBER","numliteral":"12.3"}
         ,{"sym":"PL","numliteral":None}
         ,{"sym":"NUMBER","numliteral":"3.7"}
         ,{"sym":"SQ","numliteral":None}
         ]
         
-  for e in lst:
-    c.add_symbol(e["sym"], e["numliteral"])
-    
-  c.print_state()
+  tst_addsym_factory(lst, "&sqrt; ( 12.3 + 3.7 )", "4", "result")
   
 def tst_addsym3():
-  c = Calculator()
-  
   lst = [{"sym":"NUMBER","numliteral":"12.3"}
         ,{"sym":"PL","numliteral":None}
         ,{"sym":"NUMBER","numliteral":"3.7"}
@@ -599,10 +571,7 @@ def tst_addsym3():
         ,{"sym":"NUMBER","numliteral":"2"}
         ]
         
-  for e in lst:
-    c.add_symbol(e["sym"], e["numliteral"])
-    
-  c.print_state()
+  tst_addsym_factory(lst, "( 12.3 + 3.7 ) * 2", "32", "result")
     
     
 def tst_smoke():
@@ -610,14 +579,14 @@ def tst_smoke():
   c.print_state()
   
 
-#tst_addsym3()
-#tst_addsym2()
-#tst_addsym1()
+tst_addsym3()
+tst_addsym2()
+tst_addsym1()
          
-#tst_malformed3()
-#tst_malformed2()
-#tst_malformed1()
-#tst_divbyzero()
-#tst_polform()
+tst_malformed3()
+tst_malformed2()
+tst_malformed1()
+tst_divbyzero()
+tst_polform()
 
-tst_smoke()
+#tst_smoke()
