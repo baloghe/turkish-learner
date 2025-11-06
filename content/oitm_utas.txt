@@ -1,0 +1,169 @@
+import csv
+import networkx as nx
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+from collections import Counter
+
+# Lista para almacenar los datos procesados
+personas = []
+
+# Abrir y leer el archivo CSV
+with open('./utaslista.txt', mode='r', encoding='utf-8') as archivo_csv:
+    lector = csv.DictReader(archivo_csv)
+    
+    for fila in lector:
+        # Separar name en family_name y name
+        nombre_completo = fila['name'].strip().split(' ', 1)
+        family_name = nombre_completo[0]
+        name = nombre_completo[1] if len(nombre_completo) > 1 else ''
+        
+        # Separar mothername en family_mothername y mothername
+        nombre_madre = fila['mothername'].strip().split(' ', 1)
+        family_mothername = nombre_madre[0]
+        mothername = nombre_madre[1] if len(nombre_madre) > 1 else ''
+
+        # Convertir birthdate a objeto datetime.date
+        fecha_str = fila['birthdate'].strip()[:10]
+        try:
+            birthdate = datetime.strptime(fecha_str, '%Y.%m.%d').date()
+            birth_md = birthdate.strftime('%m-%d')  # Extraer mes y día
+        except ValueError:
+            birthdate = None  # o manejar el error como prefieras
+            birth_md = None
+        
+        # Crear diccionario con los nuevos campos
+        persona = {
+            'family_name': family_name,
+            'name': name,
+            'fullname': fila['name'].strip(),
+            'birthdate': birthdate,
+            'birth_md': birth_md,
+            'family_mothername': family_mothername,
+            'mothername': mothername,
+            'fullmothername': fila['mothername'].strip()
+        }
+        
+        personas.append(persona)
+
+# Mostrar los resultados
+for p in personas[:1]:
+    print(p)
+
+
+# Ordenar la lista por mes y día de nacimiento (birth_md)
+personas_ordenadas = sorted(personas, key=lambda p: (p['birth_md']))
+
+# Mostrar los resultados ordenados
+for p in personas_ordenadas[:1]:
+    print(p)
+
+# Contar ocurrencias de cada valor birth_md
+conteo_birth_md = Counter(p['birth_md'] for p in personas_ordenadas if p['birth_md'])
+
+# Crear lista ordenada por birth_md
+lista_birth_md = sorted(conteo_birth_md.items())
+
+
+# Mostrar resultados
+for birth_md, cantidad in lista_birth_md[:1]:
+    print(f'{birth_md}: {cantidad}')
+
+# Cuando ha empezado la viaje?
+start_date = lista_birth_md[0][0]
+cons_len = 1
+prv_birth_md = lista_birth_md[0][0]
+found = False
+for act_birth_md, cantidad in lista_birth_md[1:]:
+    if not found:
+        #diferencia = abs((act_birth_md - prv_birth_md).days)
+        diferencia = abs((datetime.strptime(act_birth_md, '%m-%d').date() - datetime.strptime(prv_birth_md, '%m-%d').date()).days)
+
+        if diferencia == 1:
+            cons_len = cons_len + 1
+        else:
+            cons_len = 1
+            start_date = act_birth_md
+        prv_birth_md = act_birth_md
+        if cons_len==14:
+            found=True
+            print(act_birth_md)
+if found:
+    print(f"La viaje ha comenzado a la {start_date}")
+else:
+    print("La vieja no comenzó nunca")
+
+# Quién es la abuela?
+## Crear un grafo vacío
+G = nx.DiGraph()
+# Agregar nodos y aristas
+for p in personas:
+    # nodos
+    child = p['fullname']
+    mother = p['fullmothername']
+    G.add_node(child)
+    if mother not in G:
+        G.add_node(mother)
+    # aristas
+    G.add_edge(mother, child)
+
+
+# Lista para guardar los nodos que cumplen ambas condiciones
+nodos_filtrados = []
+
+for nodo in G.nodes:
+    hijos = list(G.successors(nodo))
+    
+    if len(hijos) == 3:
+        # Recolectar todos los nietos (successors de los hijos)
+        nietos = []
+        for hijo in hijos:
+            nietos.extend(G.successors(hijo))
+        
+        if len(nietos) == 10:
+            nodos_filtrados.append(nodo)
+
+print("Abuelas candidadas (nodos con exactamente 3 hijos y 10 nietos):", nodos_filtrados)
+
+
+# El viajero más feliz
+mas_feliz = {'fullname': None, 'pos': 0, 'cnt': 0}
+## Ordenar la lista por fecha de nacimiento (birthdate)
+personas_ordenadas = sorted(personas, key=lambda p: (p['birthdate']))
+## a: muestra la fecha actual
+## c: muestra el comienzo de un periodo de dos anos el relacion con 'a'
+## f: muestra el final de un periodo de dos anos a partir de 'a'
+c = 0
+a = 0
+f = -1
+## calcular f
+limiteAlta = personas_ordenadas[0]['birthdate'] + relativedelta(years=2)
+for i,p in enumerate(personas_ordenadas):
+    if p['birthdate'] <= limiteAlta:
+        f = i
+    else:
+        break
+## recorre la lista con 'a' y calcula 'c' y 'f'. El numero de amigos de 'a' == f-a+1-1 == f-a
+for a,p in enumerate(personas_ordenadas):
+    ### Recalcular límites
+    limiteBaja = personas_ordenadas[a]['birthdate'] + relativedelta(years=-2)
+    limiteAlta = personas_ordenadas[a]['birthdate'] + relativedelta(years=2)
+    ### Ajustar f
+    for i2,p2 in enumerate(personas_ordenadas[f:]):
+        newf = p2['birthdate']
+        if newf <= limiteAlta:
+            f = i2
+        else:
+            break
+    ### Ajustar c
+    for i3,p3 in enumerate(personas_ordenadas[c:]):
+        newc = p3['birthdate']
+        if newc < limiteBaja:
+            c = i3
+        else:
+            break
+    ### Cuenta las amigas de 'a':
+    cnt = f - c
+    if cnt > mas_feliz['cnt']:
+        mas_feliz = {'fullname': p['fullname'], 'pos': a, 'cnt': cnt}
+
+print(f"Viajero/a más feliz: {mas_feliz}")
