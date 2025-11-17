@@ -1,3 +1,32 @@
+import csv
+
+grid = []
+vec = []
+
+# Lee el archivo
+with open('./racs.txt', mode='r', encoding='utf-8') as archivo_csv:
+    lector = csv.DictReader(archivo_csv, delimiter=" ")
+    
+    for fila in lector:
+        grid.append(fila)
+        #grid.append({k: v} for k,v in fila.items())
+        vec.append(int(fila['o1']))
+        vec.append(int(fila['o2']))
+        vec.append(int(fila['o3']))
+
+# Mostrar los resultados
+for g in grid[:2]:
+    print(g)
+for v in vec[:6]:
+    print(v)
+
+
+# Verificar si hay números repetidos
+repetidos = {n for n in vec if vec.count(n) > 1}
+print(f"Números repetidos: {list(repetidos)[:3]}..., total: {len(repetidos)}")
+
+
+
 1955
 1211709 4198424 4418723
 1104588 2118728 5163679
