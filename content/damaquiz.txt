@@ -1,815 +1,161 @@
-23. Which of the following describes Information Technology (IT) Governance?
-Informs decisions about IT investments, projects, and application portfolios
-Digitizes information so that Data Governance can take place
-Communicates Data Governance information to stakeholders
-Procures data in a way that is aligned with ethical principles and responsibilities
-Analyzes management of data as a strategic asset
-0
-
-25. Data is important to organizations in all but one of the following ways:
-Organizations need data to conduct interactions with customers and constituents
-Organizations need data to make decisions
-Organizations need data for daily operations
-Organizations sell data to third-parties
-Organizations get value from data analytics
-3
-
-41. What are the two types of Data Integration processes involved in Data Warehousing?
-Historical Loads, Ongoing Loads
-Statistical Update, Historical Loads
-Historical Update, Statistical Update
-Historical Update, Ongoing Loads
-Historical Loads, Ongoing Update
-4
-
-44. In past decades, information such as names and addresses might not have been considered data. Why has that changed?
-These forms of information can now be analyzed to make business decisions
-These forms of information can now can be stored digitally
-These forms of information are now available online
-These forms of information can be used for Data Science
-These forms of information can be stored by the organization because of improvements in data encryption
-0
-
-11. Data created while operational processes are in progress is referred to as...
-Resource information
-Business event information
-Category information
-Detail transaction information
-Detail resource information
-1
-
-31. What kind of software helps transform pick lists and controlled vocabularies into pick lists searchable from the home page?
-Term Management
-Software Management
-Transformation Management
-Content Management
-Home Page Software
-3
-
-28. Which of the following is not necessary to realize Data Governance programs?
-Develop policies and procedures
-Cultivate data stewardship practices at multiple levels within the organization
-Engage in organizational change management efforts
-Engage in behaviors necessary to manage data as an asset
-Communicate updated policies and procedures to external stakeholders
-4
-
-7. The first activity to be completed in the implementation of Data Governance is...
-Perform readiness assessment
-Perform discovery and business alignment
-Define Data Governance for the organization
-Develop organizational touchpoints
-Develop Data Governance strategy
+A RACI matrix is a useful tool to support the __________ in an outsourced arrangement
+Alignment of Business goals
+Attributing Costs
+Segregation of duties
+Transfer of access controls
+Service level Agreement
 2
 
-45. Which of the following is not a factor that determines the ability of an organization to adopt Data Architecture
-practices?
-Level of acceptance of formal data governance
-Ability to holistically consider the enterprise and not focus on project delivery and IT
-Cultural receptivity to an architectural approach
-Organizational recognition of data as a business asset
-Ability to put proper structures in place for the implementation of Data Architecture practices
+Which of these are increasingly driving legislation for information security and data privacy?
+A resistance to open data and transparency
+A recognition of Ethical issues in information management
+A desire for economic protectionism
+An objective of making life more challenging for information management professionals
+GDPR
+1
+
+Every enterprise is subject to many governmental and industry regulations, many of which regulate how data and information is used and managed. Part of the Data Governance Function is to:
+This is a risk and audit responsibility; Data Governance plays no role in this
+Perform ad-hoc audits of possible regulations to report to the DG Council on an information only basis
+Enforce enterprise-wide mandatory compliance to regulations
+This is about data, Data Governance is accountable for the whole process, with Risk and Audit reporting to DG
+Monitor and ensure that organisations meet any regulatory compliance requirements
 4
 
-36. What is the goal of Data Architecture?
-To bridge the gap between business strategy and execution
-To help organize a business strategy
-For ease of data management
-To structure and organize data
-To facilitate smooth execution
+One of the difficulties when integrating multiple source systems is:
+determining valid links or equivalences between data elements.
+maintaining documentation describing the data warehouse operation.
+completing the data architecture on time for the first release.
+having a data quality rule applicable to all source systems.
+modifying the source systems to align to the enterprise data model.
 0
 
-49. What are the essential characteristics of high-quality data definitions?
-Concreteness, Accuracy, Succinctness
-Clarity, Accuracy, Succinctness
-Clarity, Completeness, Succinctness
-Clarity, Accuracy, Completeness
-Clarity, Completeness, Concreteness
-3
+When defining your business continuity plan, which of the following should one consider doing?
+Determine the risk, probability and impact, check document backup frequency
+Consider written policies and procedures, impact mitigating measures, required recovery time and acceptable amount of disruption, the criticality of the documents
+Write a report and discuss with management the required budget
+Make sure that the data is retained sufficiently long, check that critical data is encrypted, check access rights
+Have the contracts in place to acquire new hardware in case of technical problems, define policies
+1
 
-21. Why must all systems handling messages or data packets be able to manage the order of execution of those processes?
-To preserve consistency and continuity
-To ensure a good view
-To make it durable
-To ensure clarity of words
-To make it complete
-0
+Metadata repository processes will not include:
+Controlling versions of data product will be required to manage the required single published master copy in conjunction with the variants potentially established as work in progress.
+Selecting Data Management Library software, search, and storage technologies
+Managing change to data products (e.g. Data Dictionary or Business Data Glossary) entries e.g. new data term to be defined, new data requirement, new database tables added, new system included into the technical landscape.
+Assessing impact where change to existing data product entries are proposed e.g. the impact of change on related data on other systems.
+All of these
+1
 
-37. How does Data Modelling and Design help an organization complete initiatives?
-Data Modelling depicts data visually
-Data Modelling quickens the success of broad-scoped initiatives
-Data Modelling confirms and documents understanding of different perspectives
-Data Modelling increases the opportunity for future initiatives
-Data Modelling visually presents Metadata
+Reference Data
+Is also known as External data
+Usually has more attributes than Master Data
+Usually has fewer attributes than Master Data
+Is more difficult to Govern than Master Data
+Is free
 2
 
-5. More than _______ of the documents created today are electronic.
-60%
-75%
-80%
-90%
-98%
-3
-
-24. Big Data encompasses...
-Speed, Accuracy, Quantity
-Volume, Accuracy, Speed
-Volume, Variety, Speed
-Variety, Uniqueness, Volume
-Uniqueness, Speed, Variety
+Data quality measurements can be taken at three levels of granularity. They are:
+Departmental data, regional data, and enterprise data.
+Historical data, current data and future dated data.
+Data element value, data instance or record, and data set.
+Fine data, coarse data, and rough data.
+Person data, location data, and product data.
 2
 
-30. What is the importance of Data Lineage Analysis to Data Flow?
-It depicts how data moves through business processes and systems in the data flow
-It explains the state of data at a given point in the data flow
-It explains the direction of processes and systems in the data flow
-It is a type of data lineage documentation
-It shows the direction of data in a data flow
-1
-
-10. Data Management principles include all but one of the following?
-It takes planning to manage data
-Data Management requires an enterprise perspective
-Data Management must drive information technology decisions
-Different types of data have different lifecycle characteristics
-Data Management must be done by experts
-4
-
-14. What does the acronym CIF refer to?
-Corporate Information Factory
-Company Information Factory
-Company Information Facts
-Corporate Information Facts
-Corporate Intergroup Factory
-0
-
-33. Master & Reference Data Management are forms of which of the following?
-Data Integration
-Data Security
-Data Warehousing
-Dataset Procurement
-Dataset Valuation
-0
-
-13. Basic data profiling involves analysis of the following except:
-Data values and how closely they correspond to a defined set of valid values
-Data format as defined in the data structures and inferred from the actual data
-Correct data flow throughout the organization
-Data population, including the levels of null, blank, and default records
-Relationships to other datasets
+Identify who has primary responsibility for data capture and usage design within programs
+Data Architects, Data Analysts,Database Administrators
+Suppliers, Consumers
+Software Architects, Developers
+Business Data Stewards, Subject Matter Experts (SMEs)
+DM Executive, BI Analysts, Data Security Administrator
 2
 
-3. Early Big Data was characterized by _______ V's but the number of V's has been expanded to _____
-3, 5
-2, 6
-2, 5
-3, 7
-3, 6
-4
-
-4. What is the purpose of a Data Flow Design diagram?
-Shows the movement of data
-Shows how data moves through business processes and systems
-Shows the data lifecycle
-Shows how queries can be executed
-Helps stakeholders understand data better
-1
-
-32. Control of contracts dealing with data, such as cloud storage, external data purchase, sales of data as a product, and outsourcing data operations - describes which driver of Data Governance?
-Vendor management
-General risk management
-Data Quality improvement
-Metadata Management
-Data Privacy
-0
-
-19. Which data model pattern can be used to construct self-referencing hierarchies?
-Integration Patterns
-Accumulation Pattern
-Construction Pattern
-Assembly Pattern
-Elementary Pattern
-4
-
-2. What is the end goal of Data Modelling?
-Providing for the understanding organizational data
-Creating a database
-Assigning the correct data types
-Implementing broadly scoped initiatives
-Laying the groundwork for Master Data Management
-0
-
-16. Two systems that are tightly coupled are characterized by what kind of interface?
-Asynchronous
-Integration
-Coupling
-Synchronous
-Overlapping
-3
-
-39. A thesaurus is a type of controlled vocabulary used for what purpose?
-Content Management
-Content Generation
-Content Retrieval
-Content Data
-Content Reference
-2
-
-35. What is the name for an authoritative system where data is created, captured, and/or maintained through a defined set of rules and expectations?
-A system of documents
-A system of record
-A system of data
-A system of files
-A system of reference
-1
-
-43. Which of the following is one of the ethical principles for data as adapted from the Belmont Principles?
-Honesty
-Transparency
-Integrity
-Respect for persons
-Fairness
-3
-
-9. Master Data Management is...
-Obstructive
-Frustrating
-Challenging
-Disorganized
-Oriented
-2
-
-34. The Strong-Wang framework describes ______ dimensions across ______ general categories of data quality.
-4, 15
-15, 4
-5, 14
-14, 5
-15, 5
-1
-
-26. The understanding of data in terms of economic value is referred to as...
-Data asset estimation
-Data asset valuation
-Economics of data asset
-Customer data value
-Customer data market value
-1
-
-12. What is the importance of Data Governance in Data Management?
-It simplifies the understanding of data for easy implementation of Data Models
-It governs the value enhancement process
-It supports the categorization of data
-It educates key stakeholders on how to make better data decisions
-It governs how decisions are made about data and how people and processes are expected to behave in relation to data
-4
-
-22. What is accuracy?
-Ensuring that no entity exists more than once within the dataset
-Ensuring that data values are consistently represented within a dataset and between datasets and that that data values are consistently associated across datasets
-Ensuring that required data is present
-Ensuring data correctly represents 'real-life' entities
-Refers to several characteristics of data
-3
-
-6. The implementation of a Data Warehouse should follow these guiding principles, except:
-Think and design globally, act and build locally
-Ensure business analysts are involved in decision support activities across the enterprise
-Promote collaboration
-One size does not fit all
-Promote transparency and self-service access to data
-1
-
-18. Which among the following can be described as goals of a Master and Reference Data Management program?
-Identification and restoration of improperly merged data
-Enterprise-wide distribution of trusted data
-Determine which sources will provide a comprehensive look at Master Data entities
-Analyze root causes of issues. 
-Identify the latency between the source system and the consumption system
-Matching and linking new records from a starting point. 
-Provide information that may not be readily available during record creation
-To make sure that the enterprise has complete, current and authoritative master and reference data for their organizational processes.
-To provide master and reference data across all functions and applications of the enterprise.
-To reduce the cost and complexity of data usage through common data models.
-7,8,9
-
-1. What is the importance of Enterprise Data Architecture?
-It shows the flow of data
-It explains the elements that are important to the organization
-It gives a pictorial representation of business elements
-It defines standard terms and designs for the elements that are important to the organization
-It represents a collection of Enterprise Data Models
-3
-
-50. Data Science used to be called which of the following?
-Applied Data
-Data Application
-Applied Statistics
-Data Analysis
-Statistics Application
-2
-
-48. Which of the following is NOT a principle guiding online data practices in the United States?
-Ownership of data
-Identity
-The right to be forgotten
-Right to sue against the proliferation of false personal information online
-Freedom of speech online
-3
-
-38. A Services Based Architecture has these three main components:
-Batch Layer, Data Layer, Serving Layer
-Batch Layer, Speed Layer, Serving Layer
-Statistics Layer, Data Layer, Serving Layer
-Serving Layer, Speed Layer, Statistics Layer
-Batch Layer, Speed Layer, Data Layer
-1
-
-40. What is the name for the index that points to Master Data in the various systems of record?
-Record
-Table of Contents
-Appendix
-Registry
-Database
-3
-
-42. In the context of Information Technology, which of the following defines data?
-Information stored on computers
-Information stored on SD cards
-Information stored in a Data Warehouse or Operational Data Store
-Information in a data center or in the cloud
-Information stored in digital form
-4
-
-17. What is e-discovery?
-The ability of an organization to effectively respond to litigation
-The process of finding electronic records that might serve as evidence in a legal action
-Planning, implementation, and control activities for data lifecycle management
-Website utilized to manage records and published information
-Modern approach to records management
-1
-
-29. High-quality data is a means to...
-Organizational success
-Decreased customer service calls
-Means unto itself
-Make quicker decisions
-Means to an end
-0
-
-47. The Shewhart / Deming cycle is also known as...
-Database cycle
-Data Management
-Content Generation
-Redman Cycle
-Plan-do-check-act
-4
-
-27. What is the data source of a Data Warehouse?
-Master Data
-Conformed dimension contents from separate repositories
-Data Structures based on performance
-Historical, atomized data
-Staging area
-1
-
-20. Why is Data Architecture important to Data Management?
-Provides for an understanding of an organization's data at different levels of abstraction
-Creates data about data
-Breaks down data systems into easily comprehensible units
-Create structured representations of data
-Supports the utilization of data to make sound decisions
-0
-
-15. Which of the following is NOT a function of Data Architects?
-Facilitate alignment between Business and IT
-Act as agents for change, transformation, and agility
-Manage complex data and information delivery throughout the enterprise
-Translate business needs into data and system requirements so processes will have their required data
-Strategize on how to procure data that meets the needs of the organization
-4
-
-46. Thomas Redman defines a data item as...
-Representative triple
-Representative double
-Representable triple
-Representable double
-Representing triple
-2
-
-51. Which of the following is used to exchange information within the Semantic Web?
-Taxonomy
-Thesaurus
-Data Model
-Syntax
-Ontology
+Dimension tables
+Contain measures
+Do not contain hierarchies
+Have few columns but many rows
+Are the same as Facts
+Have many columns but few rows
 4
 
 
+---------------------------------------------
+{"question": "A RACI matrix is a useful tool to support the __________ in an outsourced arrangement",
+"answers": ["Alignment of Business goals",
+ "Attributing Costs",
+ "Segregation of duties",
+ "Transfer of access controls",
+ "Service level Agreement",
 
--------------------------------------------
 
-{"question": "Which of the following describes Information Technology (IT) Governance?",
-"answers": ["Informs decisions about IT investments, projects, and application portfolios",
- "Digitizes information so that Data Governance can take place",
- "Communicates Data Governance information to stakeholders",
- "Procures data in a way that is aligned with ethical principles and responsibilities",
- "Analyzes management of data as a strategic asset"],
-"valid": [0]},
-
-{"question": "Data is important to organizations in all but one of the following ways:",
-"answers": ["Organizations need data to conduct interactions with customers and constituents",
- "Organizations need data to make decisions",
- "Organizations need data for daily operations",
- "Organizations sell data to third-parties",
- "Organizations get value from data analytics"],
-"valid": [3]},
-
-{"question": "What are the two types of Data Integration processes involved in Data Warehousing?",
-"answers": ["Historical Loads, Ongoing Loads",
- "Statistical Update, Historical Loads",
- "Historical Update, Statistical Update",
- "Historical Update, Ongoing Loads",
- "Historical Loads, Ongoing Update"],
-"valid": [4]},
-
-{"question": "In past decades, information such as names and addresses might not have been considered data. Why has that changed?",
-"answers": ["These forms of information can now be analyzed to make business decisions",
- "These forms of information can now can be stored digitally",
- "These forms of information are now available online",
- "These forms of information can be used for Data Science",
- "These forms of information can be stored by the organization because of improvements in data encryption"],
-"valid": [0]},
-
-{"question": "Data created while operational processes are in progress is referred to as...",
-"answers": ["Resource information",
- "Business event information",
- "Category information",
- "Detail transaction information",
- "Detail resource information"],
+{"question": "Which of these are increasingly driving legislation for information security and data privacy?",
+"answers": ["A resistance to open data and transparency",
+ "A recognition of Ethical issues in information management",
+ "A desire for economic protectionism",
+ "An objective of making life more challenging for information management professionals",
+ "GDPR"],
 "valid": [1]},
 
-{"question": "What kind of software helps transform pick lists and controlled vocabularies into pick lists searchable from the home page?",
-"answers": ["Term Management",
- "Software Management",
- "Transformation Management",
- "Content Management",
- "Home Page Software"],
-"valid": [3]},
-
-{"question": "Which of the following is not necessary to realize Data Governance programs?",
-"answers": ["Develop policies and procedures",
- "Cultivate data stewardship practices at multiple levels within the organization",
- "Engage in organizational change management efforts",
- "Engage in behaviors necessary to manage data as an asset",
- "Communicate updated policies and procedures to external stakeholders"],
+{"question": "Every enterprise is subject to many governmental and industry regulations, many of which regulate how data and information is used and managed. Part of the Data Governance Function is to:",
+"answers": ["This is a risk and audit responsibility; Data Governance plays no role in this",
+ "Perform ad-hoc audits of possible regulations to report to the DG Council on an information only basis",
+ "Enforce enterprise-wide mandatory compliance to regulations",
+ "This is about data, Data Governance is accountable for the whole process, with Risk and Audit reporting to DG",
+ "Monitor and ensure that organisations meet any regulatory compliance requirements"],
 "valid": [4]},
 
-{"question": "The first activity to be completed in the implementation of Data Governance is...",
-"answers": ["Perform readiness assessment",
- "Perform discovery and business alignment",
- "Define Data Governance for the organization",
- "Develop organizational touchpoints",
- "Develop Data Governance strategy"],
+{"question": "One of the difficulties when integrating multiple source systems is:",
+"answers": ["determining valid links or equivalences between data elements.",
+ "maintaining documentation describing the data warehouse operation.",
+ "completing the data architecture on time for the first release.",
+ "having a data quality rule applicable to all source systems.",
+ "modifying the source systems to align to the enterprise data model."],
+"valid": [0]},
+
+{"question": "When defining your business continuity plan, which of the following should one consider doing?",
+"answers": ["Determine the risk, probability and impact, check document backup frequency",
+"valid": [0,1,2]},
+ "Write a report and discuss with management the required budget",
+ "Make sure that the data is retained sufficiently long, check that critical data is encrypted, check access rights",
+ "Have the contracts in place to acquire new hardware in case of technical problems, define policies"],
+"valid": [1]},
+
+{"question": "Metadata repository processes will not include:",
+"answers": ["Controlling versions of data product will be required to manage the required single published master copy in conjunction with the variants potentially established as work in progress.",
+ "Selecting Data Management Library software, search, and storage technologies",
+ "Managing change to data products (e.g. Data Dictionary or Business Data Glossary) entries e.g. new data term to be defined, new data requirement, new database tables added, new system included into the technical landscape.",
+ "Assessing impact where change to existing data product entries are proposed e.g. the impact of change on related data on other systems.",
+ "All of these"],
+"valid": [1]},
+
+{"question": "Reference Data",
+"answers": ["Is also known as External data",
+ "Usually has more attributes than Master Data",
+ "Usually has fewer attributes than Master Data",
+ "Is more difficult to Govern than Master Data",
+ "Is free"],
+"valid": [2]},
+"valid": []},
+{"question": "Data quality measurements can be taken at three levels of granularity. They are:",
+"answers": ["Departmental data, regional data, and enterprise data.",
+ "Historical data, current data and future dated data.",
+ "Data element value, data instance or record, and data set.",
+ "Fine data, coarse data, and rough data.",
+ "Person data, location data, and product data."],
+"valid": [2]},
+"valid": []},
+{"question": "Identify who has primary responsibility for data capture and usage design within programs",
+"answers": ["Data Architects, Data Analysts,Database Administrators",
+ "Suppliers, Consumers",
+ "Software Architects, Developers",
+ "Business Data Stewards, Subject Matter Experts (SMEs)"],
+ "DM Executive, BI Analysts, Data Security Administrator"],
 "valid": [2]},
 
-{"question": "Which of the following is not a factor that determines the ability of an organization to adopt Data Architecture",
-"answers": ["practices?",
- "Level of acceptance of formal data governance",
- "Ability to holistically consider the enterprise and not focus on project delivery and IT",
- "Cultural receptivity to an architectural approach",
- "Organizational recognition of data as a business asset",
- "Ability to put proper structures in place for the implementation of Data Architecture practices"],
-"valid": [4]},
-
-{"question": "What is the goal of Data Architecture?",
-"answers": ["To bridge the gap between business strategy and execution",
- "To help organize a business strategy",
- "For ease of data management",
- "To structure and organize data",
- "To facilitate smooth execution"],
-"valid": [0]},
-
-{"question": "What are the essential characteristics of high-quality data definitions?",
-"answers": ["Concreteness, Accuracy, Succinctness",
- "Clarity, Accuracy, Succinctness",
- "Clarity, Completeness, Succinctness",
- "Clarity, Accuracy, Completeness",
- "Clarity, Completeness, Concreteness"],
-"valid": [3]},
-
-{"question": "Why must all systems handling messages or data packets be able to manage the order of execution of those processes?",
-"answers": ["To preserve consistency and continuity",
- "To ensure a good view",
- "To make it durable",
- "To ensure clarity of words",
- "To make it complete"],
-"valid": [0]},
-
-{"question": "How does Data Modelling and Design help an organization complete initiatives?",
-"answers": ["Data Modelling depicts data visually",
- "Data Modelling quickens the success of broad-scoped initiatives",
- "Data Modelling confirms and documents understanding of different perspectives",
- "Data Modelling increases the opportunity for future initiatives",
- "Data Modelling visually presents Metadata"],
-"valid": [2]},
-
-{"question": "More than _______ of the documents created today are electronic.",
-"answers": ["60%",
- "75%",
- "80%",
- "90%",
- "98%"],
-"valid": [3]},
-
-{"question": "Big Data encompasses...",
-"answers": ["Speed, Accuracy, Quantity",
- "Volume, Accuracy, Speed",
- "Volume, Variety, Speed",
- "Variety, Uniqueness, Volume",
- "Uniqueness, Speed, Variety"],
-"valid": [2]},
-
-{"question": "What is the importance of Data Lineage Analysis to Data Flow?",
-"answers": ["It depicts how data moves through business processes and systems in the data flow",
- "It explains the state of data at a given point in the data flow",
- "It explains the direction of processes and systems in the data flow",
- "It is a type of data lineage documentation",
- "It shows the direction of data in a data flow"],
-"valid": [1]},
-
-{"question": "Data Management principles include all but one of the following?",
-"answers": ["It takes planning to manage data",
- "Data Management requires an enterprise perspective",
- "Data Management must drive information technology decisions",
- "Different types of data have different lifecycle characteristics",
- "Data Management must be done by experts"],
-"valid": [4]},
-
-{"question": "What does the acronym CIF refer to?",
-"answers": ["Corporate Information Factory",
- "Company Information Factory",
- "Company Information Facts",
- "Corporate Information Facts",
- "Corporate Intergroup Factory"],
-"valid": [0]},
-
-{"question": "Master & Reference Data Management are forms of which of the following?",
-"answers": ["Data Integration",
- "Data Security",
- "Data Warehousing",
- "Dataset Procurement",
- "Dataset Valuation"],
-"valid": [0]},
-
-{"question": "Basic data profiling involves analysis of the following except:",
-"answers": ["Data values and how closely they correspond to a defined set of valid values",
- "Data format as defined in the data structures and inferred from the actual data",
- "Correct data flow throughout the organization",
- "Data population, including the levels of null, blank, and default records",
- "Relationships to other datasets"],
-"valid": [2]},
-
-{"question": "Early Big Data was characterized by _______ V's but the number of V's has been expanded to _____",
-"answers": ["3 and 5",
- "2 and 6",
- "2 and 5",
- "3 and 7",
- "3 and 6"],
-"valid": [4]},
-
-{"question": "What is the purpose of a Data Flow Design diagram?",
-"answers": ["Shows the movement of data",
- "Shows how data moves through business processes and systems",
- "Shows the data lifecycle",
- "Shows how queries can be executed",
- "Helps stakeholders understand data better"],
-"valid": [1]},
-
-{"question": "Control of contracts dealing with data, such as cloud storage, external data purchase, sales of data as a product, and outsourcing data operations - describes which driver of Data Governance?",
-"answers": ["Vendor management",
- "General risk management",
- "Data Quality improvement",
- "Metadata Management",
- "Data Privacy"],
-"valid": [0]},
-
-{"question": "Which data model pattern can be used to construct self-referencing hierarchies?",
-"answers": ["Integration Patterns",
- "Accumulation Pattern",
- "Construction Pattern",
- "Assembly Pattern",
- "Elementary Pattern"],
-"valid": [4]},
-
-{"question": "What is the end goal of Data Modelling?",
-"answers": ["Providing for the understanding organizational data",
- "Creating a database",
- "Assigning the correct data types",
- "Implementing broadly scoped initiatives",
- "Laying the groundwork for Master Data Management"],
-"valid": [0]},
-
-{"question": "Two systems that are tightly coupled are characterized by what kind of interface?",
-"answers": ["Asynchronous",
- "Integration",
- "Coupling",
- "Synchronous",
- "Overlapping"],
-"valid": [3]},
-
-{"question": "A thesaurus is a type of controlled vocabulary used for what purpose?",
-"answers": ["Content Management",
- "Content Generation",
- "Content Retrieval",
- "Content Data",
- "Content Reference"],
-"valid": [2]},
-
-{"question": "What is the name for an authoritative system where data is created, captured, and/or maintained through a defined set of rules and expectations?",
-"answers": ["A system of documents",
- "A system of record",
- "A system of data",
- "A system of files",
- "A system of reference"],
-"valid": [1]},
-
-{"question": "Which of the following is one of the ethical principles for data as adapted from the Belmont Principles?",
-"answers": ["Honesty",
- "Transparency",
- "Integrity",
- "Respect for persons",
- "Fairness"],
-"valid": [3]},
-
-{"question": "Master Data Management is...",
-"answers": ["Obstructive",
- "Frustrating",
- "Challenging",
- "Disorganized",
- "Oriented"],
-"valid": [2]},
-
-{"question": "The Strong-Wang framework describes ______ dimensions across ______ general categories of data quality.",
-"answers": ["4 and 15",
- "15 and 4",
- "5 and 14",
- "14 and 5",
- "15 and 5"],
-"valid": [1]},
-
-{"question": "The understanding of data in terms of economic value is referred to as...",
-"answers": ["Data asset estimation",
- "Data asset valuation",
- "Economics of data asset",
- "Customer data value",
- "Customer data market value"],
-"valid": [1]},
-
-{"question": "What is the importance of Data Governance in Data Management?",
-"answers": ["It simplifies the understanding of data for easy implementation of Data Models",
- "It governs the value enhancement process",
- "It supports the categorization of data",
- "It educates key stakeholders on how to make better data decisions",
- "It governs how decisions are made about data and how people and processes are expected to behave in relation to data"],
-"valid": [4]},
-
-{"question": "What is accuracy?",
-"answers": ["Ensuring that no entity exists more than once within the dataset",
- "Ensuring that data values are consistently represented within a dataset and between datasets and that that data values are consistently associated across datasets",
- "Ensuring that required data is present",
- "Ensuring data correctly represents 'real-life' entities",
- "Refers to several characteristics of data"],
-"valid": [3]},
-
-{"question": "The implementation of a Data Warehouse should follow these guiding principles, except:",
-"answers": ["Think and design globally, act and build locally",
- "Ensure business analysts are involved in decision support activities across the enterprise",
- "Promote collaboration",
- "One size does not fit all",
- "Promote transparency and self-service access to data"],
-"valid": [1]},
-
-{"question": "Which among the following can be described as goals of a Master and Reference Data Management program?",
-"answers": ["Identification and restoration of improperly merged data",
- "Enterprise-wide distribution of trusted data",
- "Determine which sources will provide a comprehensive look at Master Data entities",
- "Analyze root causes of issues. ",
- "Identify the latency between the source system and the consumption system",
- "Matching and linking new records from a starting point. ",
- "Provide information that may not be readily available during record creation",
- "To make sure that the enterprise has complete, current and authoritative master and reference data for their organizational processes.",
- "To provide master and reference data across all functions and applications of the enterprise.",
- "To reduce the cost and complexity of data usage through common data models.",
-"valid": [7,8,9]},
-
-{"question": "What is the importance of Enterprise Data Architecture?",
-"answers": ["It shows the flow of data",
- "It explains the elements that are important to the organization",
- "It gives a pictorial representation of business elements",
- "It defines standard terms and designs for the elements that are important to the organization",
- "It represents a collection of Enterprise Data Models"],
-"valid": [3]},
-
-{"question": "Data Science used to be called which of the following?",
-"answers": ["Applied Data",
- "Data Application",
- "Applied Statistics",
- "Data Analysis",
- "Statistics Application"],
-"valid": [2]},
-
-{"question": "Which of the following is NOT a principle guiding online data practices in the United States?",
-"answers": ["Ownership of data",
- "Identity",
- "The right to be forgotten",
- "Right to sue against the proliferation of false personal information online",
- "Freedom of speech online"],
-"valid": [3]},
-
-{"question": "A Services Based Architecture has these three main components:",
-"answers": ["Batch Layer, Data Layer, Serving Layer",
- "Batch Layer, Speed Layer, Serving Layer",
- "Statistics Layer, Data Layer, Serving Layer",
- "Serving Layer, Speed Layer, Statistics Layer",
- "Batch Layer, Speed Layer, Data Layer"],
-"valid": [1]},
-
-{"question": "What is the name for the index that points to Master Data in the various systems of record?",
-"answers": ["Record",
- "Table of Contents",
- "Appendix",
- "Registry",
- "Database"],
-"valid": [3]},
-
-{"question": "In the context of Information Technology, which of the following defines data?",
-"answers": ["Information stored on computers",
- "Information stored on SD cards",
- "Information stored in a Data Warehouse or Operational Data Store",
- "Information in a data center or in the cloud",
- "Information stored in digital form"],
-"valid": [4]},
-
-{"question": "What is e-discovery?",
-"answers": ["The ability of an organization to effectively respond to litigation",
- "The process of finding electronic records that might serve as evidence in a legal action",
- "Planning, implementation, and control activities for data lifecycle management",
- "Website utilized to manage records and published information",
- "Modern approach to records management"],
-"valid": [1]},
-
-{"question": "High-quality data is a means to...",
-"answers": ["Organizational success",
- "Decreased customer service calls",
- "Means unto itself",
- "Make quicker decisions",
- "Means to an end"],
-"valid": [0]},
-
-{"question": "The Shewhart / Deming cycle is also known as...",
-"answers": ["Database cycle",
- "Data Management",
- "Content Generation",
- "Redman Cycle",
- "Plan-do-check-act"],
-"valid": [4]},
-
-{"question": "What is the data source of a Data Warehouse?",
-"answers": ["Master Data",
- "Conformed dimension contents from separate repositories",
- "Data Structures based on performance",
- "Historical, atomized data",
- "Staging area"],
-"valid": [1]},
-
-{"question": "Why is Data Architecture important to Data Management?",
-"answers": ["Provides for an understanding of an organization's data at different levels of abstraction",
- "Creates data about data",
- "Breaks down data systems into easily comprehensible units",
- "Create structured representations of data",
- "Supports the utilization of data to make sound decisions"],
-"valid": [0]},
-
-{"question": "Which of the following is NOT a function of Data Architects?",
-"answers": ["Facilitate alignment between Business and IT",
- "Act as agents for change, transformation, and agility",
- "Manage complex data and information delivery throughout the enterprise",
- "Translate business needs into data and system requirements so processes will have their required data",
- "Strategize on how to procure data that meets the needs of the organization"],
-"valid": [4]},
-
-{"question": "Thomas Redman defines a data item as...",
-"answers": ["Representative triple",
- "Representative double",
- "Representable triple",
- "Representable double",
- "Representing triple"],
-"valid": [2]},
-
-{"question": "Which of the following is used to exchange information within the Semantic Web?",
-"answers": ["Taxonomy",
- "Thesaurus",
- "Data Model",
- "Syntax",
- "Ontology"],
+"valid": [Dimension tables]},
+ "Contain measures",
+ "Do not contain hierarchies",
+ "Have few columns but many rows",
+ "Are the same as Facts",
+ "Have many columns but few rows"],
 "valid": [4]}
