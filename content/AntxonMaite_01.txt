@@ -44,3 +44,59 @@ el envoltorio	wrapping
 currarse más en	to work harder at
 la prisa	hurry
 
+
+AntxonMaite_04
+
+Qué tal Gorriti? Esta a gusto de tu bufete?
+Le han despedido, Antxón. Es un inútil.
+Puedes despedirle? Si lo hacéis, sentiré culpable de toda mi vida.
+Que no, Antxón. Que Gorriti me ha confesado que aquella vez no le echaron por tu culpa.
+Que fue porque no sabía hacer la o con un canuto.
+No fue culpa mía? Pues, entonces que le den.
+Antxón?
+Es que estoy contento, Maite. Gorriti saldrá adelante a pesar de todo. Seguro.
+
+el bufete	office
+no saber hacer la o con un canuto	to be totally useless
+
+
+AntxonMaite_05
+
+Arantxa, tengo que darte las gracias.
+Esta experiencia no la olvidaré nunca.
+Me has abierto los ojos a un mundo nuevo.
+Ah bueno. Dicen que la primera mujer está especial.
+La primera y la última. Contigo no he sentido nada.
+Te habrás dado cuenta que estaba ahí como desganado, en plan automático.
+Qué?
+Gracias por ayudarme a descubrir que no me gustan las mujeres.
+Ay Arantxa, ya lo puedo decir: soy gay.
+
+
+AntxonMaite_06
+
+A: Ese tío es un cabrón. Pero como puede ir por ahí entrándole a todo lo que se mueve?
+Encima jugando con los sentimientos de la gente?
+M: O sea que estás cabreada con ese tío porque se porta igual que tú?
+A: Oye oye, que yo no voy por ahí poniéndole los cuernos a nadie, eh?
+M: Lo has hecho tres veces en lo que va de año, la última el mes pasado.
+A: No me saques las cosas de contexto, Maite! Que esas situaciónes están completamente distintas.
+
+cabrear	to infuriate
+
+
+AntxonMaite_07
+
+A: Ojalá. Es el curro. Que no me han despdido.
+I: Pero eso es bueno, no?
+A: Pues, no. Porque me ha hechon un oferta mejor. El trabajo de mi vida.
+Vamos, que me pagan el doble, y trabajo la mitad.
+An: Y cuál es el problema? Deja tu otro curro y punto.
+A: Y renunciar a finiquito? Ni de coña. No soy la Madre Teresa.
+Tengo que conseguir que me despida.
+I: Pues vete olviendo Arantxa, porque lo muy mal que lo hagas, no te van a despedir.
+Nadie despide a una [??]
+An: Eso es verdad.
+A: Tú no me conoces. Yo sí me pongo puedo ser tan inútil como Iñaki.
+Mañana estoy de patitas en la calle, fijo.
+
