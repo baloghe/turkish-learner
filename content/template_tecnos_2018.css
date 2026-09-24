@@ -1,0 +1,2519 @@
+ 
+body {
+	padding: 0em 12px 0em 12px;
+}
+
+p {
+	color: #000000;
+}
+
+p.saltopagina {
+	page-break-before: always;
+}
+
+/* ESTILOS CARACTER */
+
+span.ImgC {
+	font-style: normal;
+	 vertical-align: baseline;
+}
+
+span.destacado-c {
+background-color:#ff9933
+}
+
+em {
+	font-weight: normal;
+	font-style: italic;
+}
+em.ii {
+	font-size: 0.75em;
+	font-weight: normal;
+	font-style: italic;
+}
+span.i {
+	font-weight: normal;
+	font-style: italic;
+}
+a {
+	text-decoration: none;
+}
+strong  {
+	font-weight: bold;
+	font-style: normal;
+}
+span.b {
+	font-weight: bold;
+	font-style: normal;
+}
+span.BoldItaC {
+	font-weight: bold;
+	font-style: italic;
+}
+span.CaptC {
+	font-size: 2.00em;
+	font-weight: normal;
+}
+span.SupC {
+	font-size: 0.75em;
+	line-height: 0.00em;
+	font-weight: normal;
+	text-decoration: none;
+	vertical-align: super;
+	margin-right: 1px;
+	margin-left: 1px;
+	color: inherit;
+}
+span.SubC {
+	font-size: 0.75em;
+	line-height: 0.00em;
+	font-weight: normal;
+	text-decoration: none;
+	vertical-align: sub;
+	margin-right: 1px;
+	margin-left: 1px;
+	color: inherit;
+}
+span.VolC{
+	font-size: 0.75em;
+	line-height: 0.00em;
+	font-weight: normal;
+	text-decoration: underline;
+	vertical-align: super;
+	cursor: pointer;
+	margin-right: 1px;
+	margin-left: 1px;
+	color: #0000FF;
+}
+.footnote-anchor {
+	font-size: 0.95em;
+	font-weight: normal;
+	text-decoration: underline;
+	cursor: pointer;
+	margin-right: 1px;
+	margin-left: 1px;
+	color: #0000FF;
+}
+span.CourierC {
+	font-family: monospace;
+	font-size: 0.97em;
+}
+span.SansC {
+	font-family: sans-serif;
+	font-size: 0.87em;
+}
+span.SmallCaps {
+	font-size: 80%;
+	text-transform: uppercase;
+}
+span.SmallCapsBold {
+	font-weight: bold;
+	font-size: 80%;
+	text-transform: uppercase;
+}
+span.SmallCapsIta {
+	font-size: 80%;
+	font-style: italic;
+	text-transform: uppercase;
+}
+span.SmallCapsBoldIta {
+	font-size: 80%;
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+samp {
+	font-family: sans-serif;
+}
+span.EspFijo  {
+	margin-right: 0.40em;
+}
+span.EspFijoGuion  {
+	margin-right: 0.35em;
+}
+span.EspFijoParen  {
+	margin-right: 0.35em;
+}
+span.EspFijoBolo {
+    margin-right: 0.80em;
+}
+
+
+/* ESTILOS PORTADA */
+
+.PortTitul {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.85em;
+	line-height: 1.30em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.40em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+p.PortAutor {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.PortAutor1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.PortCargo {
+	font-family: serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 0.88em;
+	line-height: 1.30em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.PortCargo1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.88em;
+	line-height: 1.30em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.PortColab {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.PortColec {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.10em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.PortColec1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.10em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.PortColecx {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 3em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+
+/* ESTILOS PRINCIPIOS */
+
+p.DedicTexto {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: right;
+	text-indent: 0.00em;
+	margin-top: 5.00em;
+	margin-right: 0em;
+	margin-bottom: 0.00em;
+	margin-left: 20%;
+	color: inherit;
+}
+
+p.DedicTexto1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: right;
+	text-indent: 0.00em;
+	margin-top: 0.50em;
+	margin-right: 0em;
+	margin-bottom: 0.00em;
+	margin-left: 20%;
+	color: inherit;
+}
+p.LemaTexto {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.95em;
+	line-height: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: right;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 10%;
+	margin-bottom: 0.00em;
+	margin-left: 10%;
+	color: inherit;
+}
+p.LemaFirma {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.95em;
+	line-height: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: right;
+	text-indent: 0.00em;
+	margin-top: 0.50em;
+	margin-right: 10%;
+	margin-bottom: 0.00em;
+	margin-left: 10%;
+	color: inherit;
+}
+
+/* ESTILOS DE ÍNDICE*/
+
+.IndiTitul{
+	font-family: serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.20em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 0px;
+	margin-top: 2.00em;
+	margin-right: 0.00em;
+	margin-bottom: 2.00em;
+	margin-left: 0.00em;
+	color: #999999;
+}
+p.IndiParte {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: left;
+	text-indent: 0em;
+	margin-top: 1.50em;
+	margin-right: 0.00em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	color: #000080;
+}
+p.IndiCapit {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 0.50em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: #000080;
+}
+p.IndiCapit0 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: #000080;
+}
+p.IndiCapit2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 2.50em;
+	color: #000080;
+}
+p.IndiCapit3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.75em;
+	color: #000080;
+}
+
+/* ESTILOS PARTE*/
+
+.PartAntet {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.30em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.50em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 3.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+.PartTitul {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.20em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.30em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.PartTitulx {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.20em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 3em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+p.PartLema {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: right;
+	text-indent: 0em;
+	margin-top: 0.00em;
+	margin-right: 15%;
+	margin-bottom: 0.00em;
+	margin-left: 15%;
+	color: inherit;
+}
+p.PartLefir {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: right;
+	text-indent: 0.00em;
+	margin-top: 0.50em;
+	margin-right: 15%;
+	margin-bottom: 2.00em;
+	margin-left: 15%;
+	color: inherit;
+}
+
+/* ESTILOS TITULOS CAPITULOS*/
+
+.CaptAntet {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.50em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+.CaptTitul {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.50em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.40em;
+	margin-right: 0.00em;
+	margin-bottom: 1em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptTitul2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.50em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.40em;
+	margin-right: 0.00em;
+	margin-bottom: 2em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptTitulxx {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.50em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.40em;
+	margin-right: 0.00em;
+	margin-bottom: 0em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptTitulx {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.50em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.50em;
+	margin-right: 0.00em;
+	margin-bottom: 2em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptEpig1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 2.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptEpig1c {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 2.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptEpig1x {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptEpig2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant:normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 1.60em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptEpig3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 1.40em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptEpig4 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 1.25em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptEpig5 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 1.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.50em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptEpig6 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 1.00em;
+	margin-top: 0.50em;
+	margin-right: 0.00em;
+	margin-bottom: 0.50em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.CaptEpig7 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 0.9em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 1.50em;
+	margin-top: 0.50em;
+	margin-right: 0.00em;
+	margin-bottom: 0.50em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+
+
+/* ESTILOS CAPITULO */
+
+p.CaptLema{
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: right;
+	text-indent: 0em;
+	margin-top: 0.00em;
+	margin-right: 0em;
+	margin-bottom: 0.00em;
+	margin-left: 15%;
+	color: inherit;
+}
+p.CaptLefir{
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: right;
+	text-indent: 0em;
+	margin-top:1em;
+	margin-right: 0em;
+	margin-bottom: 1.00em;
+	margin-left: 15%;
+	color: inherit;
+}
+p.CaptLefir1{
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: right;
+	text-indent: 0em;
+	margin-top: 1em;
+	margin-right: 0em;
+	margin-bottom: 0.00em;
+	margin-left: 15%;
+	color: inherit;
+}
+p.CaptLefir2{
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: right;
+	text-indent: 0em;
+	margin-top: 0.00em;
+	margin-right: 0em;
+	margin-bottom: 0.00em;
+	margin-left: 15%;
+	color: inherit;
+}
+p.CaptLefir3{
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: right;
+	text-indent: 0em;
+	margin-top: 0.00em;
+	margin-right: 0em;
+	margin-bottom: 1.00em;
+	margin-left: 15%;
+	color: inherit;
+}
+p.CaptEntra {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptEntrax {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.88em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptTexto {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptPeque {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptPeque1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptPeque2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptPeque3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptNota {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10;
+	text-align: justify;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptNotaSigue {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptNotaFran {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+/* ESTILOS CON SALTOS Y CENTRADOS */
+
+p.CaptSalto {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptSalta {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptSaltamas {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 2.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptSaltaDer {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: right;
+	text-indent: 1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptCentra {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.90em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptCentrax {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.10em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.90em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptCentra1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptCentra2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptCentra3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+/* ESTILOS ESPECIALES */
+
+p.CaptEspec {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.90em;
+	margin-left: 2.00em;
+	color: inherit;
+}
+p.CaptEspec1 {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 2.00em;
+	color: inherit;
+}
+p.CaptEspec2 {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 2.00em;
+	color: inherit;
+}
+p.CaptEspec3 {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.90em;
+	margin-left: 2.00em;
+	color: inherit;
+}
+
+/* ESTILOS CITAS Y PIES */
+
+p.CaptCita {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 3.00em;
+	color: inherit;
+}
+p.CaptCita1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.00em;
+	color: inherit;
+}
+p.CaptCita2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.00em;
+	color: inherit;
+}
+p.CaptCita3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 3.00em;
+	color: inherit;
+}
+p.CaptCitaSin {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.00em;
+	color: inherit;
+}
+p.CaptPilus {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.50em;
+	margin-right: 0.00em;
+	margin-bottom: 1.50em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptPilus1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.50em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptPilus2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CaptPilus3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.10em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.50em;
+	margin-right: 0.00em;
+	margin-bottom: 1.50em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+/* VERSOS Y FRANCESAS */
+
+p.CaptFranc {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+p.CaptFranc1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+p.CaptFranc2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+p.CaptFranc22 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.75em;
+	color: inherit;
+}
+p.CaptFranc3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+p.CaptFrancEntra {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 2.50em;
+	color: inherit;
+}
+p.CaptFrancEntra1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 2.50em;
+	color: inherit;
+}
+p.CaptFrancEntraEntra1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.75em;
+	color: inherit;
+}
+p.CaptFrancEntraEntraEntra1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 5em;
+	color: inherit;
+}
+p.CaptFrancEntra2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 2.50em;
+	color: inherit;
+}
+p.CaptFrancEntraEntra2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.75em;
+	color: inherit;
+}
+p.CaptFrancEntraEntraEntra2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 5em;
+	color: inherit;
+}
+p.CaptFrancEntra3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 2.50em;
+	color: inherit;
+}
+p.CaptFrancSalta {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+p.CaptFrancSigue {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+p.CaptVerso {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.92em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: -1.20em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.90em;
+	margin-left: 18%;
+	color: inherit;
+}
+p.CaptVerso1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.92em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: -1.20em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 18%;
+	color: inherit;
+}
+p.CaptVerso2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.92em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: -1.20em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 18%;
+	color: inherit;
+}
+p.CaptVerso3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.92em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: -1.20em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.90em;
+	margin-left: 18%;
+	color: inherit;
+}
+
+/* APÉNDICES */
+
+p.ApdcTxt {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.90em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.ApdcBibli1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.90em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: 0em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0em;
+	color: inherit;
+}
+p.ApdcBibli {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.90em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+p.ApdcBibliSigue {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.90em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.15em;
+	text-align: justify;
+	text-indent: 1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.50em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+p.ApdcAnalt {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.95em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.15em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+.ApdcEpig {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.90em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.ApdcEpig2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.95em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.90em;
+	margin-left: 0.00em;
+	color: inherit;
+	-webkit-hyphens: none; 
+	adobe-hyphenate: none !important; 
+	-epub-hyphens: none;
+}
+.ApdcTitul {
+	font-family: serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.25em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.20em;
+	margin-right: 0.00em;
+	margin-bottom: 3.50em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+/* ESTILOS TABLAS */
+
+.TabAnte {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 2.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+.TabTitul {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.50em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 1.25em;
+	color: inherit;
+}
+p.TabCabec {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.90em;
+	line-height: 1.10em;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.TabTexto {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.90em;
+	line-height: 1.10em;
+	font-variant: normal;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.TabText {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	line-height: 1.10em;
+	font-variant: normal;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.TabTexto1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 1.10em;
+	font-variant: normal;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.TabCentro {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	line-height: 1.10em;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.TabSalta {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.90em;
+	line-height: 1.10em;
+	font-variant: normal;
+	text-align: left;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.TabFran {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 2.50em;
+	color: inherit;
+}
+p.TabFran1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 2.50em;
+	color: inherit;
+}
+p.TabFran2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 2.50em;
+	color: inherit;
+}
+p.TabFran3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 2.50em;
+	color: inherit;
+}
+p.TabFranEntra {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.75em;
+	color: inherit;
+}
+p.TabFranEntra1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.75em;
+	color: inherit;
+}
+p.TabFranEntra2 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 3.75em;
+	color: inherit;
+}
+p.TabFranEntra22 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: left;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 5em;
+	color: inherit;
+}
+p.TabFranEntra3 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.10em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 1.00em;
+	margin-left: 3.75em;
+	color: inherit;
+}
+table.tabla {
+	margin-top: 1.20em;
+	margin-right: auto;
+	margin-bottom: 1.20em;
+	margin-left: auto;
+	text-align: center;
+	border: none;
+	width: 100%;
+
+}
+table.tablax {
+	margin-top: 1.20em;
+	margin-right: auto;
+	margin-bottom: 1.20em;
+	margin-left: auto;
+	text-align: center;
+	border-collapse: collapse;
+	border-width: 1px;
+	border-style: solid;
+}
+table.tablano {
+	margin-top: 1.20em;
+	margin-right: auto;
+	margin-bottom: 1.20em;
+	margin-left: auto;
+	text-align: center;
+	border: none;
+	width: 100%;
+}
+td.celda {
+   vertical-align: top;
+	padding-top: 0.00em;
+	padding-bottom: 0.00em;
+	padding-left: 0.30em;
+	padding-right: 0.30em;
+	border: none;
+	vertical-align: top;
+}
+td.celdano {
+   vertical-align: top;
+	padding-top: 0.00em;
+	padding-bottom: 0.00em;
+	padding-left: 0.10em;
+	padding-right: 0.10em;
+	border-collapse: collapse;
+	border: none;
+}
+td.celdano25 {
+   vertical-align: top;
+	padding-top: 0.10em;
+	padding-bottom: 0.10em;
+	padding-left: 0.10em;
+	padding-right: 0.10em;
+	border-collapse: collapse;
+	border: none;
+	width: 22%;
+}
+td.cabecera {
+	border-collapse: collapse;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 0.50em;
+	padding-bottom: 0.50em;
+	padding-left: 0.50em;
+	padding-right: 0.50em;
+	
+	
+}
+
+p.tab-fran-ent1 {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.80em;
+	text-decoration: none;
+	font-variant: normal;
+	line-height: 1.25em;
+	text-align: justify;
+	text-indent: -1.25em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 2.50em;
+	color: inherit;
+}
+
+/* ESTILOS CREDITOS */
+
+p.CrediTitor {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 2.00em;
+	margin-right: 0.00em;
+	margin-bottom: 2.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CrediTitul {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 2.00em;
+	margin-right: 0.00em;
+	margin-bottom: 2.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CrediEdici {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 2.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CrediAutor {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CrediTraduc {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CrediEditor {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CrediISBN {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 2.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CrediAdvert {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 2.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: inherit;
+}
+p.CrediLegal {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-left: 0.00em;
+	margin-bottom: 2.00em;
+	color: inherit;
+}
+p.CrediTexto {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 1.00em;
+	margin-right: 0.00em;
+	margin-left: 0.00em;
+	margin-bottom: 2.00em;
+	color: inherit;
+}
+p.CrediOrgan {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: #000080;
+}
+p.copy-https-p {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.87em;
+	line-height: 1.15em;
+	text-decoration: none;
+	font-variant: normal;
+	text-align: center;
+	text-indent: 0.00em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;
+	color: #000080;
+}
+
+
+/* ESTILOS ELEMENTOS GRAFICOS */
+
+/* Lineas horizontales*/
+
+div.footnotes {
+	border-top: 1px solid;
+	color: inherit;
+	margin-top: 2em;
+	margin-bottom: 0.00em;
+}
+
+hr { 
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+	margin-top: 2.00em;
+	margin-bottom: 1.00em;
+	margin-left: 0.00em;
+	color: inherit; 
+}
+.white1  {
+	font-family: serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.00em;
+	line-height: 1.50em;
+	margin-top: 0.00em;
+	margin-right: 0.00em;
+	margin-bottom: 0.00em;
+	margin-left: 0.00em;	
+}
+
+/* Recuadro tramado */
+
+.transnote    {
+	background-color: #eeeeee; 
+	border-width: 1px;
+	border-style: solid;
+	padding: 0.50em;
+	margin-top: 1.00em;
+	margin-right: 10%;
+	margin-bottom: 1.00em;
+	margin-left: 10%;
+	text-align: center;
+	color: inherit; 
+}
+
+/* Imagenes */
+
+.CaptImg {
+	text-align: center;
+	display: block;
+	margin-top: 1.00em;
+	margin-right: auto;
+	margin-bottom: 1.00em;
+	margin-left: auto;
+}
+.CaptImg1 {
+	text-align: center;
+	display: block;
+	margin-top: 1.00em;
+	margin-right: auto;
+	margin-bottom: 0.00em;
+	margin-left: auto;
+}
+.captImg2 {
+	text-align: center;
+	display: block;
+	margin-top: 0.00em;
+	margin-right: auto;
+	margin-bottom: 0.00em;
+	margin-left: auto;
+}
+.captImg3 {
+	text-align: center;
+	display: block;
+	margin-top: 0.00em;
+	margin-right: auto;
+	margin-bottom: 1.00em;
+	margin-left: auto;
+}
+capt-image-lateral-p{
+	text-align: center;
+	display: block;
+	margin-top: 1.00em;
+	margin-right: auto;
+	margin-bottom: 1.00em;
+	margin-left: auto;
+}
+.PortImg {
+	text-align: center;
+	display: block;
+	margin-top: 4.00em;
+	margin-right: auto;
+	margin-bottom: 0.00em;
+	margin-left: auto;
+}
+/* div_imagenes_laterales */
+
+div.lateral {
+	margin: 0 .5em 0 0 !important;
+	float:left !important;
+	width:30% !important;
+	line-height:2em !important;
+}
+img.img_lateral {
+	width:100%;
+	vertical-align: text-top;
+	margin-bottom:.5em !important;
+	}
+
